@@ -1,0 +1,30 @@
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.DS_Store
+
+# renv: commit renv.lock + activate.R only
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+
+# Data: raw and intermediate are rebuilt by scripts, never committed
+data/raw/
+data/interim/
+*.parquet
+*.tar.xz
+
+# targets pipeline store
+_targets/
+
+# Quarto build artifacts (docs/ IS committed for GitHub Pages)
+analysis/.quarto/
+analysis/_freeze/
+analysis/*_files/
+/.quarto/
