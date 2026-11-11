@@ -51,7 +51,8 @@ treatment_from <- function(ps_all, years) {
 did <- function(d, y, tvar, controls = "") {
   f <- as.formula(sprintf("%s ~ %s:post %s | personId + season", y, tvar, controls))
   m <- feols(f, data = d, cluster = ~personId)
-  ct <- coeftable(m)[1, ]
+  ct <- coeftable(m)
+  ct <- ct[grep(":post$", rownames(ct)), ]   # the treatment x post term, not any control
   data.table(outcome = OUTCOMES[[y]], estimate = ct[1], se = ct[2], p = ct[4],
              ci_lo = ct[1] - 1.96 * ct[2], ci_hi = ct[1] + 1.96 * ct[2], n = nobs(m),
              players = uniqueN(d[!is.na(get(y)), personId]))

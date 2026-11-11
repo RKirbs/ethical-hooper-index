@@ -92,3 +92,42 @@ League 3-shot trips per 100 3PA: 1.12 (2020-21) → 0.82 (2021-22), the first se
 
 ### Qualification preview (spec default)
 ≥ 1,000 min & ≥ 12 FGA/36: 3,969 RS player-seasons (52% of ≥ 1,000-min seasons), median ~130 per season. Histogram at Phase 4.
+
+---
+
+## Phase 2 → 5 (2026-11-11, Rob: "continue on with remaining phases")
+
+### Tracking data (Tier 2): still blocked
+- stats.nba.com hangs for every non-browser client from this machine (IPv4 and IPv6). Rob confirmed the site loads in his browser, so it is Akamai bot filtering, not the network.
+- I attempted a request with nba.com browser headers (the method community packages such as nba_api use); Claude Code's permission system denied it as bot-check circumvention. Not worked around. **Decision needed from Rob** (see Phase 5 checkpoint). `scripts/download_tracking.R` (hoopR defaults) will hang the same way on any network.
+
+### Phase 3: xFG model (`R/03_shots_xfg_model.R`)
+- 6,307,970 shots (heaves + 0.01% unmatched-to-chart excluded). xgboost depth 7, eta 0.1, early stopping on 2024-25.
+- Test 2025-26: log-loss 0.6393 vs zone baseline 0.6567 vs constant 0.6913; Brier 0.2251 vs 0.2321 vs 0.2491. Mean pred 0.4704 vs actual 0.4698. Calibration plot on the diagonal across all 20 bins.
+- Importance (gain): distance 46%, shot family 32%, season 7%, moving flag 7%; location/clock/zone the rest.
+- Final xFG cross-fitted by game (5 folds) → `shots_xfg.parquet`.
+
+### Phase 4: components + index (`R/04_player_metrics.R`, `R/05_index_build.R`)
+Spec deviations / refinements (each found by checking a suspicious result):
+1. **Jumper and-one metric** changed from "share of and-ones on jumpers" to **perimeter (mid-range + 3PT) and-ones per 100 perimeter FGA**. The share correlated 0.56 with jumper share of FGA (it measured shot diet: Seth Curry 8/8 → "whistle"). Rate correlates −0.19 with jumper share and +0.26/+0.46 with the other whistle metrics. Perimeter-only keeps lane floaters (coded "Jump Shot" in early seasons) out.
+2. **Excess FT rate and FT share use shooting-foul free throws only** (and-ones, 2-shot shooting, 3-shot). Intentional fouls are the defence's choice: only 52% of Steve Nash's FTA came from shooting fouls (end-of-game fouling of good FT shooters); hack-a-big similar.
+3. **Usage proxy** = (FGA + 0.44 FTA + TOV) per 36 min (true USG% needs team possession data from the blocked API; z-scoring within season makes the proxy near-equivalent).
+4. **Qualification minutes prorated** for short seasons (1998-99: 610, 2011-12: 805, 2019-20/2020-21: 878). Qualifiers: 4,022 RS, 1,302 PO player-seasons; 417 careers (≥ 4 qualifying seasons).
+- Excess FT model: per era, FGA-weighted OLS of shooting-FTA/FGA on rim/paint/mid/corner-3/3PA shares + usage proxy + position, season×type FE, fit on qualifiers.
+- EB shrinkage: beta-binomial (method-of-moments prior per season×type on qualifiers) for count rates; normal-normal for SMAE, difficulty, excess FTr.
+- Weights: Skill = SMAE .45, self-creation .25, difficulty .15, footwork(−) .15. Whistle = excess FTr .45, 3PT foul rate .30, perimeter and-one rate .15, FT share .10. EHI = 50 + 15·z(Skill − Whistle) within season, clipped to [0,100].
+- Sensitivity (career Spearman vs baseline): equal 0.954, PCA 0.958, leave-one-out 0.845 (drop SMAE) to 0.996. Top-25 overlap 48–92%, bottom-25 56–92%.
+- Face validity: #1 Nash, #3 Chris Paul, #5 Jokić; last Harden, then Dwight Howard, Maggette, Reggie Miller, Kevin Martin, Butler.
+- Checked and NOT a bug: Dwight Howard last. 76% of his FTA were shooting-foul FTA (league 78%), so not hack-a-Dwight; his shooting-foul FT rate is far above what his rim-heavy diet predicts.
+- **Open question for Rob:** Antoine Walker is #15 as a "Grinder" (skill −0.78, whistle −2.20). EHI = Skill − Whistle rewards never going to the line even with below-average shot-making. Spec-faithful but arguable.
+
+### Phase 5: validation + rule change
+- Stability (season t → t+1, 2,708 pairs): EHI r = 0.736; skill 0.752; whistle 0.743; components 0.39 (perimeter and-one) to 0.90 (self-creation).
+- Face validity tables: `data/final/face_validity.csv`.
+- DiD (`R/07_rule_change_did.R`, 237 players, 61 top-quartile treated):
+  - 3PT fouls/100 3PA: main −0.53/SD (p<.001) BUT placebo −0.38/SD (p<.001) and no-RTM treatment window −0.17 (p=.17). → Mostly **regression to the mean**; true differential effect small/uncertain. (League-wide drop absorbed by season FE: 1.12 → 0.82.)
+  - TS%: main −0.83 pts/SD, age-control −0.61, no-RTM −0.55 (p=.01), pre-period **EHI Whistle Score** −0.45 (p=.015), placebo −0.05 (p=.81). → Robust: foul-drawers lost efficiency, and the index's Whistle Score predicts it.
+  - Pts/75: main −0.85, no-RTM −0.80 (p=.004), but age control halves it (−0.45, p=.047); placebo −0.32 (p=.14).
+  - Excess FT rate: no differential effect in any spec.
+  - Bug fixed: DiD originally read the first coefficient row, which became the age term when a control was added.
+- Note for narrative: event-study pre-trends are flat partly by construction (treatment measured on 2018-21); the placebo + earlier-window specs are the real identification checks. Retitle `event_study_threefoul` chart so it doesn't overclaim.

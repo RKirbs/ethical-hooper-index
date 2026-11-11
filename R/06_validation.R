@@ -80,3 +80,35 @@ crosscheck_pbpstats <- function(min_fga = 200) {
       cbind(metric = "Unassisted 3PM", agree(fg3m_unast, PtsUnassisted3s / 3, 1)))
   }, era][order(era)]
 }
+
+# ---- 2. Year-to-year stability ----------------------------------------------------------------
+# Correlation of each player's value in season t with season t+1 (both qualifying,
+# regular season). A real stylistic trait should be sticky; pure noise would be ~0.
+stability <- function() {
+  ps <- as.data.table(read_parquet(file.path(paths$interim, "player_index.parquet")))[qualified == TRUE & season_type == "RS"]
+  ps[, yr := season_year(season)]
+  cols <- c("ehi", "skill", "whistle", "smae", "difficulty", "selfcreate", "footwork",
+            "excess_ftr", "threefoul", "and1jump", "ftshare")
+  nxt <- ps[, c("personId", "yr", cols), with = FALSE][, yr := yr - 1]
+  m <- merge(ps[, c("personId", "yr", cols), with = FALSE], nxt, by = c("personId", "yr"), suffixes = c("", "_next"))
+  rbindlist(lapply(cols, function(cc) {
+    ct <- cor.test(m[[cc]], m[[paste0(cc, "_next")]])
+    data.table(measure = cc, r = round(ct$estimate, 3), ci_lo = round(ct$conf.int[1], 3),
+               ci_hi = round(ct$conf.int[2], 3), pairs = nrow(m))
+  }))
+}
+
+# ---- 3. Face validity: top / bottom 15 in selected seasons ------------------------------------
+face_validity <- function(seasons = c("2000-01", "2010-11", "2018-19", "2025-26"), n = 15) {
+  ps <- as.data.table(read_parquet(file.path(paths$interim, "player_index.parquet")))[qualified == TRUE & season_type == "RS"]
+  rbindlist(lapply(seasons, function(s) {
+    d <- ps[season == s][order(-ehi)]
+    rbind(d[1:n, .(season, end = "top", rank = 1:n, player, ehi = round(ehi, 1), archetype)],
+          d[.N:(.N - n + 1), .(season, end = "bottom", rank = 1:n, player, ehi = round(ehi, 1), archetype)])
+  }))
+}
+
+if (sys.nframe() == 0) {
+  st <- stability(); print(st); fwrite(st, file.path(paths$final, "stability.csv"))
+  fv <- face_validity(); fwrite(fv, file.path(paths$final, "face_validity.csv"))
+}
