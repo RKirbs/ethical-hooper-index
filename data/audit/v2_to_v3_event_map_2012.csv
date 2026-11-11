@@ -1,0 +1,200 @@
+EVENTMSGTYPE,EVENTMSGACTIONTYPE,actionType,subType,N
+4,0,Rebound,Unknown,115565
+2,1,Missed Shot,Jump Shot,70792
+8,0,Substitution,"",48988
+1,1,Made Shot,Jump Shot,35141
+3,11,Free Throw,Free Throw 1 of 2,23130
+3,12,Free Throw,Free Throw 2 of 2,23088
+6,2,Foul,Shooting,22015
+6,1,Foul,Personal,16179
+5,1,Turnover,Bad Pass,15601
+2,5,Missed Shot,Layup Shot,13202
+1,5,Made Shot,Layup Shot,12851
+9,1,Timeout,Regular,11362
+1,42,Made Shot,Driving Layup Shot,7538
+5,2,Turnover,Lost Ball,7208
+4,1,Rebound,Normal Rebound,6575
+12,0,period,start,4942
+13,0,period,end,4942
+3,10,Free Throw,Free Throw 1 of 1,4757
+5,5,Turnover,Foul,4293
+1,7,Made Shot,Dunk Shot,3834
+1,79,Made Shot,Pullup Jump shot,3582
+2,42,Missed Shot,Driving Layup Shot,3560
+6,3,Foul,Loose Ball,2887
+6,4,Foul,Offensive,2876
+9,2,Timeout,Short,2591
+5,4,Turnover,Traveling,2396
+2,79,Missed Shot,Pullup Jump shot,2178
+10,0,Jump Ball,"",2119
+9,4,Timeout,Official,2045
+5,40,Turnover,Out of Bounds Lost Ball Turnover,1860
+1,4,Made Shot,Tip Shot,1858
+2,46,Missed Shot,Running Jump Shot,1837
+2,4,Missed Shot,Tip Shot,1796
+2,47,Missed Shot,Turnaround Jump Shot,1796
+1,8,Made Shot,Slam Dunk Shot,1659
+2,3,Missed Shot,Hook Shot,1623
+1,47,Made Shot,Turnaround Jump Shot,1482
+1,44,Made Shot,Reverse Layup Shot,1468
+1,78,Made Shot,Floating Jump shot,1458
+1,46,Made Shot,Running Jump Shot,1456
+6,26,Foul,Offensive Charge,1412
+1,63,Made Shot,Fadeaway Jump Shot,1401
+3,16,Free Throw,Free Throw Technical,1400
+2,63,Missed Shot,Fadeaway Jump Shot,1389
+5,11,Turnover,Shot Clock Turnover,1358
+1,3,Made Shot,Hook Shot,1311
+1,52,Made Shot,Alley Oop Dunk Shot,1193
+1,80,Made Shot,Step Back Jump shot,1184
+6,28,Foul,Personal Take,1171
+18,0,Instant Replay,Support Ruling,1156
+1,72,Made Shot,Putback Layup Shot,1152
+2,78,Missed Shot,Floating Jump shot,1136
+7,5,Violation,Kicked Ball,998
+1,66,Made Shot,Jump Bank Shot,986
+2,80,Missed Shot,Step Back Jump shot,982
+1,41,Made Shot,Running Layup Shot,886
+1,49,Made Shot,Driving Dunk Shot,868
+1,65,Made Shot,Jump Hook Shot,853
+2,77,Missed Shot,Driving Jump shot,848
+1,75,Made Shot,Driving Finger Roll Layup Shot,830
+6,11,Foul,Technical,826
+2,44,Missed Shot,Reverse Layup Shot,797
+5,39,Turnover,Step Out of Bounds Turnover,697
+6,29,Foul,Shooting Block,690
+2,86,Missed Shot,Turnaround Fadeaway shot,651
+7,2,Violation,Defensive Goaltending,628
+1,73,Made Shot,Driving Reverse Layup Shot,611
+2,66,Missed Shot,Jump Bank Shot,610
+1,86,Made Shot,Turnaround Fadeaway shot,600
+1,87,Made Shot,Putback Dunk Shot,580
+6,27,Foul,Personal Block,564
+2,65,Missed Shot,Jump Hook Shot,554
+5,8,Turnover,3 Second Violation,547
+6,17,Foul,Defense 3 Second,543
+1,77,Made Shot,Driving Jump shot,529
+2,7,Missed Shot,Dunk Shot,519
+1,84,Made Shot,Running Bank shot,486
+5,41,Turnover,Poss Lost Ball Turnover,478
+1,88,Made Shot,Driving Slam Dunk Shot,477
+1,58,Made Shot,Turnaround Hook Shot,458
+2,41,Missed Shot,Running Layup Shot,453
+1,43,Made Shot,Alley Oop Layup shot,448
+2,58,Missed Shot,Turnaround Hook Shot,425
+2,45,Missed Shot,Jump Shot,409
+1,56,Made Shot,Running Hook Shot,406
+1,71,Made Shot,Finger Roll Layup Shot,377
+3,15,Free Throw,Free Throw 3 of 3,362
+3,13,Free Throw,Free Throw 1 of 3,361
+3,14,Free Throw,Free Throw 2 of 3,360
+2,53,Missed Shot,Tip Shot,356
+2,56,Missed Shot,Running Hook Shot,342
+7,1,Violation,Delay Of Game,328
+2,73,Missed Shot,Driving Reverse Layup Shot,315
+18,1,Instant Replay,Overturn Ruling,305
+2,72,Missed Shot,Putback Layup Shot,295
+2,40,Missed Shot,Layup Shot,232
+1,50,Made Shot,Running Dunk Shot,230
+2,75,Missed Shot,Driving Finger Roll Layup Shot,223
+2,84,Missed Shot,Running Bank shot,220
+1,57,Made Shot,Driving Hook Shot,216
+2,43,Missed Shot,Alley Oop Layup shot,210
+1,85,Made Shot,Turnaround Bank shot,203
+1,82,Made Shot,Driving Bank shot,194
+5,15,Turnover,Offensive Goaltending,187
+1,90,Made Shot,Running Slam Dunk Shot,185
+2,57,Missed Shot,Driving Hook Shot,182
+5,13,Turnover,Backcourt Turnover,162
+1,92,Made Shot,Putback Slam Dunk Shot,131
+2,71,Missed Shot,Finger Roll Layup Shot,130
+1,51,Made Shot,Reverse Dunk Shot,123
+3,19,Free Throw,Free Throw Flagrant 2 of 2,118
+3,18,Free Throw,Free Throw Flagrant 1 of 2,116
+5,7,Turnover,Discontinue Dribble,109
+2,52,Missed Shot,Alley Oop Dunk Shot,109
+5,21,Turnover,Palming Turnover,104
+6,14,Foul,Flagrant Type 1,101
+6,9,Foul,Clear Path,99
+2,85,Missed Shot,Turnaround Bank shot,97
+6,16,Foul,Double Technical,96
+3,25,Free Throw,Free Throw Clear Path 1 of 2,95
+3,26,Free Throw,Free Throw Clear Path 2 of 2,95
+1,45,Made Shot,Jump Shot,95
+1,83,Made Shot,Fadeaway Bank shot,88
+2,49,Missed Shot,Driving Dunk Shot,82
+1,76,Made Shot,Running Finger Roll Layup Shot,80
+5,6,Turnover,Double Dribble,76
+1,40,Made Shot,Layup Shot,76
+1,74,Made Shot,Running Reverse Layup Shot,71
+2,82,Missed Shot,Driving Bank shot,67
+7,3,Violation,Lane,66
+2,87,Missed Shot,Putback Dunk Shot,66
+1,67,Made Shot,Hook Bank Shot,63
+1,96,Made Shot,Turnaround Bank Hook Shot,58
+1,81,Made Shot,Pullup Bank shot,57
+1,48,Made Shot,Dunk Shot,48
+1,89,Made Shot,Reverse Slam Dunk Shot,47
+1,53,Made Shot,Tip Shot,47
+6,10,Foul,Double Personal,47
+2,8,Missed Shot,Slam Dunk Shot,45
+5,36,Turnover,Illegal Screen Turnover,44
+6,6,Foul,Away From Play,44
+5,38,Turnover,5 Second Inbound Turnover,43
+1,94,Made Shot,Jump Bank Hook Shot,37
+6,5,Foul,Inbound,37
+2,81,Missed Shot,Pullup Bank shot,36
+5,19,Turnover,Kicked Ball Violation,34
+5,17,Turnover,Lane Violation,33
+11,1,Ejection,Second Technical,32
+2,55,Missed Shot,Hook Shot,31
+5,12,Turnover,Inbound Turnover,29
+2,67,Missed Shot,Hook Bank Shot,28
+2,74,Missed Shot,Running Reverse Layup Shot,27
+1,54,Made Shot,Running Tip Shot,27
+2,48,Missed Shot,Dunk Shot,24
+2,76,Missed Shot,Running Finger Roll Layup Shot,23
+1,95,Made Shot,Running Bank Hook Shot,21
+2,83,Missed Shot,Fadeaway Bank shot,21
+5,37,Turnover,Offensive Foul Turnover,20
+2,51,Missed Shot,Reverse Dunk Shot,18
+6,15,Foul,Flagrant Type 2,17
+11,3,Ejection,First Flagrant Type 2,17
+2,96,Missed Shot,Turnaround Bank Hook Shot,17
+6,18,Foul,Delay Technical,16
+18,2,Instant Replay,Altercation Ruling,15
+2,50,Missed Shot,Running Dunk Shot,14
+5,10,Turnover,8 Second Violation,14
+2,2,Missed Shot,Running Jump Shot,13
+2,54,Missed Shot,Running Tip Shot,13
+7,4,Violation,Jump Ball,12
+11,4,Ejection,Other,12
+2,88,Missed Shot,Driving Slam Dunk Shot,11
+1,93,Made Shot,Driving Bank Hook Shot,11
+2,92,Missed Shot,Putback Slam Dunk Shot,10
+6,19,Foul,Taunting Technical,9
+2,94,Missed Shot,Jump Bank Hook Shot,9
+1,55,Made Shot,Hook Shot,8
+6,13,Foul,Hanging Technical,8
+2,95,Missed Shot,Running Bank Hook Shot,7
+5,9,Turnover,5 Second Violation,5
+5,0,Turnover,"",5
+2,93,Missed Shot,Driving Bank Hook Shot,5
+7,6,Violation,Double Lane,5
+2,89,Missed Shot,Reverse Slam Dunk Shot,4
+5,20,Turnover,Illegal Assist Turnover,4
+9,0,Timeout,"",3
+3,20,Free Throw,Free Throw Flagrant 1 of 1,3
+2,90,Missed Shot,Running Slam Dunk Shot,3
+6,12,Foul,Non-Unsportsmanlike Technical,3
+5,32,Turnover,Opposite Basket Turnover,2
+6,25,Foul,Excess Timeout Technical,2
+5,42,Turnover,Excess Timeout Turnover,2
+5,3,Turnover,Out Of Bounds,2
+5,18,Turnover,Jump Ball Violation,2
+4,3,"","",2
+5,34,Turnover,Swinging Elbows Turnover,1
+7,0,Violation,"",1
+5,23,Turnover,Double Personal Turnover,1
+11,0,Ejection,"",1
+1,91,Made Shot,Putback Reverse Dunk Shot,1

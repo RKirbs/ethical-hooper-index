@@ -1,0 +1,6 @@
+metric,n,r,mean_abs_diff,pct_within_tol,tol
+Shooting fouls drawn,25,0.9995,0.68,96,5
+And-ones,25,0.9997,0.08,100,3
+Offensive fouls,25,0.998,0.24,100,3
+% of 2PM assisted,25,1,0.03,100,2
+% of 3PM assisted,20,0.9997,0.07,100,2

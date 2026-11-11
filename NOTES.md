@@ -48,3 +48,47 @@ Running log of decisions, data quirks, and open questions. Newest phase at the b
 2. Approve pbpstats.com as the box-score source (minutes, possessions, usage, FTA, TOV) + Basketball Reference for position, since stats.nba.com is blocked?
 3. xFG action types: harmonized coarse taxonomy across all seasons (recommended) vs. full detail?
 4. Tier 2 tracking validation: how to proceed given stats.nba.com is blocked?
+
+**Phase 0 decisions (approved by Rob 2026-11-11, "do what you think is best"):** all four recommendations taken: PBP V3 + 2012-13 V2 patch; pbpstats + BBRef instead of stats.nba.com; harmonised coarse shot families for xFG; tracking via `scripts/download_tracking.R` run from another network (retry from here on 2026-11-11 15:59 still timed out).
+
+---
+
+## Phase 1: Scaffold (2026-11-11)
+- Folder structure per spec + `scripts/` (one-off scripts not part of the pipeline) and `data/audit/` (committed QA tables).
+- renv initialised, snapshot type "all"; lockfile records every installed package. xgboost is 3.2 (new API: `evals=`, `xgb.attr(fit, "best_iteration")`).
+- Git identity set **for this repo only**: "Rob Kirby" + Rob's account email. Revisit before pushing (could switch to GitHub noreply address).
+- Palette: dataviz-skill reference palette (validated). Node.js isn't installed so the validator couldn't be re-run; the palette is used unmodified. Archetype scatter uses only the 3 all-pairs-safe slots (blue/orange/aqua) + neutral gray, with point shape as secondary encoding.
+- Chart caption changed from the spec's "NBA Stats via hoopR" to name the sources actually used.
+
+## Phase 2: Download + clean (2026-11-11)
+### Pipeline
+- `R/01_download.R`: bulk archives, pbpstats (60 JSON), BBRef (totals/play-by-play/shooting RS + playoff totals = 120 pages at 15/min). All cached; reruns skip.
+- `R/02_clean_pbp.R` → `shots.parquet` (6.4M FGA), `ft_trips.parquet`, `player_team_season.parquet`.
+- `R/02b_external_sources.R` → `bbref_totals`, `pbpstats`, `player_season.parquet`, `data/final/player_id_map.csv`.
+
+### Definitions fixed in code (document in methodology)
+- **Heaves excluded everywhere**: FGA from ≥ 36 ft with ≤ 3 s left in the period. Reason: from 2025-26 the NBA logs missed end-of-quarter heaves as *team* attempts, so player FGA would otherwise change definition mid-sample. Side effect: our points exclude made heaves (e.g. Curry 2015-16 −18 pts).
+- **FT trips**: "1 of n" rows. And-one = "1 of 1" whose shooter made a FG at the identical game clock (matches ~95% of 1-of-1 trips; remainder are away-from-play, and from 2022-23 transition take fouls → "other_1of1" jump to ~300/season, as expected). Three-shot = "1 of 3". Two-shot shooting vs penalty decided by whether a Shooting foul occurred at the same stoppage.
+- **Offensive fouls** = Foul/Offensive + Foul/Offensive Charge (Foul rows only; the paired turnover row is not double counted).
+- **Shot families**: dunk > tip/putback > hook > layup > jumper (string rules in `shot_family()`); moving = "Driving|Running".
+- **3-shot foul rate denominator** = 3PA + 3-shot trips (fouled misses are not FGA).
+- **Minutes** from BBRef (official). pbpstats possessions only used for 2000-01+.
+
+### pbpstats is incomplete before 2000-01
+Jordan 1996-97 in pbpstats: 77 G / 2,931 min / 528 FTA vs official 82 / 3,106 / 576. Our PBP matches official (1,892 FGA incl. 2 heaves, 576 FTA). → pbpstats is only a cross-check from 2000-01 on.
+
+### Cross-source checks (`data/final/crosscheck_*.csv`)
+- vs official BBRef totals, all 7,656 RS player-seasons ≥ 1,000 min: FGA (incl. heaves), FTA, TOV within ±2 in 100%.
+- vs BBRef PBP/shooting tables, 25 random player-seasons ≥ 1,000 min (seed 2026): shooting fouls drawn r = 0.9995 (96% within ±5), and-ones r = 0.9997, offensive fouls r = 0.998, % 2PM assisted r = 1.000, % 3PM assisted r = 0.9997.
+- vs pbpstats 2000-01+ (7,965 player-seasons ≥ 200 FGA): every count agrees (r ≥ 0.999, ≥ 99.6% within tolerance).
+
+### Data quirks found
+- 1996-97: Melvin Booker's shots split across two NBA person IDs (775 / 511). Non-qualifier; ignored.
+- BBRef playoff-totals pages use legacy column names (`player`, `team_id`, `g`); parser normalises.
+- 62 BBRef RS player-seasons unmatched to NBA IDs, all < 500 min (e.g. Ha Seung-Jin, Sun Yue). 2,131 NBA IDs unmatched, all < 100 FGA (mostly coaches/teams with technicals).
+
+### Early signal
+League 3-shot trips per 100 3PA: 1.12 (2020-21) → 0.82 (2021-22), the first season of the "non-basketball move" crackdown. Peak 1.57 in 2016-17.
+
+### Qualification preview (spec default)
+≥ 1,000 min & ≥ 12 FGA/36: 3,969 RS player-seasons (52% of ≥ 1,000-min seasons), median ~130 per season. Histogram at Phase 4.
