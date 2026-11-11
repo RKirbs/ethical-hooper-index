@@ -42,6 +42,16 @@ era_of <- function(y) {
          levels = ERA_LEVELS, ordered = TRUE)
 }
 
+# ---- Qualification (spec section 7) ------------------------------------------------------------------
+# Spec: >= 1,000 RS minutes and >= 12 FGA per 36. Minutes are prorated for
+# shortened seasons so lockout/COVID years are not gutted. Playoffs: >= 150 min.
+SEASON_GAMES <- c("1998-99" = 50, "2011-12" = 66, "2019-20" = 72, "2020-21" = 72)
+min_minutes <- function(season, season_type) {
+  g <- ifelse(season %in% names(SEASON_GAMES), SEASON_GAMES[season], 82)
+  ifelse(season_type == "RS", round(1000 * g / 82), 150)
+}
+QUAL_FGA36 <- 12
+
 # ---- Polite HTTP with on-disk caching -------------------------------------------
 # Download `url` to `dest` once; later calls reuse the cached file. Sleeps
 # `pause` seconds after each real request and retries with exponential backoff,
@@ -141,7 +151,7 @@ theme_ehi <- function(base_size = 12) {
     )
 }
 
-CAPTION <- "Data: NBA Stats play-by-play & shot charts (via shufinskiy/nba_data), pbpstats.com, Basketball Reference | Analysis: Rob Kirby"
+CAPTION <- "Data: NBA play-by-play & shot charts (via shufinskiy/nba_data), pbpstats.com, Basketball Reference\nAnalysis: Rob Kirby"
 
 # Save a figure to figures/ as PNG at a phone-friendly default size
 save_fig <- function(plot, name, width = 8, height = 5.5, dpi = 200) {

@@ -1,0 +1,11 @@
+scheme,spearman_careers,spearman_seasons,top25_overlap_pct,bottom25_overlap_pct,weights
+Equal weights,0.954,0.949,68,80,smae=0.25 selfcreate=0.25 difficulty=0.25 footwork=0.25 excess_ftr=0.25 threefoul=0.25 and1jump=0.25 ftshare=0.25
+PCA weights,0.958,0.949,80,76,smae=0.29 selfcreate=0.13 difficulty=0.37 footwork=0.21 excess_ftr=0.26 threefoul=0.23 and1jump=0.24 ftshare=0.26
+Drop smae,0.845,0.827,48,56,selfcreate=0.45 difficulty=0.27 footwork=0.27 excess_ftr=0.45 threefoul=0.30 and1jump=0.15 ftshare=0.10
+Drop selfcreate,0.935,0.951,64,84,smae=0.60 difficulty=0.20 footwork=0.20 excess_ftr=0.45 threefoul=0.30 and1jump=0.15 ftshare=0.10
+Drop difficulty,0.989,0.988,80,92,smae=0.53 selfcreate=0.29 footwork=0.18 excess_ftr=0.45 threefoul=0.30 and1jump=0.15 ftshare=0.10
+Drop footwork,0.98,0.982,80,88,smae=0.53 selfcreate=0.29 difficulty=0.18 excess_ftr=0.45 threefoul=0.30 and1jump=0.15 ftshare=0.10
+Drop excess_ftr,0.915,0.897,56,76,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 threefoul=0.55 and1jump=0.27 ftshare=0.18
+Drop threefoul,0.971,0.965,76,76,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.64 and1jump=0.21 ftshare=0.14
+Drop and1jump,0.994,0.99,92,92,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.53 threefoul=0.35 ftshare=0.12
+Drop ftshare,0.995,0.996,88,92,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.50 threefoul=0.33 and1jump=0.17
