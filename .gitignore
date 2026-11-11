@@ -31,3 +31,6 @@ analysis/*_files/
 
 # Quarto: figures copied in at render time
 analysis/figures/
+
+# Claude Code personal settings (never published)
+.claude/settings.local.json
