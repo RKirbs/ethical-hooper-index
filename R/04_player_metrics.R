@@ -20,15 +20,21 @@ suppressPackageStartupMessages({ library(arrow); library(fixest) })
 # Beta-binomial EB for k successes out of n trials. The Beta prior is fit by
 # method of moments on qualifying players in the same group (season x type);
 # every player's rate is replaced by its posterior mean (k + a) / (n + a + b).
-eb_beta <- function(k, n, group, qual) {
+eb_beta <- function(k, n, group, qual, min_n = 50) {
   dt <- data.table(k = k, n = n, g = group, q = qual)
   dt[, p := fifelse(n > 0, k / n, NA_real_)]
-  pri <- dt[q & n > 0, {
+  # prior fit only on qualifiers with >= min_n trials: method of moments is not
+  # robust to tiny samples (e.g. Karl Malone 1998-99, 2 three-shot fouls on ~3
+  # attempts, supplied a third of that season's observed variance)
+  pri <- dt[q & n >= min_n, {
     m <- weighted.mean(p, n)
-    # observed variance minus expected binomial noise = true-talent variance
+    # n-weighted observed variance minus its expected binomial noise = true-talent
+    # variance. E[sum n (p - m)^2] = v_true * sum(n) + K * m(1-m), so the noise
+    # term is K * m(1-m) / sum(n). (An earlier version used mean(1/n), which
+    # overstated noise, collapsed the prior and produced |z| > 8 artefacts.)
     v_obs <- sum(n * (p - m)^2) / sum(n)
-    v_noise <- m * (1 - m) * mean(1 / n)
-    v_true <- max(v_obs - v_noise, 1e-6 * m * (1 - m))
+    v_noise <- m * (1 - m) * .N / sum(n)
+    v_true <- max(v_obs - v_noise, 0.05 * v_obs)
     ab <- m * (1 - m) / v_true - 1
     .(a = m * ab, b = (1 - m) * ab)
   }, g]

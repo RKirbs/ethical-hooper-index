@@ -1,11 +1,11 @@
 scheme,spearman_careers,spearman_seasons,top25_overlap_pct,bottom25_overlap_pct,weights
-Equal weights,0.966,0.961,80,84,smae=0.25 selfcreate=0.25 difficulty=0.25 footwork=0.25 excess_ftr=0.25 threefoul=0.25 ftshare=0.25 and1jump=0.25
-PCA weights,0.972,0.965,84,84,smae=0.29 selfcreate=0.13 difficulty=0.37 footwork=0.21 excess_ftr=0.26 threefoul=0.23 ftshare=0.26 and1jump=0.24
-Drop smae,0.887,0.871,60,64,selfcreate=0.45 difficulty=0.27 footwork=0.27 excess_ftr=0.40 threefoul=0.25 ftshare=0.20 and1jump=0.15
-Drop selfcreate,0.961,0.97,76,92,smae=0.60 difficulty=0.20 footwork=0.20 excess_ftr=0.40 threefoul=0.25 ftshare=0.20 and1jump=0.15
+Equal weights,0.966,0.962,76,84,smae=0.25 selfcreate=0.25 difficulty=0.25 footwork=0.25 excess_ftr=0.25 threefoul=0.25 ftshare=0.25 and1jump=0.25
+PCA weights,0.973,0.966,80,84,smae=0.29 selfcreate=0.13 difficulty=0.37 footwork=0.21 excess_ftr=0.27 threefoul=0.23 ftshare=0.26 and1jump=0.24
+Drop smae,0.889,0.875,48,68,selfcreate=0.45 difficulty=0.27 footwork=0.27 excess_ftr=0.40 threefoul=0.25 ftshare=0.20 and1jump=0.15
+Drop selfcreate,0.962,0.97,72,92,smae=0.60 difficulty=0.20 footwork=0.20 excess_ftr=0.40 threefoul=0.25 ftshare=0.20 and1jump=0.15
 Drop difficulty,0.992,0.991,88,92,smae=0.53 selfcreate=0.29 footwork=0.18 excess_ftr=0.40 threefoul=0.25 ftshare=0.20 and1jump=0.15
-Drop footwork,0.987,0.988,80,96,smae=0.53 selfcreate=0.29 difficulty=0.18 excess_ftr=0.40 threefoul=0.25 ftshare=0.20 and1jump=0.15
-Drop excess_ftr,0.94,0.925,64,72,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 threefoul=0.42 ftshare=0.33 and1jump=0.25
-Drop threefoul,0.979,0.975,84,76,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.53 ftshare=0.27 and1jump=0.20
-Drop ftshare,0.981,0.984,76,88,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.50 threefoul=0.31 and1jump=0.19
+Drop footwork,0.987,0.989,80,92,smae=0.53 selfcreate=0.29 difficulty=0.18 excess_ftr=0.40 threefoul=0.25 ftshare=0.20 and1jump=0.15
+Drop excess_ftr,0.938,0.924,64,76,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 threefoul=0.42 ftshare=0.33 and1jump=0.25
+Drop threefoul,0.979,0.973,80,80,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.53 ftshare=0.27 and1jump=0.20
+Drop ftshare,0.98,0.984,76,92,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.50 threefoul=0.31 and1jump=0.19
 Drop and1jump,0.993,0.989,88,96,smae=0.45 selfcreate=0.25 difficulty=0.15 footwork=0.15 excess_ftr=0.47 threefoul=0.29 ftshare=0.24

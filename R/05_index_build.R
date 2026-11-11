@@ -28,7 +28,8 @@ COMPONENTS <- c(names(SKILL_W), names(WHISTLE_W))
 z_within <- function(dt, cols) {
   for (cc in cols) {
     st <- dt[qualified == TRUE, .(m = mean(get(cc), na.rm = TRUE), s = sd(get(cc), na.rm = TRUE)), group]
-    dt[st, on = "group", paste0("z_", cc) := (get(cc) - i.m) / i.s]
+    # capped at +/-4 SD so one extreme component cannot dominate a composite
+    dt[st, on = "group", paste0("z_", cc) := pmin(pmax((get(cc) - i.m) / i.s, -4), 4)]
   }
   dt
 }

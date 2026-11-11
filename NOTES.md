@@ -139,3 +139,9 @@ Spec deviations / refinements (each found by checking a suspicious result):
 2. **Formula:** Rob's definition — an ethical hooper "doesn't have to be the most skillful", the core is no foul-baiting / low FT reliance relative to volume. → **EHI = 0.4·Skill − 0.6·Whistle** (each axis standardised within season first), FT share weight raised 0.10 → 0.20 (whistle: excess FTr .40, 3PT fouls .25, FT share .20, perimeter and-ones .15). Antoine Walker (#21) and Jason Williams (#20) are legitimate low-whistle "Grinders" in the top 25.
    - Results after reweight: sensitivity Spearman 0.887–0.993; stability r = 0.743; DiD Whistle-Score treatment on TS% −0.38 pts/SD (p = .039), placebo null.
 3. Continue to Phases 6-7.
+
+## Phase 6 (2026-11-11)
+- **EB bug fixed (found via |z| > 8 outliers):** beta-binomial noise term used mean(1/n) against an n-weighted variance, collapsing priors; then MoM priors were dominated by tiny samples (Karl Malone 1998-99: 2 three-shot fouls on ~3 attempts supplied ~1/3 of that season's variance). Now: noise = K·m(1−m)/Σn, floor 5% of observed variance, prior fit on qualifiers with ≥ 50 trials. Component z capped at ±4 in composites. Rankings, sensitivity, stability and DiD essentially unchanged; whistle components now cohere (r .21–.66), perimeter and-one stability .39 → .48.
+- Remaining |z| = 4 (capped) cases are genuine large samples (Reggie Miller, Iverson, Mitch Richmond 3PT fouls; Harden; JaVale/Capela easy shot diets).
+- Anomaly filters: post-rule drop requires ≥ 2 qualifying seasons each side; playoff whistle requires ≥ 3 playoff runs and ≥ 300 playoff FGA.
+- Team effects are franchise fixed effects net of player FE (SEA→OKC, NJN→BRK, VAN→MEM, NOH/NOK/CHH→NOP, CHA→CHO, WSB→WAS). Exploratory only.

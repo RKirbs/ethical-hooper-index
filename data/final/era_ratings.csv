@@ -1,0 +1,896 @@
+personId,era,player,seasons,ehi,skill,whistle,archetype
+15,Hand-Check Era,Eric Piatkowski,2,43.9,-0.126,0.402,Downhill Bully
+17,Hand-Check Era,Clyde Drexler,2,47,-0.689,-0.207,Grinder
+22,Hand-Check Era,Rik Smits,4,71.9,1.374,-0.84,Ethical Hooper
+42,Hand-Check Era,Monty Williams,2,56.2,0.066,-0.44,Ethical Hooper
+45,Hand-Check Era,George McCloud,2,59.4,-0.516,-1.083,Grinder
+56,Hand-Check Era,Gary Payton,8,75.1,0.718,-1.488,Ethical Hooper
+57,Hand-Check Era,Doug Christie,3,41.6,-1.65,-0.422,Grinder
+72,Hand-Check Era,Kenny Anderson,5,59,0.35,-0.471,Ethical Hooper
+76,Hand-Check Era,Cedric Ceballos,2,62.4,-0.137,-1.065,Grinder
+84,Hand-Check Era,Latrell Sprewell,7,41.5,0.029,0.679,Whistle Artist
+89,Hand-Check Era,Nick Van Exel,8,55.7,0.558,-0.085,Ethical Hooper
+98,Hand-Check Era,Nick Anderson,4,61.9,-0.19,-1.068,Grinder
+107,Hand-Check Era,Dale Ellis,2,48.2,0.096,0.177,Whistle Artist
+111,Hand-Check Era,LaPhonso Ellis,3,51.5,-0.201,-0.243,Grinder
+120,Hand-Check Era,Steve Smith,3,48.8,0.836,0.659,Whistle Artist
+121,Hand-Check Era,Patrick Ewing,3,45,0.931,1.009,Whistle Artist
+123,Hand-Check Era,Robert Pack,2,39.1,-1.339,-0.044,Grinder
+133,Hand-Check Era,David Wesley,5,50.2,-0.379,-0.268,Grinder
+137,Hand-Check Era,Vernon Maxwell,2,45.4,-1.485,-0.618,Grinder
+145,Hand-Check Era,Tracy Murray,4,45.1,-0.081,0.334,Downhill Bully
+147,Hand-Check Era,Jalen Rose,7,58.3,1.006,0.019,Whistle Artist
+147,Freedom-of-Movement Era,Jalen Rose,2,49.3,0.51,0.383,Whistle Artist
+165,Hand-Check Era,Hakeem Olajuwon,5,60.5,1.02,-0.154,Ethical Hooper
+178,Hand-Check Era,Olden Polynice,2,61.1,-0.225,-1.032,Grinder
+183,Hand-Check Era,Bison Dele,2,57.5,-0.52,-0.951,Grinder
+185,Hand-Check Era,Chris Webber,7,66.3,-0.067,-1.326,Grinder
+185,Freedom-of-Movement Era,Chris Webber,3,57.7,-0.663,-1.057,Grinder
+187,Hand-Check Era,Terry Cummings,2,64.8,1.171,-0.413,Ethical Hooper
+192,Hand-Check Era,Dennis Scott,2,56.5,-0.112,-0.579,Grinder
+204,Hand-Check Era,Jeff Hornacek,2,66.8,0.965,-0.698,Ethical Hooper
+208,Hand-Check Era,Sam Cassell,7,64.5,2.371,0.453,Whistle Artist
+208,Freedom-of-Movement Era,Sam Cassell,4,66.4,1.659,-0.192,Ethical Hooper
+209,Hand-Check Era,Dell Curry,3,72.6,0.948,-1.126,Ethical Hooper
+210,Hand-Check Era,Terrell Brandon,5,71.2,1.369,-0.784,Ethical Hooper
+224,Hand-Check Era,Eddie Jones,7,44.6,-0.695,-0.041,Grinder
+252,Hand-Check Era,Karl Malone,7,43.2,1.009,1.208,Whistle Artist
+255,Hand-Check Era,Grant Hill,4,41.2,1.109,1.435,Whistle Artist
+255,Freedom-of-Movement Era,Grant Hill,2,55.7,1.487,0.539,Whistle Artist
+271,Hand-Check Era,Johnny Newman,3,19.7,-1.11,1.718,Downhill Bully
+275,Hand-Check Era,Allan Houston,8,55.4,1.19,0.352,Whistle Artist
+283,Hand-Check Era,Lindsey Hunter,2,46.8,-0.304,0.044,Downhill Bully
+296,Hand-Check Era,Rick Fox,3,60,-0.039,-0.804,Grinder
+297,Hand-Check Era,Alonzo Mourning,5,24,-1.048,1.333,Downhill Bully
+299,Hand-Check Era,Glenn Robinson,8,68.8,1.644,-0.404,Ethical Hooper
+302,Hand-Check Era,Mookie Blaylock,5,71.6,0.577,-1.33,Ethical Hooper
+317,Hand-Check Era,John Starks,4,49.5,-0.761,-0.474,Grinder
+324,Hand-Check Era,Anthony Peeler,5,54.1,-0.318,-0.545,Grinder
+330,Hand-Check Era,Danny Manning,3,68.4,1.612,-0.37,Ethical Hooper
+339,Hand-Check Era,Tom Gugliotta,4,53.8,0.217,-0.171,Ethical Hooper
+344,Hand-Check Era,Dana Barros,3,75.2,1.298,-1.181,Ethical Hooper
+353,Hand-Check Era,Darrell Armstrong,4,51.8,0.105,-0.074,Ethical Hooper
+358,Hand-Check Era,Anfernee Hardaway,4,43.9,0.142,0.575,Whistle Artist
+361,Hand-Check Era,Clifford Robinson,6,44.1,0.011,0.485,Whistle Artist
+364,Hand-Check Era,Rex Chapman,3,48.8,-0.488,-0.214,Grinder
+375,Hand-Check Era,Isaiah Rider,5,59.8,0.327,-0.558,Ethical Hooper
+381,Hand-Check Era,James Robinson,2,42,-0.15,0.522,Downhill Bully
+383,Hand-Check Era,Kendall Gill,5,45,-1.108,-0.342,Grinder
+389,Hand-Check Era,Toni Kukoč,7,48.4,0.347,0.337,Whistle Artist
+393,Hand-Check Era,Rod Strickland,4,42.6,0.945,1.217,Whistle Artist
+397,Hand-Check Era,Reggie Miller,5,23,0.672,2.591,Whistle Artist
+406,Hand-Check Era,Shaquille O'Neal,8,44.9,0.359,0.63,Whistle Artist
+406,Freedom-of-Movement Era,Shaquille O'Neal,5,38.8,-0.254,0.74,Downhill Bully
+417,Hand-Check Era,Sam Mitchell,2,25,0.14,2.111,Whistle Artist
+423,Hand-Check Era,Chris Gatling,5,42.6,-0.58,0.199,Downhill Bully
+431,Hand-Check Era,Shawn Kemp,5,23.8,-2.112,0.671,Downhill Bully
+436,Hand-Check Era,Juwan Howard,8,53,0.621,0.174,Whistle Artist
+441,Hand-Check Era,Lamond Murray,6,36.5,-1.077,0.333,Downhill Bully
+445,Hand-Check Era,Wesley Person,2,69,0.931,-0.81,Ethical Hooper
+446,Hand-Check Era,Lucious Harris,2,52.6,0.175,-0.077,Ethical Hooper
+452,Hand-Check Era,Vin Baker,6,51.9,0.794,0.384,Whistle Artist
+467,Hand-Check Era,Jason Kidd,5,53.4,0.091,-0.211,Ethical Hooper
+469,Hand-Check Era,Jamal Mashburn,6,61.9,0.583,-0.536,Ethical Hooper
+673,Hand-Check Era,Alan Henderson,4,43.4,0.08,0.588,Whistle Artist
+680,Hand-Check Era,John Amaechi,2,31.9,-0.883,0.89,Downhill Bully
+686,Hand-Check Era,Antonio McDyess,5,45.8,-0.727,-0.155,Grinder
+693,Hand-Check Era,Joe Smith,4,45.1,0.038,0.429,Whistle Artist
+694,Hand-Check Era,Sam Mack,2,55.6,-0.374,-0.701,Grinder
+702,Hand-Check Era,Voshon Lenard,5,49,-0.356,-0.152,Grinder
+703,Hand-Check Era,Kurt Thomas,2,68.8,1.371,-0.485,Ethical Hooper
+708,Hand-Check Era,Kevin Garnett,8,61.7,0.917,-0.309,Ethical Hooper
+708,Freedom-of-Movement Era,Kevin Garnett,9,60.1,1.202,-0.016,Ethical Hooper
+711,Hand-Check Era,Jerry Stackhouse,7,23.7,-1.463,1.083,Downhill Bully
+711,Freedom-of-Movement Era,Jerry Stackhouse,4,43.9,-0.324,0.277,Downhill Bully
+713,Hand-Check Era,Chris Carr,2,48,-0.855,-0.405,Grinder
+714,Hand-Check Era,Michael Finley,8,59.8,0.785,-0.256,Ethical Hooper
+714,Freedom-of-Movement Era,Michael Finley,4,65.6,0.37,-1,Ethical Hooper
+717,Hand-Check Era,Arvydas Sabonis,5,39.6,-0.705,0.359,Downhill Bully
+718,Hand-Check Era,Gary Trent,4,54.9,1.169,0.406,Whistle Artist
+722,Hand-Check Era,Corliss Williamson,8,54.1,0.629,0.098,Whistle Artist
+722,Freedom-of-Movement Era,Corliss Williamson,2,46.5,0.413,0.55,Whistle Artist
+735,Hand-Check Era,Bryant Reeves,3,57.5,0.976,0.068,Whistle Artist
+739,Hand-Check Era,Rasheed Wallace,7,53.1,0.51,0.092,Whistle Artist
+739,Freedom-of-Movement Era,Rasheed Wallace,6,59.2,0.123,-0.659,Ethical Hooper
+754,Hand-Check Era,Jim Jackson,5,62.6,0.03,-0.974,Ethical Hooper
+757,Hand-Check Era,Damon Stoudamire,5,63.9,0.079,-1.065,Ethical Hooper
+761,Hand-Check Era,Matt Geiger,4,59.8,0.056,-0.75,Ethical Hooper
+762,Hand-Check Era,Shawn Bradley,2,54.4,-0.327,-0.558,Grinder
+764,Hand-Check Era,David Robinson,4,22.5,-0.406,1.965,Downhill Bully
+779,Hand-Check Era,Glen Rice,5,48.1,0.458,0.445,Whistle Artist
+782,Hand-Check Era,Mitch Richmond,5,36.1,0.447,1.395,Whistle Artist
+786,Hand-Check Era,Gerald Wilkins,2,41.2,-1.445,-0.264,Grinder
+788,Hand-Check Era,Kevin Willis,5,48.3,-0.907,-0.48,Grinder
+893,Hand-Check Era,Michael Jordan,4,57.1,1.728,0.616,Whistle Artist
+896,Hand-Check Era,Tim Hardaway,6,67.9,0.716,-0.949,Ethical Hooper
+915,Hand-Check Era,Rodney Rogers,7,53.2,-0.719,-0.725,Grinder
+922,Hand-Check Era,Elden Campbell,4,26.6,-0.301,1.659,Downhill Bully
+923,Hand-Check Era,Donyell Marshall,8,54.2,-1.034,-1.008,Grinder
+923,Freedom-of-Movement Era,Donyell Marshall,2,46.7,-1.311,-0.623,Grinder
+934,Hand-Check Era,Derrick Coleman,5,41.3,0.086,0.746,Whistle Artist
+937,Hand-Check Era,Scottie Pippen,2,67.4,0.326,-1.108,Ethical Hooper
+938,Hand-Check Era,Rony Seikaly,2,37.1,-0.217,0.867,Downhill Bully
+947,Hand-Check Era,Allen Iverson,8,42.2,-0.042,0.591,Downhill Bully
+947,Freedom-of-Movement Era,Allen Iverson,5,31.1,0.478,1.835,Whistle Artist
+948,Hand-Check Era,Marcus Camby,2,36.4,-1.805,-0.128,Grinder
+949,Hand-Check Era,Shareef Abdur-Rahim,8,40.3,0.102,0.822,Whistle Artist
+950,Hand-Check Era,Stephon Marbury,8,42.9,-0.228,0.413,Downhill Bully
+950,Freedom-of-Movement Era,Stephon Marbury,3,35.8,-0.062,1.067,Downhill Bully
+951,Hand-Check Era,Ray Allen,8,59.8,1.203,0.025,Whistle Artist
+951,Freedom-of-Movement Era,Ray Allen,7,61.9,0.667,-0.509,Ethical Hooper
+952,Hand-Check Era,Antoine Walker,8,70.2,-0.73,-2.065,Grinder
+952,Freedom-of-Movement Era,Antoine Walker,3,66.1,-0.956,-1.897,Grinder
+953,Hand-Check Era,Lorenzen Wright,4,55.1,-0.473,-0.711,Grinder
+954,Hand-Check Era,Kerry Kittles,7,53.9,-0.958,-0.94,Grinder
+958,Hand-Check Era,Vitaly Potapenko,3,56.5,-0.118,-0.599,Grinder
+959,Hand-Check Era,Steve Nash,3,78.5,1.724,-1.021,Ethical Hooper
+959,Freedom-of-Movement Era,Steve Nash,5,92.7,3.312,-1.25,Ethical Hooper
+960,Hand-Check Era,Tony Delk,4,51.4,0.032,-0.084,Ethical Hooper
+961,Hand-Check Era,John Wallace,2,44.8,0.252,0.59,Whistle Artist
+965,Freedom-of-Movement Era,Derek Fisher,3,45.7,0.338,0.565,Whistle Artist
+977,Hand-Check Era,Kobe Bryant,8,39.5,0.385,1.078,Whistle Artist
+977,Freedom-of-Movement Era,Kobe Bryant,9,46.9,1.258,1.092,Whistle Artist
+977,Pace-and-Space Era,Kobe Bryant,2,36.1,-0.236,1,Downhill Bully
+978,Hand-Check Era,Peja Stojaković,6,61.7,0.626,-0.489,Ethical Hooper
+978,Freedom-of-Movement Era,Peja Stojaković,5,58.8,0.072,-0.67,Ethical Hooper
+979,Hand-Check Era,Jermaine O'Neal,3,46.5,0.537,0.621,Whistle Artist
+979,Freedom-of-Movement Era,Jermaine O'Neal,7,43.2,0.035,0.557,Whistle Artist
+980,Hand-Check Era,Zydrunas Ilgauskas,4,34.7,-0.44,0.843,Downhill Bully
+980,Freedom-of-Movement Era,Zydrunas Ilgauskas,5,40.5,-0.701,0.28,Downhill Bully
+1005,Hand-Check Era,Walt Williams,4,46.5,-1.383,-0.652,Grinder
+1065,Hand-Check Era,Erick Strickland,2,58.8,0.462,-0.402,Ethical Hooper
+1088,Hand-Check Era,Chucky Atkins,3,74.4,0.498,-1.592,Ethical Hooper
+1134,Hand-Check Era,Isaac Austin,3,38.3,-1.092,0.214,Downhill Bully
+1444,Hand-Check Era,Lawrence Funderburke,2,43.8,-0.102,0.43,Downhill Bully
+1495,Hand-Check Era,Tim Duncan,7,48.5,1.884,1.362,Whistle Artist
+1495,Freedom-of-Movement Era,Tim Duncan,9,52.7,1.593,0.836,Whistle Artist
+1495,Pace-and-Space Era,Tim Duncan,2,42.5,0.846,1.153,Whistle Artist
+1496,Hand-Check Era,Keith Van Horn,7,45.4,-1.14,-0.382,Grinder
+1496,Freedom-of-Movement Era,Keith Van Horn,2,44.3,-0.73,-0.037,Grinder
+1497,Hand-Check Era,Chauncey Billups,4,29.3,0.238,1.749,Whistle Artist
+1497,Freedom-of-Movement Era,Chauncey Billups,5,27.3,0.82,2.385,Whistle Artist
+1500,Hand-Check Era,Ron Mercer,6,62.1,-0.162,-1.07,Grinder
+1501,Hand-Check Era,Tim Thomas,7,42.1,-0.806,0.088,Downhill Bully
+1501,Freedom-of-Movement Era,Tim Thomas,4,44.6,-0.723,-0.029,Grinder
+1503,Hand-Check Era,Tracy McGrady,7,29.1,0.047,1.635,Whistle Artist
+1503,Freedom-of-Movement Era,Tracy McGrady,5,38.4,0.343,1.149,Whistle Artist
+1505,Hand-Check Era,Tariq Abdul-Wahad,2,36.6,-1.618,-0.002,Grinder
+1506,Hand-Check Era,Austin Croshere,3,36.8,-1.221,0.251,Downhill Bully
+1507,Hand-Check Era,Derek Anderson,3,22.3,-0.696,1.756,Downhill Bully
+1508,Hand-Check Era,Maurice Taylor,6,61.7,0.441,-0.645,Ethical Hooper
+1517,Hand-Check Era,Bobby Jackson,5,63.2,0.356,-0.792,Ethical Hooper
+1517,Freedom-of-Movement Era,Bobby Jackson,3,51.4,-0.472,-0.438,Grinder
+1531,Hand-Check Era,Marc Jackson,2,40.9,0.268,0.849,Whistle Artist
+1531,Freedom-of-Movement Era,Marc Jackson,3,46,0.348,0.553,Whistle Artist
+1536,Hand-Check Era,Stephen Jackson,3,49.5,-1.219,-0.768,Grinder
+1536,Freedom-of-Movement Era,Stephen Jackson,8,48,-0.614,-0.243,Grinder
+1542,Hand-Check Era,Predrag Drobnjak,2,64.1,-0.461,-1.352,Grinder
+1607,Hand-Check Era,Troy Hudson,4,60.6,-0.058,-0.821,Grinder
+1710,Hand-Check Era,Mike Bibby,5,62.2,1.015,-0.297,Ethical Hooper
+1710,Freedom-of-Movement Era,Mike Bibby,5,59.2,0.7,-0.285,Ethical Hooper
+1711,Hand-Check Era,Raef LaFrentz,2,52.6,-0.941,-0.8,Grinder
+1712,Hand-Check Era,Antawn Jamison,6,59.2,0.653,-0.293,Ethical Hooper
+1712,Freedom-of-Movement Era,Antawn Jamison,9,48,0.074,0.227,Whistle Artist
+1713,Hand-Check Era,Vince Carter,6,57,-0.194,-0.668,Grinder
+1713,Freedom-of-Movement Era,Vince Carter,9,54,-0.446,-0.622,Grinder
+1713,Pace-and-Space Era,Vince Carter,4,53.3,-0.694,-0.704,Grinder
+1715,Hand-Check Era,Jason Williams,4,68.9,-0.072,-1.499,Grinder
+1716,Hand-Check Era,Larry Hughes,6,33.2,-0.49,0.99,Downhill Bully
+1716,Freedom-of-Movement Era,Larry Hughes,6,32.9,-1.172,0.579,Downhill Bully
+1717,Hand-Check Era,Dirk Nowitzki,6,20,0.698,2.818,Whistle Artist
+1717,Freedom-of-Movement Era,Dirk Nowitzki,9,50.8,1.939,1.224,Whistle Artist
+1717,Pace-and-Space Era,Dirk Nowitzki,5,67.3,1.872,-0.132,Ethical Hooper
+1718,Hand-Check Era,Paul Pierce,6,21.4,-0.423,1.947,Downhill Bully
+1718,Freedom-of-Movement Era,Paul Pierce,9,35.7,0.077,1.209,Whistle Artist
+1718,Pace-and-Space Era,Paul Pierce,2,26.7,-0.507,1.484,Downhill Bully
+1719,Hand-Check Era,Bonzi Wells,5,55.3,-0.597,-0.827,Grinder
+1719,Freedom-of-Movement Era,Bonzi Wells,3,41.3,-1.283,-0.148,Grinder
+1720,Hand-Check Era,Michael Doleac,3,62.8,-0.14,-1.136,Grinder
+1722,Hand-Check Era,Michael Dickerson,2,49.8,-0.524,-0.334,Grinder
+1723,Hand-Check Era,Matt Harpring,2,65.5,0.712,-0.675,Ethical Hooper
+1723,Freedom-of-Movement Era,Matt Harpring,3,47.2,0.203,0.351,Whistle Artist
+1727,Hand-Check Era,Pat Garrity,2,44.3,-0.539,0.133,Downhill Bully
+1729,Hand-Check Era,Ricky Davis,3,52.3,-0.268,-0.356,Grinder
+1729,Freedom-of-Movement Era,Ricky Davis,3,54.2,0.484,-0.005,Ethical Hooper
+1731,Freedom-of-Movement Era,Tyronn Lue,2,68,1.244,-0.569,Ethical Hooper
+1733,Hand-Check Era,Al Harrington,3,54.2,0.107,-0.252,Ethical Hooper
+1733,Freedom-of-Movement Era,Al Harrington,8,55.5,-0.79,-0.968,Grinder
+1739,Hand-Check Era,Ruben Patterson,2,35,-0.765,0.67,Downhill Bully
+1739,Freedom-of-Movement Era,Ruben Patterson,2,48.7,-0.115,0.033,Downhill Bully
+1740,Hand-Check Era,Rashard Lewis,4,53.5,0.2,-0.139,Ethical Hooper
+1740,Freedom-of-Movement Era,Rashard Lewis,6,45.5,0.181,0.484,Whistle Artist
+1747,Freedom-of-Movement Era,Rafer Alston,3,55.6,-0.917,-1.058,Grinder
+1749,Hand-Check Era,Cuttino Mobley,4,55.5,-0.092,-0.467,Grinder
+1749,Freedom-of-Movement Era,Cuttino Mobley,2,58.7,0.103,-0.622,Ethical Hooper
+1838,Hand-Check Era,Tyrone Nesby,2,39,-1.634,-0.196,Grinder
+1863,Hand-Check Era,Earl Boykins,2,66.1,1.319,-0.362,Ethical Hooper
+1863,Freedom-of-Movement Era,Earl Boykins,4,62.6,0.849,-0.43,Ethical Hooper
+1882,Hand-Check Era,Elton Brand,5,48.6,1.243,0.925,Whistle Artist
+1882,Freedom-of-Movement Era,Elton Brand,6,57,1.833,0.669,Whistle Artist
+1883,Hand-Check Era,Steve Francis,5,40.4,-0.295,0.527,Downhill Bully
+1884,Hand-Check Era,Baron Davis,3,50.6,-0.207,-0.18,Grinder
+1884,Freedom-of-Movement Era,Baron Davis,7,53.8,-0.25,-0.483,Grinder
+1885,Hand-Check Era,Lamar Odom,4,43.3,-0.465,0.213,Downhill Bully
+1885,Freedom-of-Movement Era,Lamar Odom,2,51.2,0.484,0.272,Whistle Artist
+1887,Hand-Check Era,Wally Szczerbiak,2,60.2,0.951,-0.126,Ethical Hooper
+1887,Freedom-of-Movement Era,Wally Szczerbiak,3,57.1,0.752,-0.069,Ethical Hooper
+1888,Hand-Check Era,Richard Hamilton,5,53.9,0.36,-0.086,Ethical Hooper
+1888,Freedom-of-Movement Era,Richard Hamilton,8,60.4,0.523,-0.49,Ethical Hooper
+1889,Hand-Check Era,Andre Miller,3,41.9,1.219,1.451,Whistle Artist
+1889,Freedom-of-Movement Era,Andre Miller,3,53.4,0.989,0.382,Whistle Artist
+1890,Hand-Check Era,Shawn Marion,5,64.1,0.171,-0.946,Ethical Hooper
+1890,Freedom-of-Movement Era,Shawn Marion,7,60.1,-0.757,-1.308,Grinder
+1891,Hand-Check Era,Jason Terry,4,62.9,1.217,-0.203,Ethical Hooper
+1891,Freedom-of-Movement Era,Jason Terry,7,67.4,1.179,-0.621,Ethical Hooper
+1894,Hand-Check Era,Corey Maggette,4,14.9,-0.949,2.069,Downhill Bully
+1894,Freedom-of-Movement Era,Corey Maggette,7,13.2,-0.729,2.499,Downhill Bully
+1897,Hand-Check Era,Metta World Peace,5,35.3,-1.124,0.399,Downhill Bully
+1897,Freedom-of-Movement Era,Metta World Peace,4,49.5,-0.304,-0.183,Grinder
+1901,Hand-Check Era,Dion Glover,3,48.2,-0.889,-0.454,Grinder
+1907,Hand-Check Era,Vonteego Cummings,2,47.8,0,0.187,Whistle Artist
+1921,Hand-Check Era,Gordan Giriček,2,49,-0.453,-0.235,Grinder
+1938,Freedom-of-Movement Era,Manu Ginóbili,8,37.8,-0.211,0.83,Downhill Bully
+1938,Pace-and-Space Era,Manu Ginóbili,5,51.7,-0.093,-0.197,Grinder
+1944,Hand-Check Era,Eddie Robinson,2,60.5,0.828,-0.296,Ethical Hooper
+2030,Hand-Check Era,Kenyon Martin,4,30.2,-2.477,-0.136,Grinder
+2030,Freedom-of-Movement Era,Kenyon Martin,2,34.1,-2.031,-0.094,Grinder
+2031,Hand-Check Era,Stromile Swift,2,24.6,-1.446,0.949,Downhill Bully
+2031,Freedom-of-Movement Era,Stromile Swift,3,27.2,-1.81,0.589,Downhill Bully
+2032,Freedom-of-Movement Era,Darius Miles,2,47,-1.062,-0.472,Grinder
+2033,Hand-Check Era,Marcus Fizer,2,45.9,-0.536,-0.085,Grinder
+2034,Hand-Check Era,Mike Miller,4,53.2,-0.98,-0.911,Grinder
+2034,Freedom-of-Movement Era,Mike Miller,3,69.8,0.357,-1.311,Ethical Hooper
+2037,Hand-Check Era,Jamal Crawford,2,47.2,0.393,0.488,Whistle Artist
+2037,Freedom-of-Movement Era,Jamal Crawford,9,31.9,0.226,1.626,Whistle Artist
+2037,Pace-and-Space Era,Jamal Crawford,6,38.6,1.064,1.617,Whistle Artist
+2042,Hand-Check Era,Courtney Alexander,3,45,0.104,0.432,Whistle Artist
+2045,Freedom-of-Movement Era,Hedo Türkoğlu,5,46.8,-0.167,0.152,Downhill Bully
+2046,Hand-Check Era,Desmond Mason,2,42.4,-0.146,0.496,Downhill Bully
+2046,Freedom-of-Movement Era,Desmond Mason,2,33.9,-0.882,0.678,Downhill Bully
+2047,Hand-Check Era,Quentin Richardson,4,53.8,-0.885,-0.875,Grinder
+2047,Freedom-of-Movement Era,Quentin Richardson,3,50,-1.115,-0.741,Grinder
+2050,Hand-Check Era,Morris Peterson,3,29.6,-1.641,0.419,Downhill Bully
+2050,Freedom-of-Movement Era,Morris Peterson,3,23,-1.426,1.169,Downhill Bully
+2067,Hand-Check Era,Eddie House,3,67.7,0.1,-1.261,Ethical Hooper
+2067,Freedom-of-Movement Era,Eddie House,4,70.7,0.417,-1.41,Ethical Hooper
+2072,Hand-Check Era,Michael Redd,3,63.5,0.89,-0.415,Ethical Hooper
+2072,Freedom-of-Movement Era,Michael Redd,5,51.6,0.612,0.286,Whistle Artist
+2200,Hand-Check Era,Pau Gasol,3,38.2,-0.734,0.39,Downhill Bully
+2200,Freedom-of-Movement Era,Pau Gasol,9,50.7,0.847,0.493,Whistle Artist
+2200,Pace-and-Space Era,Pau Gasol,5,55.5,0.725,0.055,Whistle Artist
+2201,Hand-Check Era,Eddy Curry,2,29.5,-1.406,0.618,Downhill Bully
+2201,Freedom-of-Movement Era,Eddy Curry,3,26.2,-1.021,1.196,Downhill Bully
+2202,Hand-Check Era,Jason Richardson,3,49.3,-0.864,-0.514,Grinder
+2202,Freedom-of-Movement Era,Jason Richardson,8,57.7,-0.415,-0.909,Grinder
+2204,Hand-Check Era,Eddie Griffin,2,54.4,-0.859,-0.897,Grinder
+2207,Hand-Check Era,Joe Johnson,2,64.5,0.323,-0.892,Ethical Hooper
+2207,Freedom-of-Movement Era,Joe Johnson,9,70.7,1.037,-0.978,Ethical Hooper
+2207,Pace-and-Space Era,Joe Johnson,3,78.2,1.786,-1.004,Ethical Hooper
+2209,Hand-Check Era,Vladimir Radmanović,2,60.2,-0.867,-1.35,Grinder
+2210,Freedom-of-Movement Era,Richard Jefferson,4,23.6,-1.33,1.259,Downhill Bully
+2211,Freedom-of-Movement Era,Troy Murphy,2,49,-0.619,-0.346,Grinder
+2216,Hand-Check Era,Zach Randolph,2,70.3,1.487,-0.56,Ethical Hooper
+2216,Freedom-of-Movement Era,Zach Randolph,8,67.6,0.991,-0.758,Ethical Hooper
+2216,Pace-and-Space Era,Zach Randolph,5,68.4,0.945,-0.831,Ethical Hooper
+2222,Freedom-of-Movement Era,Gerald Wallace,2,32.7,-1.228,0.579,Downhill Bully
+2224,Freedom-of-Movement Era,Jamaal Tinsley,4,58.9,0.519,-0.361,Ethical Hooper
+2225,Hand-Check Era,Tony Parker,2,62.7,0.337,-0.727,Ethical Hooper
+2225,Freedom-of-Movement Era,Tony Parker,9,70.4,1.445,-0.683,Ethical Hooper
+2225,Pace-and-Space Era,Tony Parker,6,69.2,1.441,-0.567,Ethical Hooper
+2229,Freedom-of-Movement Era,Mike James,3,63.6,0.37,-0.824,Ethical Hooper
+2240,Hand-Check Era,Gilbert Arenas,2,36.6,-0.302,0.808,Downhill Bully
+2240,Freedom-of-Movement Era,Gilbert Arenas,5,34.1,0.101,1.304,Whistle Artist
+2246,Freedom-of-Movement Era,Mehmet Okur,5,44.8,-0.008,0.41,Downhill Bully
+2397,Hand-Check Era,Yao Ming,2,43.4,0.824,1.048,Whistle Artist
+2397,Freedom-of-Movement Era,Yao Ming,5,46.1,0.642,0.735,Whistle Artist
+2399,Freedom-of-Movement Era,Mike Dunleavy,4,42.8,-0.042,0.588,Downhill Bully
+2400,Hand-Check Era,Drew Gooden,2,52.5,0.095,-0.115,Ethical Hooper
+2400,Freedom-of-Movement Era,Drew Gooden,6,39.2,-0.419,0.609,Downhill Bully
+2403,Freedom-of-Movement Era,Nenê,2,33,-1.069,0.66,Downhill Bully
+2403,Pace-and-Space Era,Nenê,3,35.7,-0.72,0.667,Downhill Bully
+2404,Freedom-of-Movement Era,Chris Wilcox,2,40.5,-0.841,0.226,Downhill Bully
+2405,Freedom-of-Movement Era,Amar'e Stoudemire,7,34,0.061,1.341,Whistle Artist
+2405,Pace-and-Space Era,Amar'e Stoudemire,2,43.8,-0.285,0.275,Downhill Bully
+2406,Freedom-of-Movement Era,Caron Butler,8,47.9,-0.404,-0.095,Grinder
+2413,Freedom-of-Movement Era,Juan Dixon,3,57.2,0.143,-0.475,Ethical Hooper
+2416,Freedom-of-Movement Era,Kareem Rush,2,63.8,-0.934,-1.747,Grinder
+2419,Freedom-of-Movement Era,Tayshaun Prince,6,58.2,0.008,-0.671,Ethical Hooper
+2420,Freedom-of-Movement Era,Nenad Krstić,2,53.1,-0.299,-0.459,Grinder
+2422,Freedom-of-Movement Era,John Salmons,3,52.3,0.475,0.118,Whistle Artist
+2430,Freedom-of-Movement Era,Carlos Boozer,9,63,0.873,-0.476,Ethical Hooper
+2430,Pace-and-Space Era,Carlos Boozer,2,62.5,0.106,-0.918,Ethical Hooper
+2436,Freedom-of-Movement Era,Ronald Murray,3,46,-0.256,0.149,Downhill Bully
+2443,Freedom-of-Movement Era,Darius Songaila,2,69.8,0.53,-1.265,Ethical Hooper
+2446,Freedom-of-Movement Era,Rasual Butler,3,58.5,-0.428,-0.951,Grinder
+2449,Freedom-of-Movement Era,Luis Scola,4,69.1,1.176,-0.79,Ethical Hooper
+2449,Pace-and-Space Era,Luis Scola,3,55.3,0.225,-0.291,Ethical Hooper
+2457,Freedom-of-Movement Era,Jannero Pargo,2,69.3,0.638,-1.126,Ethical Hooper
+2544,Freedom-of-Movement Era,LeBron James,9,51.7,0.478,0.182,Whistle Artist
+2544,Pace-and-Space Era,LeBron James,8,60,0.715,-0.308,Ethical Hooper
+2544,Post-Crackdown Era,LeBron James,5,64.7,0.76,-0.609,Ethical Hooper
+2546,Freedom-of-Movement Era,Carmelo Anthony,9,47,-0.794,-0.293,Grinder
+2546,Pace-and-Space Era,Carmelo Anthony,7,52.3,0.516,0.145,Whistle Artist
+2547,Freedom-of-Movement Era,Chris Bosh,8,30.3,0.182,1.719,Whistle Artist
+2547,Pace-and-Space Era,Chris Bosh,3,48.2,0.549,0.51,Whistle Artist
+2548,Freedom-of-Movement Era,Dwyane Wade,9,31.8,0.233,1.616,Whistle Artist
+2548,Pace-and-Space Era,Dwyane Wade,6,53.2,0.855,0.314,Whistle Artist
+2549,Freedom-of-Movement Era,Chris Kaman,4,57.7,0.011,-0.623,Ethical Hooper
+2550,Freedom-of-Movement Era,Kirk Hinrich,3,54.6,0.291,-0.169,Ethical Hooper
+2551,Freedom-of-Movement Era,T.J. Ford,4,55.8,0.642,-0.042,Ethical Hooper
+2553,Freedom-of-Movement Era,Jarvis Hayes,3,52.1,-0.481,-0.493,Grinder
+2554,Freedom-of-Movement Era,Mickaël Piétrus,2,20.4,-2.095,0.945,Downhill Bully
+2561,Freedom-of-Movement Era,David West,8,66.3,1.511,-0.308,Ethical Hooper
+2561,Pace-and-Space Era,David West,2,66.6,1.184,-0.522,Ethical Hooper
+2566,Freedom-of-Movement Era,Travis Outlaw,3,38.8,-0.202,0.766,Downhill Bully
+2567,Freedom-of-Movement Era,Brian Cook,2,72.3,0.105,-1.676,Ethical Hooper
+2571,Freedom-of-Movement Era,Leandro Barbosa,6,64.5,0.188,-1.04,Ethical Hooper
+2572,Freedom-of-Movement Era,Josh Howard,5,42,0.368,0.882,Whistle Artist
+2584,Freedom-of-Movement Era,Willie Green,7,61.2,-0.031,-0.925,Grinder
+2590,Freedom-of-Movement Era,Mo Williams,8,71.3,1.323,-0.845,Ethical Hooper
+2590,Pace-and-Space Era,Mo Williams,2,64.8,1.068,-0.436,Ethical Hooper
+2594,Freedom-of-Movement Era,Kyle Korver,2,65.4,0.494,-0.886,Ethical Hooper
+2605,Freedom-of-Movement Era,Marquis Daniels,3,58.1,0.119,-0.585,Ethical Hooper
+2679,Freedom-of-Movement Era,Matt Carroll,2,29.4,-0.454,1.294,Downhill Bully
+2730,Freedom-of-Movement Era,Dwight Howard,3,11.4,-1.292,2.33,Downhill Bully
+2730,Pace-and-Space Era,Dwight Howard,2,11.5,-2.405,1.575,Downhill Bully
+2731,Freedom-of-Movement Era,Emeka Okafor,2,44,-0.452,0.176,Downhill Bully
+2732,Freedom-of-Movement Era,Ben Gordon,9,53.4,0.696,0.199,Whistle Artist
+2734,Freedom-of-Movement Era,Devin Harris,4,15,-0.875,2.313,Downhill Bully
+2736,Freedom-of-Movement Era,Luol Deng,9,52.2,-0.225,-0.32,Grinder
+2738,Freedom-of-Movement Era,Andre Iguodala,3,28.9,-0.804,1.228,Downhill Bully
+2742,Freedom-of-Movement Era,Sebastian Telfair,2,40.7,-0.249,0.569,Downhill Bully
+2744,Freedom-of-Movement Era,Al Jefferson,9,69.8,1.513,-0.615,Ethical Hooper
+2744,Pace-and-Space Era,Al Jefferson,3,76.9,2.073,-0.738,Ethical Hooper
+2746,Freedom-of-Movement Era,Josh Smith,7,34.8,-1.681,0.121,Downhill Bully
+2746,Pace-and-Space Era,Josh Smith,2,50,-1.71,-1.147,Grinder
+2747,Freedom-of-Movement Era,J.R. Smith,8,54.8,-0.183,-0.528,Grinder
+2747,Pace-and-Space Era,J.R. Smith,3,69.1,0.485,-1.202,Ethical Hooper
+2749,Freedom-of-Movement Era,Jameer Nelson,8,67.8,0.659,-1.005,Ethical Hooper
+2749,Pace-and-Space Era,Jameer Nelson,2,61.1,0.02,-0.871,Ethical Hooper
+2755,Freedom-of-Movement Era,Kevin Martin,7,16.4,-0.495,2.425,Downhill Bully
+2755,Pace-and-Space Era,Kevin Martin,3,34.3,-0.558,0.91,Downhill Bully
+2756,Freedom-of-Movement Era,Sasha Vujačić,2,51.9,0.149,-0.052,Ethical Hooper
+2757,Freedom-of-Movement Era,Beno Udrih,3,68,1.311,-0.625,Ethical Hooper
+2804,Freedom-of-Movement Era,Andrés Nocioni,5,46.3,-0.715,-0.154,Grinder
+101106,Freedom-of-Movement Era,Andrew Bogut,2,52.1,-0.881,-0.762,Grinder
+101108,Freedom-of-Movement Era,Chris Paul,7,68,2.143,-0.053,Ethical Hooper
+101108,Pace-and-Space Era,Chris Paul,8,82.4,2.829,-0.647,Ethical Hooper
+101108,Post-Crackdown Era,Chris Paul,2,76.3,2.269,-0.525,Ethical Hooper
+101109,Freedom-of-Movement Era,Raymond Felton,6,61.1,-0.126,-0.979,Grinder
+101111,Freedom-of-Movement Era,Charlie Villanueva,6,55.4,-0.716,-0.917,Grinder
+101112,Freedom-of-Movement Era,Channing Frye,4,55.6,0.036,-0.422,Ethical Hooper
+101112,Pace-and-Space Era,Channing Frye,2,58.9,-0.637,-1.099,Grinder
+101114,Freedom-of-Movement Era,Deron Williams,8,44.7,0.479,0.767,Whistle Artist
+101114,Pace-and-Space Era,Deron Williams,4,43.8,0.494,0.836,Whistle Artist
+101115,Freedom-of-Movement Era,Andrew Bynum,3,43.2,-0.277,0.387,Downhill Bully
+101119,Freedom-of-Movement Era,Rashad McCants,3,61.1,-0.455,-1.21,Grinder
+101122,Freedom-of-Movement Era,Danny Granger,5,38.4,-0.144,0.856,Downhill Bully
+101123,Freedom-of-Movement Era,Gerald Green,2,47.5,-1.258,-0.648,Grinder
+101123,Pace-and-Space Era,Gerald Green,4,48.7,-0.465,-0.206,Grinder
+101124,Freedom-of-Movement Era,Hakim Warrick,3,28.5,-0.717,1.318,Downhill Bully
+101126,Freedom-of-Movement Era,Nate Robinson,8,52.2,0.132,-0.101,Ethical Hooper
+101127,Freedom-of-Movement Era,Jarrett Jack,3,57.4,2.002,0.719,Whistle Artist
+101127,Pace-and-Space Era,Jarrett Jack,2,56.1,1.585,0.57,Whistle Artist
+101128,Freedom-of-Movement Era,Francisco García,3,53.3,-0.119,-0.353,Grinder
+101132,Freedom-of-Movement Era,Linas Kleiza,4,36.4,-1.747,-0.028,Grinder
+101135,Freedom-of-Movement Era,David Lee,5,58.2,0.328,-0.464,Ethical Hooper
+101136,Freedom-of-Movement Era,Salim Stoudamire,2,56.2,0.213,-0.335,Ethical Hooper
+101139,Freedom-of-Movement Era,C.J. Miles,5,49.4,-1.061,-0.649,Grinder
+101139,Pace-and-Space Era,C.J. Miles,4,44.1,-0.674,0.05,Downhill Bully
+101141,Freedom-of-Movement Era,Ersan İlyasova,4,54.7,-0.058,-0.419,Grinder
+101141,Pace-and-Space Era,Ersan İlyasova,5,46.6,-0.963,-0.372,Grinder
+101145,Freedom-of-Movement Era,Monta Ellis,6,49.9,-0.298,-0.2,Grinder
+101145,Pace-and-Space Era,Monta Ellis,3,53.6,-0.246,-0.474,Grinder
+101150,Freedom-of-Movement Era,Lou Williams,6,31.3,0.185,1.676,Whistle Artist
+101150,Pace-and-Space Era,Lou Williams,8,21.5,0.66,2.738,Whistle Artist
+101154,Freedom-of-Movement Era,Andray Blatche,4,53.7,-0.343,-0.538,Grinder
+101155,Freedom-of-Movement Era,Ryan Gomes,2,54.2,-0.037,-0.372,Grinder
+101198,Freedom-of-Movement Era,Will Bynum,2,59.2,-0.217,-0.872,Grinder
+101235,Freedom-of-Movement Era,Kelenna Azubuike,2,53.7,-0.609,-0.713,Grinder
+200745,Freedom-of-Movement Era,Andrea Bargnani,7,41.1,-1.003,0.059,Downhill Bully
+200746,Freedom-of-Movement Era,LaMarcus Aldridge,7,53.1,0.456,0.048,Whistle Artist
+200746,Pace-and-Space Era,LaMarcus Aldridge,7,56.7,1.058,0.177,Whistle Artist
+200750,Freedom-of-Movement Era,Brandon Roy,5,49.2,0.79,0.604,Whistle Artist
+200751,Freedom-of-Movement Era,Randy Foye,6,51.7,-0.098,-0.212,Grinder
+200751,Pace-and-Space Era,Randy Foye,2,59.6,-0.028,-0.756,Grinder
+200752,Freedom-of-Movement Era,Rudy Gay,7,57,-0.17,-0.69,Grinder
+200752,Pace-and-Space Era,Rudy Gay,8,56.5,0.588,-0.126,Ethical Hooper
+200755,Pace-and-Space Era,JJ Redick,6,45.8,1.031,1.012,Whistle Artist
+200760,Freedom-of-Movement Era,Rodney Carney,2,42.2,-1.812,-0.555,Grinder
+200768,Pace-and-Space Era,Kyle Lowry,7,35,0.472,1.493,Whistle Artist
+200769,Freedom-of-Movement Era,Shannon Brown,4,51.2,-0.684,-0.546,Grinder
+200770,Freedom-of-Movement Era,Jordan Farmar,5,59.8,-0.434,-1.102,Grinder
+200783,Freedom-of-Movement Era,Craig Smith,2,52.3,1.15,0.577,Whistle Artist
+200794,Freedom-of-Movement Era,Paul Millsap,3,52.5,0.95,0.42,Whistle Artist
+200794,Pace-and-Space Era,Paul Millsap,8,33.5,-0.654,0.858,Downhill Bully
+200826,Freedom-of-Movement Era,J.J. Barea,5,63.5,-0.086,-1.161,Grinder
+200826,Pace-and-Space Era,J.J. Barea,4,70.1,0.571,-1.257,Ethical Hooper
+201142,Freedom-of-Movement Era,Kevin Durant,6,40.1,0.453,1.096,Whistle Artist
+201142,Pace-and-Space Era,Kevin Durant,6,46.3,1.599,1.34,Whistle Artist
+201142,Post-Crackdown Era,Kevin Durant,5,56.1,2.146,0.986,Whistle Artist
+201143,Freedom-of-Movement Era,Al Horford,2,70.5,0.881,-1.044,Ethical Hooper
+201143,Pace-and-Space Era,Al Horford,5,67.3,0.186,-1.253,Ethical Hooper
+201144,Pace-and-Space Era,Mike Conley,7,48.1,0.944,0.79,Whistle Artist
+201145,Freedom-of-Movement Era,Jeff Green,4,41.4,-1.108,-0.043,Grinder
+201145,Pace-and-Space Era,Jeff Green,6,34.2,-1.322,0.372,Downhill Bully
+201146,Freedom-of-Movement Era,Yi Jianlian,2,32.9,-1.966,0.124,Downhill Bully
+201147,Freedom-of-Movement Era,Corey Brewer,3,28.6,-1.851,0.531,Downhill Bully
+201150,Freedom-of-Movement Era,Spencer Hawes,4,59.9,-0.733,-1.312,Grinder
+201152,Freedom-of-Movement Era,Thaddeus Young,5,64.7,-0.156,-1.311,Grinder
+201152,Pace-and-Space Era,Thaddeus Young,6,68.3,-0.29,-1.629,Grinder
+201154,Freedom-of-Movement Era,Al Thornton,2,47.5,-0.849,-0.36,Grinder
+201155,Freedom-of-Movement Era,Rodney Stuckey,6,30.1,-0.967,0.99,Downhill Bully
+201155,Pace-and-Space Era,Rodney Stuckey,3,38.9,0.005,0.907,Whistle Artist
+201156,Freedom-of-Movement Era,Nick Young,6,42.1,0.218,0.789,Whistle Artist
+201156,Pace-and-Space Era,Nick Young,5,31.1,0.066,1.536,Whistle Artist
+201158,Freedom-of-Movement Era,Marco Belinelli,2,52,-0.194,-0.297,Grinder
+201158,Pace-and-Space Era,Marco Belinelli,7,45.4,0.328,0.595,Whistle Artist
+201161,Freedom-of-Movement Era,Daequan Cook,2,54.8,-0.791,-0.926,Grinder
+201163,Freedom-of-Movement Era,Wilson Chandler,4,53.9,-0.799,-0.853,Grinder
+201163,Pace-and-Space Era,Wilson Chandler,3,51,-0.979,-0.732,Grinder
+201166,Freedom-of-Movement Era,Aaron Brooks,3,55.6,-0.006,-0.473,Grinder
+201166,Pace-and-Space Era,Aaron Brooks,3,58.6,0.532,-0.339,Ethical Hooper
+201167,Freedom-of-Movement Era,Arron Afflalo,2,31,-0.009,1.566,Downhill Bully
+201167,Pace-and-Space Era,Arron Afflalo,3,43.9,0.676,0.909,Whistle Artist
+201171,Freedom-of-Movement Era,Carl Landry,3,38.5,0.578,1.345,Whistle Artist
+201175,Freedom-of-Movement Era,Glen Davis,3,39.1,-0.537,0.538,Downhill Bully
+201188,Pace-and-Space Era,Marc Gasol,6,44.2,0.147,0.571,Whistle Artist
+201196,Freedom-of-Movement Era,Ramon Sessions,3,34.3,-0.184,1.128,Downhill Bully
+201196,Pace-and-Space Era,Ramon Sessions,2,22.2,-0.72,1.706,Downhill Bully
+201228,Freedom-of-Movement Era,C.J. Watson,2,46.6,-0.095,0.217,Downhill Bully
+201563,Freedom-of-Movement Era,Michael Beasley,5,57.9,-0.143,-0.741,Grinder
+201564,Freedom-of-Movement Era,O.J. Mayo,5,61.6,0.434,-0.676,Ethical Hooper
+201564,Pace-and-Space Era,O.J. Mayo,2,58,-0.292,-0.808,Grinder
+201565,Freedom-of-Movement Era,Derrick Rose,4,62.8,0.906,-0.463,Ethical Hooper
+201565,Pace-and-Space Era,Derrick Rose,6,62.3,0.762,-0.454,Ethical Hooper
+201566,Freedom-of-Movement Era,Russell Westbrook,5,34.3,-0.664,0.837,Downhill Bully
+201566,Pace-and-Space Era,Russell Westbrook,8,39.6,-0.331,0.601,Downhill Bully
+201566,Post-Crackdown Era,Russell Westbrook,5,52.1,-0.325,-0.368,Grinder
+201567,Freedom-of-Movement Era,Kevin Love,3,37.2,0.06,1.09,Whistle Artist
+201567,Pace-and-Space Era,Kevin Love,6,37,-0.359,0.795,Downhill Bully
+201567,Post-Crackdown Era,Kevin Love,2,40.1,-0.412,0.485,Downhill Bully
+201568,Freedom-of-Movement Era,Danilo Gallinari,3,30.6,-1.034,0.913,Downhill Bully
+201568,Pace-and-Space Era,Danilo Gallinari,6,30,-0.075,1.519,Downhill Bully
+201569,Freedom-of-Movement Era,Eric Gordon,4,42.3,-0.488,0.311,Downhill Bully
+201569,Pace-and-Space Era,Eric Gordon,7,51.5,-0.371,-0.359,Grinder
+201571,Freedom-of-Movement Era,D.J. Augustin,2,45,-0.754,-0.098,Grinder
+201572,Freedom-of-Movement Era,Brook Lopez,4,42.4,-0.304,0.421,Downhill Bully
+201572,Pace-and-Space Era,Brook Lopez,7,45.4,-0.234,0.185,Downhill Bully
+201573,Freedom-of-Movement Era,Jerryd Bayless,3,39,-0.653,0.475,Downhill Bully
+201577,Pace-and-Space Era,Robin Lopez,2,61.9,-0.293,-1.128,Grinder
+201578,Freedom-of-Movement Era,Marreese Speights,4,47.2,-0.535,-0.13,Grinder
+201578,Pace-and-Space Era,Marreese Speights,2,47.8,-0.207,0.039,Downhill Bully
+201579,Freedom-of-Movement Era,Roy Hibbert,5,42.4,-1.026,-0.069,Grinder
+201580,Freedom-of-Movement Era,JaVale McGee,3,37.3,-2.323,-0.497,Grinder
+201583,Freedom-of-Movement Era,Ryan Anderson,3,55.1,-0.261,-0.579,Grinder
+201583,Pace-and-Space Era,Ryan Anderson,3,55.4,0.085,-0.379,Ethical Hooper
+201586,Pace-and-Space Era,Serge Ibaka,8,60.6,-0.262,-1.002,Grinder
+201587,Pace-and-Space Era,Nicolas Batum,2,31.3,-0.182,1.306,Downhill Bully
+201588,Pace-and-Space Era,George Hill,2,54.3,1.536,0.67,Whistle Artist
+201590,Freedom-of-Movement Era,Donté Greene,2,41.9,-1.433,-0.286,Grinder
+201593,Freedom-of-Movement Era,Nikola Peković,2,43.7,-0.422,0.218,Downhill Bully
+201603,Freedom-of-Movement Era,Sonny Weems,2,58.1,-0.387,-0.935,Grinder
+201609,Freedom-of-Movement Era,Goran Dragić,4,46.3,-0.05,0.262,Downhill Bully
+201609,Pace-and-Space Era,Goran Dragić,7,57.3,0.766,-0.083,Ethical Hooper
+201627,Freedom-of-Movement Era,Anthony Morrow,4,54.6,0.931,0.243,Whistle Artist
+201627,Pace-and-Space Era,Anthony Morrow,2,61.3,1.352,0.004,Whistle Artist
+201933,Freedom-of-Movement Era,Blake Griffin,3,38.6,-0.773,0.403,Downhill Bully
+201933,Pace-and-Space Era,Blake Griffin,7,46.4,-0.1,0.204,Downhill Bully
+201935,Pace-and-Space Era,James Harden,8,14.4,0.682,3.245,Whistle Artist
+201935,Post-Crackdown Era,James Harden,4,5.9,0.876,4.159,Whistle Artist
+201936,Freedom-of-Movement Era,Tyreke Evans,4,51.8,-0.606,-0.552,Grinder
+201936,Pace-and-Space Era,Tyreke Evans,4,52.6,-0.955,-0.853,Grinder
+201937,Pace-and-Space Era,Ricky Rubio,3,40.6,-0.067,0.669,Downhill Bully
+201939,Freedom-of-Movement Era,Stephen Curry,3,70.9,2.03,-0.345,Ethical Hooper
+201939,Pace-and-Space Era,Stephen Curry,7,67.1,2.325,0.183,Whistle Artist
+201939,Post-Crackdown Era,Stephen Curry,5,56,1.681,0.667,Whistle Artist
+201941,Pace-and-Space Era,Jordan Hill,3,54.4,0.256,-0.195,Ethical Hooper
+201942,Freedom-of-Movement Era,DeMar DeRozan,3,29,-0.483,1.396,Downhill Bully
+201942,Pace-and-Space Era,DeMar DeRozan,8,32,1.163,2.174,Whistle Artist
+201942,Post-Crackdown Era,DeMar DeRozan,5,31.7,1.795,2.573,Whistle Artist
+201943,Freedom-of-Movement Era,Brandon Jennings,4,58.6,0.065,-0.683,Ethical Hooper
+201943,Pace-and-Space Era,Brandon Jennings,2,36.9,-0.466,0.698,Downhill Bully
+201945,Freedom-of-Movement Era,Gerald Henderson,3,37.7,-0.175,0.884,Downhill Bully
+201945,Pace-and-Space Era,Gerald Henderson,3,40.6,-0.3,0.54,Downhill Bully
+201950,Freedom-of-Movement Era,Jrue Holiday,3,67.2,0.676,-0.946,Ethical Hooper
+201950,Pace-and-Space Era,Jrue Holiday,8,74.5,1.045,-1.229,Ethical Hooper
+201950,Post-Crackdown Era,Jrue Holiday,3,81.7,1.577,-1.333,Ethical Hooper
+201951,Freedom-of-Movement Era,Ty Lawson,2,62,0.483,-0.67,Ethical Hooper
+201951,Pace-and-Space Era,Ty Lawson,2,27.1,0.788,2.318,Whistle Artist
+201952,Pace-and-Space Era,Jeff Teague,5,40.9,0.061,0.73,Whistle Artist
+201954,Freedom-of-Movement Era,Darren Collison,2,71.7,1.384,-0.853,Ethical Hooper
+201954,Pace-and-Space Era,Darren Collison,3,63.6,1.65,0.02,Whistle Artist
+201957,Freedom-of-Movement Era,Byron Mullens,2,47.5,-1.526,-0.822,Grinder
+201959,Pace-and-Space Era,Taj Gibson,2,43.9,-0.832,-0.09,Grinder
+201960,Pace-and-Space Era,DeMarre Carroll,2,18.1,-1.049,1.885,Downhill Bully
+201961,Pace-and-Space Era,Wayne Ellington,6,59.4,-0.194,-0.874,Grinder
+201962,Freedom-of-Movement Era,Toney Douglas,3,57.6,-0.047,-0.659,Grinder
+201971,Freedom-of-Movement Era,DeJuan Blair,2,65.8,0.101,-1.248,Ethical Hooper
+201975,Pace-and-Space Era,Jodie Meeks,3,34.6,-0.365,0.986,Downhill Bully
+201977,Freedom-of-Movement Era,Marcus Thornton,4,68.3,0.326,-1.283,Ethical Hooper
+201977,Pace-and-Space Era,Marcus Thornton,2,60.3,-0.392,-1.094,Grinder
+201978,Freedom-of-Movement Era,Chase Budinger,3,48.5,-1.076,-0.623,Grinder
+201988,Pace-and-Space Era,Patty Mills,6,59.3,0.639,-0.297,Ethical Hooper
+202083,Freedom-of-Movement Era,Wesley Matthews,3,44.4,-0.688,0,Downhill Bully
+202083,Pace-and-Space Era,Wesley Matthews,3,45.3,-0.162,0.239,Downhill Bully
+202322,Freedom-of-Movement Era,John Wall,3,24.7,-0.944,1.454,Downhill Bully
+202322,Pace-and-Space Era,John Wall,7,51.6,0.106,-0.057,Ethical Hooper
+202323,Freedom-of-Movement Era,Evan Turner,2,63.5,0.515,-0.763,Ethical Hooper
+202324,Pace-and-Space Era,Derrick Favors,5,40.6,-0.492,0.403,Downhill Bully
+202326,Freedom-of-Movement Era,DeMarcus Cousins,3,44.8,-0.734,-0.074,Grinder
+202326,Pace-and-Space Era,DeMarcus Cousins,5,36.2,-0.513,0.755,Downhill Bully
+202328,Freedom-of-Movement Era,Greg Monroe,2,45.2,-1.04,-0.318,Grinder
+202328,Pace-and-Space Era,Greg Monroe,5,45.4,-0.356,0.12,Downhill Bully
+202330,Pace-and-Space Era,Gordon Hayward,7,47,0.024,0.269,Whistle Artist
+202330,Post-Crackdown Era,Gordon Hayward,2,44.9,-0.184,0.246,Downhill Bully
+202331,Pace-and-Space Era,Paul George,7,50.9,0.455,0.265,Whistle Artist
+202331,Post-Crackdown Era,Paul George,5,61.7,0.753,-0.381,Ethical Hooper
+202335,Freedom-of-Movement Era,Patrick Patterson,2,67.4,0.593,-1.026,Ethical Hooper
+202339,Pace-and-Space Era,Eric Bledsoe,8,44,0.33,0.671,Whistle Artist
+202340,Pace-and-Space Era,Avery Bradley,5,63,-0.217,-1.174,Grinder
+202348,Freedom-of-Movement Era,Jordan Crawford,3,58.1,-0.003,-0.665,Grinder
+202349,Pace-and-Space Era,Greivis Vásquez,2,67.3,0.363,-1.124,Ethical Hooper
+202355,Pace-and-Space Era,Hassan Whiteside,5,43.4,-0.655,0.07,Downhill Bully
+202362,Pace-and-Space Era,Lance Stephenson,4,55.3,-0.397,-0.703,Grinder
+202390,Freedom-of-Movement Era,Gary Neal,3,59.9,0.851,-0.26,Ethical Hooper
+202390,Pace-and-Space Era,Gary Neal,2,49,0.299,0.28,Whistle Artist
+202391,Freedom-of-Movement Era,Jeremy Lin,2,47.4,-0.126,0.126,Downhill Bully
+202391,Pace-and-Space Era,Jeremy Lin,3,39,-0.136,0.812,Downhill Bully
+202397,Pace-and-Space Era,Ish Smith,5,74.6,1.039,-1.256,Ethical Hooper
+202681,Freedom-of-Movement Era,Kyrie Irving,2,67.6,0.897,-0.848,Ethical Hooper
+202681,Pace-and-Space Era,Kyrie Irving,7,67.4,1.42,-0.41,Ethical Hooper
+202681,Post-Crackdown Era,Kyrie Irving,4,68.6,1.763,-0.226,Ethical Hooper
+202682,Freedom-of-Movement Era,Derrick Williams,2,4.3,-2.427,2.182,Downhill Bully
+202683,Pace-and-Space Era,Enes Freedom,7,57.5,-0.08,-0.649,Grinder
+202685,Pace-and-Space Era,Jonas Valančiūnas,6,51.6,0.145,-0.019,Ethical Hooper
+202685,Post-Crackdown Era,Jonas Valančiūnas,4,49.6,-0.493,-0.294,Grinder
+202688,Freedom-of-Movement Era,Brandon Knight,2,53.1,-0.896,-0.877,Grinder
+202688,Pace-and-Space Era,Brandon Knight,4,57.4,-0.143,-0.711,Grinder
+202689,Freedom-of-Movement Era,Kemba Walker,2,40.1,-0.104,0.744,Downhill Bully
+202689,Pace-and-Space Era,Kemba Walker,8,51.8,0.774,0.383,Whistle Artist
+202691,Freedom-of-Movement Era,Klay Thompson,2,63.4,-0.296,-1.305,Grinder
+202691,Pace-and-Space Era,Klay Thompson,6,72,0.908,-1.153,Ethical Hooper
+202691,Post-Crackdown Era,Klay Thompson,4,67.2,-0.004,-1.262,Grinder
+202692,Freedom-of-Movement Era,Alec Burks,2,39.9,-0.463,0.521,Downhill Bully
+202692,Pace-and-Space Era,Alec Burks,5,35.3,0.038,1.163,Whistle Artist
+202692,Post-Crackdown Era,Alec Burks,2,22.5,0.143,2.151,Whistle Artist
+202693,Freedom-of-Movement Era,Markieff Morris,2,44.8,-1.358,-0.479,Grinder
+202693,Pace-and-Space Era,Markieff Morris,7,48.9,-0.514,-0.264,Grinder
+202694,Pace-and-Space Era,Marcus Morris,7,53.8,0.616,0.107,Whistle Artist
+202694,Post-Crackdown Era,Marcus Morris,2,49.2,0.393,0.346,Whistle Artist
+202695,Pace-and-Space Era,Kawhi Leonard,7,54.3,1.041,0.352,Whistle Artist
+202695,Post-Crackdown Era,Kawhi Leonard,4,62,1.603,0.178,Whistle Artist
+202696,Freedom-of-Movement Era,Nikola Vučević,2,73.4,-0.184,-2.022,Grinder
+202696,Pace-and-Space Era,Nikola Vučević,8,76.4,0.574,-1.675,Ethical Hooper
+202696,Post-Crackdown Era,Nikola Vučević,5,75.6,-0.105,-1.993,Grinder
+202699,Pace-and-Space Era,Tobias Harris,8,57.1,0.336,-0.319,Ethical Hooper
+202699,Post-Crackdown Era,Tobias Harris,5,52.6,-0.084,-0.256,Grinder
+202702,Pace-and-Space Era,Kenneth Faried,3,40.3,-1.177,-0.002,Grinder
+202703,Pace-and-Space Era,Nikola Mirotić,5,43.1,-0.745,0.064,Downhill Bully
+202704,Pace-and-Space Era,Reggie Jackson,7,63.2,0.473,-0.723,Ethical Hooper
+202704,Post-Crackdown Era,Reggie Jackson,3,65.5,-0.1,-1.275,Grinder
+202710,Pace-and-Space Era,Jimmy Butler,7,14.4,0.1,2.851,Whistle Artist
+202710,Post-Crackdown Era,Jimmy Butler,5,18.3,0.322,2.596,Whistle Artist
+202711,Pace-and-Space Era,Bojan Bogdanović,6,51.3,-0.127,-0.187,Grinder
+202711,Post-Crackdown Era,Bojan Bogdanović,3,54.2,0.565,0.049,Whistle Artist
+202714,Pace-and-Space Era,Shelvin Mack,2,62.7,-0.004,-1.02,Grinder
+202718,Pace-and-Space Era,Chandler Parsons,3,46.8,-0.62,-0.161,Grinder
+202722,Pace-and-Space Era,Dāvis Bertāns,2,48.2,0.294,0.349,Whistle Artist
+202734,Pace-and-Space Era,E'Twaun Moore,3,71.8,0.72,-1.183,Ethical Hooper
+202738,Freedom-of-Movement Era,Isaiah Thomas,2,48.4,1.001,0.779,Whistle Artist
+202738,Pace-and-Space Era,Isaiah Thomas,5,45.3,0.389,0.659,Whistle Artist
+203076,Pace-and-Space Era,Anthony Davis,8,38.6,-0.161,0.778,Downhill Bully
+203076,Post-Crackdown Era,Anthony Davis,4,44.3,-0.458,0.108,Downhill Bully
+203078,Pace-and-Space Era,Bradley Beal,8,60.3,0.662,-0.373,Ethical Hooper
+203078,Post-Crackdown Era,Bradley Beal,4,60.7,0.925,-0.181,Ethical Hooper
+203079,Pace-and-Space Era,Dion Waiters,4,55.3,-0.951,-1.037,Grinder
+203081,Pace-and-Space Era,Damian Lillard,8,43.1,0.557,0.919,Whistle Artist
+203081,Post-Crackdown Era,Damian Lillard,4,28.6,0.95,2.228,Whistle Artist
+203082,Pace-and-Space Era,Terrence Ross,7,48.3,-0.084,0.038,Downhill Bully
+203082,Post-Crackdown Era,Terrence Ross,2,36.3,-0.102,1.063,Downhill Bully
+203083,Pace-and-Space Era,Andre Drummond,7,28.7,-2.26,0.188,Downhill Bully
+203084,Pace-and-Space Era,Harrison Barnes,3,59,0.302,-0.506,Ethical Hooper
+203085,Pace-and-Space Era,Austin Rivers,4,54.5,0.08,-0.337,Ethical Hooper
+203087,Pace-and-Space Era,Jeremy Lamb,6,50.5,0.47,0.271,Whistle Artist
+203093,Pace-and-Space Era,Terrence Jones,3,44.5,-0.935,-0.185,Grinder
+203095,Pace-and-Space Era,Evan Fournier,8,58.5,0.121,-0.596,Ethical Hooper
+203096,Pace-and-Space Era,Jared Sullinger,3,60.9,-0.72,-1.357,Grinder
+203109,Pace-and-Space Era,Jae Crowder,2,25.3,-1.395,1.078,Downhill Bully
+203114,Pace-and-Space Era,Khris Middleton,7,52.9,1.046,0.479,Whistle Artist
+203114,Post-Crackdown Era,Khris Middleton,3,44.1,1.069,1.169,Whistle Artist
+203115,Pace-and-Space Era,Will Barton,6,56.4,-0.058,-0.534,Grinder
+203118,Pace-and-Space Era,Mike Scott,3,61.4,0.088,-0.862,Ethical Hooper
+203141,Pace-and-Space Era,Mirza Teletović,3,60.5,-0.315,-1.052,Grinder
+203145,Pace-and-Space Era,Kent Bazemore,4,41.9,-1.229,-0.157,Grinder
+203148,Pace-and-Space Era,Brian Roberts,2,55.5,0.972,0.212,Whistle Artist
+203210,Pace-and-Space Era,JaMychal Green,2,42.4,-1.607,-0.439,Grinder
+203458,Pace-and-Space Era,Alex Len,2,16.7,-3.216,0.597,Downhill Bully
+203463,Pace-and-Space Era,Ben McLemore,4,44.1,-0.897,-0.157,Grinder
+203468,Pace-and-Space Era,CJ McCollum,6,74.4,1.365,-0.995,Ethical Hooper
+203468,Post-Crackdown Era,CJ McCollum,5,66.1,1.078,-0.506,Ethical Hooper
+203471,Pace-and-Space Era,Dennis Schröder,7,55.9,-0.155,-0.575,Grinder
+203471,Post-Crackdown Era,Dennis Schröder,4,52.9,0.354,0.005,Whistle Artist
+203482,Pace-and-Space Era,Kelly Olynyk,5,47,-0.829,-0.347,Grinder
+203484,Pace-and-Space Era,Kentavious Caldwell-Pope,4,40.2,-0.673,0.326,Downhill Bully
+203484,Post-Crackdown Era,Kentavious Caldwell-Pope,2,46.4,0.054,0.305,Whistle Artist
+203487,Pace-and-Space Era,Michael Carter-Williams,3,43.4,-0.731,0.029,Downhill Bully
+203490,Pace-and-Space Era,Otto Porter Jr.,2,71.8,1.301,-0.917,Ethical Hooper
+203496,Pace-and-Space Era,Robert Covington,4,33.5,-1.781,0.108,Downhill Bully
+203498,Pace-and-Space Era,Shabazz Muhammad,2,36,-0.915,0.505,Downhill Bully
+203501,Pace-and-Space Era,Tim Hardaway Jr.,7,43,-0.452,0.24,Downhill Bully
+203501,Post-Crackdown Era,Tim Hardaway Jr.,4,35.4,-0.192,0.953,Downhill Bully
+203504,Pace-and-Space Era,Trey Burke,5,62.5,0.213,-0.85,Ethical Hooper
+203506,Pace-and-Space Era,Victor Oladipo,7,49.3,-0.542,-0.316,Grinder
+203507,Pace-and-Space Era,Giannis Antetokounmpo,6,27.7,-1.289,0.894,Downhill Bully
+203507,Post-Crackdown Era,Giannis Antetokounmpo,5,33.9,-0.759,0.712,Downhill Bully
+203546,Pace-and-Space Era,Ian Clark,2,74.6,0.952,-1.307,Ethical Hooper
+203552,Pace-and-Space Era,Seth Curry,3,63.6,1.373,-0.097,Ethical Hooper
+203552,Post-Crackdown Era,Seth Curry,2,60.7,1.37,0.065,Whistle Artist
+203584,Pace-and-Space Era,Troy Daniels,2,54.1,-0.355,-0.534,Grinder
+203894,Pace-and-Space Era,Shabazz Napier,2,28.1,0.285,1.911,Whistle Artist
+203897,Pace-and-Space Era,Zach LaVine,6,56.8,-0.151,-0.616,Grinder
+203897,Post-Crackdown Era,Zach LaVine,4,56.5,0.695,-0.016,Ethical Hooper
+203901,Pace-and-Space Era,Elfrid Payton,5,56.6,-0.138,-0.6,Grinder
+203903,Pace-and-Space Era,Jordan Clarkson,7,61,0.51,-0.529,Ethical Hooper
+203903,Post-Crackdown Era,Jordan Clarkson,4,44.4,0.286,0.591,Whistle Artist
+203914,Pace-and-Space Era,Gary Harris,3,56.3,-0.132,-0.596,Grinder
+203915,Pace-and-Space Era,Spencer Dinwiddie,3,15.5,-0.288,2.514,Downhill Bully
+203915,Post-Crackdown Era,Spencer Dinwiddie,2,33.5,0.475,1.585,Whistle Artist
+203918,Pace-and-Space Era,Rodney Hood,5,49.9,0.554,0.376,Whistle Artist
+203924,Pace-and-Space Era,Jerami Grant,2,28.1,-0.765,1.098,Downhill Bully
+203924,Post-Crackdown Era,Jerami Grant,5,18.1,-0.718,1.886,Downhill Bully
+203926,Pace-and-Space Era,Doug McDermott,3,57.1,-0.145,-0.65,Grinder
+203926,Post-Crackdown Era,Doug McDermott,2,52.4,-0.299,-0.376,Grinder
+203932,Pace-and-Space Era,Aaron Gordon,5,35.8,-1.482,0.108,Downhill Bully
+203932,Post-Crackdown Era,Aaron Gordon,4,38.1,-1.046,0.188,Downhill Bully
+203933,Pace-and-Space Era,T.J. Warren,5,61.1,0.491,-0.533,Ethical Hooper
+203944,Pace-and-Space Era,Julius Randle,6,38.1,-0.672,0.491,Downhill Bully
+203944,Post-Crackdown Era,Julius Randle,5,40.6,-0.715,0.223,Downhill Bully
+203952,Pace-and-Space Era,Andrew Wiggins,7,43.4,-0.369,0.302,Downhill Bully
+203952,Post-Crackdown Era,Andrew Wiggins,5,46.5,0.151,0.358,Whistle Artist
+203953,Pace-and-Space Era,Jabari Parker,4,45.5,-1.348,-0.529,Grinder
+203954,Pace-and-Space Era,Joel Embiid,4,32.4,-0.011,1.347,Downhill Bully
+203954,Post-Crackdown Era,Joel Embiid,4,27.2,0.509,2.075,Whistle Artist
+203967,Pace-and-Space Era,Dario Šarić,3,48.1,-1.057,-0.56,Grinder
+203991,Pace-and-Space Era,Clint Capela,2,34.3,-2.269,-0.355,Grinder
+203992,Pace-and-Space Era,Bogdan Bogdanović,4,69.9,0.96,-0.895,Ethical Hooper
+203992,Post-Crackdown Era,Bogdan Bogdanović,4,57.4,0.298,-0.369,Ethical Hooper
+203994,Pace-and-Space Era,Jusuf Nurkić,5,33.4,-1.764,0.122,Downhill Bully
+203994,Post-Crackdown Era,Jusuf Nurkić,2,31.4,-1.624,0.356,Downhill Bully
+203999,Pace-and-Space Era,Nikola Jokić,6,70.2,1.642,-0.449,Ethical Hooper
+203999,Post-Crackdown Era,Nikola Jokić,5,72.8,2.25,-0.221,Ethical Hooper
+204001,Pace-and-Space Era,Kristaps Porziņģis,5,42.8,-0.693,0.103,Downhill Bully
+204001,Post-Crackdown Era,Kristaps Porziņģis,4,36.8,-0.396,0.74,Downhill Bully
+204020,Pace-and-Space Era,Tyler Johnson,3,43.5,-0.468,0.185,Downhill Bully
+204038,Pace-and-Space Era,Langston Galloway,3,44.1,-0.274,0.287,Downhill Bully
+204456,Post-Crackdown Era,T.J. McConnell,3,92.9,1.802,-1.983,Ethical Hooper
+1626143,Pace-and-Space Era,Jahlil Okafor,2,53.3,0.677,0.174,Whistle Artist
+1626144,Pace-and-Space Era,Emmanuel Mudiay,4,43.3,-0.905,-0.083,Grinder
+1626145,Pace-and-Space Era,Tyus Jones,2,64.7,0.77,-0.569,Ethical Hooper
+1626145,Post-Crackdown Era,Tyus Jones,3,72.7,1.146,-0.975,Ethical Hooper
+1626149,Pace-and-Space Era,Montrezl Harrell,4,36.1,-0.681,0.611,Downhill Bully
+1626156,Pace-and-Space Era,D'Angelo Russell,6,66.6,0.925,-0.685,Ethical Hooper
+1626156,Post-Crackdown Era,D'Angelo Russell,4,60.9,0.841,-0.264,Ethical Hooper
+1626157,Pace-and-Space Era,Karl-Anthony Towns,6,50.2,0.109,0.047,Whistle Artist
+1626157,Post-Crackdown Era,Karl-Anthony Towns,4,36.8,-0.789,0.455,Downhill Bully
+1626161,Pace-and-Space Era,Willie Cauley-Stein,3,33.3,-1.85,0.108,Downhill Bully
+1626162,Pace-and-Space Era,Kelly Oubre Jr.,4,30.6,-1.462,0.536,Downhill Bully
+1626162,Post-Crackdown Era,Kelly Oubre Jr.,5,38.6,-1.084,0.142,Downhill Bully
+1626163,Pace-and-Space Era,Frank Kaminsky,2,43.7,-0.535,0.142,Downhill Bully
+1626164,Pace-and-Space Era,Devin Booker,6,46.7,0.458,0.562,Whistle Artist
+1626164,Post-Crackdown Era,Devin Booker,5,42.4,1.208,1.334,Whistle Artist
+1626166,Post-Crackdown Era,Cameron Payne,3,62.2,0.435,-0.654,Ethical Hooper
+1626167,Pace-and-Space Era,Myles Turner,4,41.2,-0.354,0.454,Downhill Bully
+1626167,Post-Crackdown Era,Myles Turner,4,34.1,-0.842,0.607,Downhill Bully
+1626168,Pace-and-Space Era,Trey Lyles,3,45.3,-0.931,-0.258,Grinder
+1626169,Pace-and-Space Era,Stanley Johnson,2,49.4,-1.598,-1.011,Grinder
+1626171,Pace-and-Space Era,Bobby Portis,6,64.3,-0.279,-1.3,Grinder
+1626171,Post-Crackdown Era,Bobby Portis,5,76.7,0.324,-1.777,Ethical Hooper
+1626174,Pace-and-Space Era,Christian Wood,2,35.5,-0.746,0.573,Downhill Bully
+1626174,Post-Crackdown Era,Christian Wood,2,32.7,-0.938,0.67,Downhill Bully
+1626178,Pace-and-Space Era,Rondae Hollis-Jefferson,2,27.2,-1.055,1.149,Downhill Bully
+1626179,Pace-and-Space Era,Terry Rozier,4,54.2,0.109,-0.236,Ethical Hooper
+1626179,Post-Crackdown Era,Terry Rozier,4,51.4,0.05,-0.077,Ethical Hooper
+1626181,Pace-and-Space Era,Norman Powell,5,44.5,-0.655,-0.042,Grinder
+1626181,Post-Crackdown Era,Norman Powell,5,33.6,0.559,1.602,Whistle Artist
+1626196,Pace-and-Space Era,Josh Richardson,3,51.8,-0.232,-0.285,Grinder
+1626209,Pace-and-Space Era,Mario Hezonja,2,51.1,-0.933,-0.724,Grinder
+1626224,Pace-and-Space Era,Cedi Osman,2,45.3,-1.15,-0.407,Grinder
+1626224,Post-Crackdown Era,Cedi Osman,2,45.7,-0.7,-0.128,Grinder
+1627732,Pace-and-Space Era,Ben Simmons,2,45.2,-0.324,0.158,Downhill Bully
+1627734,Pace-and-Space Era,Domantas Sabonis,4,38.7,-1.051,0.185,Downhill Bully
+1627734,Post-Crackdown Era,Domantas Sabonis,4,46.4,-0.362,0.036,Downhill Bully
+1627736,Pace-and-Space Era,Malik Beasley,3,69.1,-0.105,-1.538,Grinder
+1627736,Post-Crackdown Era,Malik Beasley,3,62.5,0.031,-0.919,Ethical Hooper
+1627739,Pace-and-Space Era,Kris Dunn,2,64.9,-0.057,-1.248,Grinder
+1627741,Pace-and-Space Era,Buddy Hield,5,75.7,0.646,-1.559,Ethical Hooper
+1627741,Post-Crackdown Era,Buddy Hield,4,68.3,0.04,-1.364,Ethical Hooper
+1627742,Pace-and-Space Era,Brandon Ingram,4,36,0.262,1.251,Whistle Artist
+1627742,Post-Crackdown Era,Brandon Ingram,4,47.9,0.712,0.644,Whistle Artist
+1627747,Pace-and-Space Era,Caris LeVert,4,54.5,-0.047,-0.369,Grinder
+1627747,Post-Crackdown Era,Caris LeVert,4,44.9,-0.441,0.083,Downhill Bully
+1627749,Pace-and-Space Era,Dejounte Murray,3,59.1,0.08,-0.594,Ethical Hooper
+1627749,Post-Crackdown Era,Dejounte Murray,4,61.5,0.841,-0.324,Ethical Hooper
+1627750,Pace-and-Space Era,Jamal Murray,5,60.6,0.684,-0.343,Ethical Hooper
+1627750,Post-Crackdown Era,Jamal Murray,4,74.6,1.735,-0.652,Ethical Hooper
+1627751,Post-Crackdown Era,Jakob Poeltl,2,60.6,0.068,-0.773,Ethical Hooper
+1627752,Pace-and-Space Era,Taurean Prince,4,52,-0.853,-0.736,Grinder
+1627756,Pace-and-Space Era,Denzel Valentine,2,72.1,-0.152,-1.881,Grinder
+1627759,Pace-and-Space Era,Jaylen Brown,4,49.1,-0.174,0.001,Downhill Bully
+1627759,Post-Crackdown Era,Jaylen Brown,5,53,0.469,0.083,Whistle Artist
+1627763,Pace-and-Space Era,Malcolm Brogdon,4,72.5,0.35,-1.497,Ethical Hooper
+1627763,Post-Crackdown Era,Malcolm Brogdon,3,64.3,0.939,-0.455,Ethical Hooper
+1627777,Pace-and-Space Era,Georges Niang,2,63.5,-0.153,-1.094,Grinder
+1627777,Post-Crackdown Era,Georges Niang,2,62.9,-0.434,-1.247,Grinder
+1627783,Pace-and-Space Era,Pascal Siakam,3,52.3,0.076,-0.127,Ethical Hooper
+1627783,Post-Crackdown Era,Pascal Siakam,5,56.1,0.663,-0.022,Ethical Hooper
+1627788,Pace-and-Space Era,Furkan Korkmaz,2,39.9,-0.129,0.658,Downhill Bully
+1627826,Post-Crackdown Era,Ivica Zubac,2,53.1,-0.553,-0.599,Grinder
+1627832,Pace-and-Space Era,Fred VanVleet,4,54,-0.057,-0.347,Grinder
+1627832,Post-Crackdown Era,Fred VanVleet,4,55.1,0.729,0.097,Whistle Artist
+1627854,Pace-and-Space Era,Bryn Forbes,3,48,0.6,0.534,Whistle Artist
+1628366,Pace-and-Space Era,Lonzo Ball,2,59.2,-0.716,-1.154,Grinder
+1628367,Pace-and-Space Era,Josh Jackson,3,32.4,-1.84,0.155,Downhill Bully
+1628368,Pace-and-Space Era,De'Aaron Fox,4,44.9,1.009,1.056,Whistle Artist
+1628368,Post-Crackdown Era,De'Aaron Fox,5,61.3,1.479,0.154,Whistle Artist
+1628369,Pace-and-Space Era,Jayson Tatum,4,55.1,0.024,-0.343,Ethical Hooper
+1628369,Post-Crackdown Era,Jayson Tatum,4,43.8,0.32,0.667,Whistle Artist
+1628370,Pace-and-Space Era,Malik Monk,3,54.4,-0.51,-0.662,Grinder
+1628370,Post-Crackdown Era,Malik Monk,5,60.9,0.203,-0.691,Ethical Hooper
+1628372,Pace-and-Space Era,Dennis Smith Jr.,2,49.7,-1.301,-0.852,Grinder
+1628374,Pace-and-Space Era,Lauri Markkanen,4,43.7,-0.958,-0.146,Grinder
+1628374,Post-Crackdown Era,Lauri Markkanen,5,42.5,-0.524,0.218,Downhill Bully
+1628378,Pace-and-Space Era,Donovan Mitchell,4,63.8,0.91,-0.477,Ethical Hooper
+1628378,Post-Crackdown Era,Donovan Mitchell,5,61.1,1.303,0.036,Whistle Artist
+1628379,Pace-and-Space Era,Luke Kennard,3,63.8,0.794,-0.51,Ethical Hooper
+1628380,Post-Crackdown Era,Zach Collins,2,50.7,-1.084,-0.767,Grinder
+1628381,Pace-and-Space Era,John Collins,3,47.8,-1.072,-0.536,Grinder
+1628381,Post-Crackdown Era,John Collins,4,50.9,-0.751,-0.565,Grinder
+1628384,Post-Crackdown Era,OG Anunoby,5,45.2,-1.584,-0.713,Grinder
+1628386,Post-Crackdown Era,Jarrett Allen,2,34,-1.325,0.31,Downhill Bully
+1628389,Post-Crackdown Era,Bam Adebayo,5,32.2,-0.914,0.727,Downhill Bully
+1628398,Pace-and-Space Era,Kyle Kuzma,4,54.4,-0.699,-0.812,Grinder
+1628398,Post-Crackdown Era,Kyle Kuzma,5,53.4,-0.472,-0.587,Grinder
+1628401,Post-Crackdown Era,Derrick White,4,47.6,0.426,0.478,Whistle Artist
+1628415,Pace-and-Space Era,Dillon Brooks,2,49.3,-0.636,-0.373,Grinder
+1628415,Post-Crackdown Era,Dillon Brooks,4,56.1,-0.337,-0.66,Grinder
+1628418,Pace-and-Space Era,Thomas Bryant,2,48.5,-0.447,-0.191,Grinder
+1628420,Pace-and-Space Era,Monte Morris,2,64.8,1.482,-0.168,Ethical Hooper
+1628449,Post-Crackdown Era,Chris Boucher,2,32,-1.716,0.267,Downhill Bully
+1628963,Pace-and-Space Era,Marvin Bagley III,2,39.8,-0.688,0.326,Downhill Bully
+1628963,Post-Crackdown Era,Marvin Bagley III,3,47.7,-0.982,-0.467,Grinder
+1628969,Post-Crackdown Era,Mikal Bridges,4,56.2,0.085,-0.39,Ethical Hooper
+1628970,Post-Crackdown Era,Miles Bridges,4,54.4,-0.663,-0.782,Grinder
+1628973,Pace-and-Space Era,Jalen Brunson,3,61.5,1.289,0.006,Whistle Artist
+1628973,Post-Crackdown Era,Jalen Brunson,5,55.5,1.941,0.872,Whistle Artist
+1628976,Post-Crackdown Era,Wendell Carter Jr.,2,45.4,-0.991,-0.314,Grinder
+1628978,Post-Crackdown Era,Donte DiVincenzo,3,56.1,-0.359,-0.691,Grinder
+1628983,Pace-and-Space Era,Shai Gilgeous-Alexander,2,55.4,1.309,0.469,Whistle Artist
+1628983,Post-Crackdown Era,Shai Gilgeous-Alexander,5,54.1,1.927,0.967,Whistle Artist
+1628984,Pace-and-Space Era,Devonte' Graham,2,46,0.384,0.55,Whistle Artist
+1628988,Pace-and-Space Era,Aaron Holiday,2,55.7,-0.197,-0.554,Grinder
+1628989,Pace-and-Space Era,Kevin Huerter,2,66.8,0.079,-1.184,Ethical Hooper
+1628989,Post-Crackdown Era,Kevin Huerter,5,64,-0.047,-1.086,Grinder
+1628991,Pace-and-Space Era,Jaren Jackson Jr.,2,38.4,-0.893,0.31,Downhill Bully
+1628991,Post-Crackdown Era,Jaren Jackson Jr.,5,34.6,-0.667,0.745,Downhill Bully
+1628995,Pace-and-Space Era,Kevin Knox,2,32.6,-1.671,0.232,Downhill Bully
+1629001,Pace-and-Space Era,De'Anthony Melton,2,47.2,-0.643,-0.221,Grinder
+1629001,Post-Crackdown Era,De'Anthony Melton,3,49.8,-0.633,-0.408,Grinder
+1629008,Pace-and-Space Era,Michael Porter Jr.,2,63.3,0.425,-0.694,Ethical Hooper
+1629008,Post-Crackdown Era,Michael Porter Jr.,4,56.7,-0.06,-0.546,Grinder
+1629012,Pace-and-Space Era,Collin Sexton,3,56.9,0.113,-0.458,Ethical Hooper
+1629012,Post-Crackdown Era,Collin Sexton,4,53.1,0.841,0.332,Whistle Artist
+1629014,Pace-and-Space Era,Anfernee Simons,2,53.9,0.17,-0.177,Ethical Hooper
+1629014,Post-Crackdown Era,Anfernee Simons,5,68.3,1.034,-0.688,Ethical Hooper
+1629018,Post-Crackdown Era,Gary Trent Jr.,5,48.9,0.111,0.139,Whistle Artist
+1629021,Post-Crackdown Era,Moritz Wagner,2,26.5,-1.559,0.7,Downhill Bully
+1629022,Pace-and-Space Era,Lonnie Walker IV,2,55.1,-0.822,-0.92,Grinder
+1629022,Post-Crackdown Era,Lonnie Walker IV,3,51.8,-0.419,-0.422,Grinder
+1629023,Pace-and-Space Era,P.J. Washington,2,38.6,-1.74,-0.319,Grinder
+1629023,Post-Crackdown Era,P.J. Washington,4,46.1,-1.026,-0.396,Grinder
+1629027,Pace-and-Space Era,Trae Young,3,31.8,0.963,1.992,Whistle Artist
+1629027,Post-Crackdown Era,Trae Young,4,49.5,1.398,0.934,Whistle Artist
+1629028,Pace-and-Space Era,Deandre Ayton,2,57.4,-0.74,-1.064,Grinder
+1629028,Post-Crackdown Era,Deandre Ayton,4,67.4,-0.118,-1.404,Grinder
+1629029,Pace-and-Space Era,Luka Dončić,3,44.7,1.297,1.274,Whistle Artist
+1629029,Post-Crackdown Era,Luka Dončić,5,51.5,2.226,1.361,Whistle Artist
+1629056,Pace-and-Space Era,Terence Davis,2,60.5,-0.558,-1.147,Grinder
+1629060,Pace-and-Space Era,Rui Hachimura,2,40.7,-0.86,0.111,Downhill Bully
+1629060,Post-Crackdown Era,Rui Hachimura,2,57,-0.404,-0.791,Grinder
+1629130,Post-Crackdown Era,Duncan Robinson,3,50.7,-0.338,-0.253,Grinder
+1629134,Pace-and-Space Era,Kendrick Nunn,2,74.4,0.353,-1.564,Ethical Hooper
+1629622,Post-Crackdown Era,Max Strus,2,50.4,-0.412,-0.331,Grinder
+1629627,Post-Crackdown Era,Zion Williamson,2,39.3,0.208,0.919,Whistle Artist
+1629628,Pace-and-Space Era,RJ Barrett,2,39.9,-1.11,0.009,Downhill Bully
+1629628,Post-Crackdown Era,RJ Barrett,5,36.1,-1.058,0.347,Downhill Bully
+1629630,Pace-and-Space Era,Ja Morant,2,43,-0.292,0.322,Downhill Bully
+1629630,Post-Crackdown Era,Ja Morant,3,51.6,0.356,0.088,Whistle Artist
+1629631,Post-Crackdown Era,De'Andre Hunter,5,36.1,-0.4,0.784,Downhill Bully
+1629632,Pace-and-Space Era,Coby White,2,56,-0.478,-0.756,Grinder
+1629632,Post-Crackdown Era,Coby White,5,52.8,0.049,-0.185,Ethical Hooper
+1629634,Pace-and-Space Era,Brandon Clarke,2,50.1,-0.747,-0.509,Grinder
+1629636,Pace-and-Space Era,Darius Garland,2,67.2,0.039,-1.237,Ethical Hooper
+1629636,Post-Crackdown Era,Darius Garland,5,65.3,1.093,-0.423,Ethical Hooper
+1629638,Post-Crackdown Era,Nickeil Alexander-Walker,2,50.5,-0.289,-0.228,Grinder
+1629639,Pace-and-Space Era,Tyler Herro,2,55.1,0.558,-0.004,Ethical Hooper
+1629639,Post-Crackdown Era,Tyler Herro,5,59.6,1.123,0.012,Whistle Artist
+1629640,Post-Crackdown Era,Keldon Johnson,5,49.7,-0.335,-0.184,Grinder
+1629645,Post-Crackdown Era,Kevin Porter Jr.,4,36.6,0.358,1.22,Whistle Artist
+1629652,Post-Crackdown Era,Luguentz Dort,2,33.6,-1.633,0.147,Downhill Bully
+1629656,Post-Crackdown Era,Quentin Grimes,2,37.8,-0.254,0.708,Downhill Bully
+1629659,Post-Crackdown Era,Talen Horton-Tucker,3,47.6,-0.566,-0.187,Grinder
+1629661,Post-Crackdown Era,Cameron Johnson,4,49.6,0.136,0.124,Whistle Artist
+1629670,Post-Crackdown Era,Jordan Nwora,2,54.7,-0.691,-0.86,Grinder
+1629673,Pace-and-Space Era,Jordan Poole,2,25.9,-0.815,1.235,Downhill Bully
+1629673,Post-Crackdown Era,Jordan Poole,4,46.8,0.215,0.379,Whistle Artist
+1629675,Post-Crackdown Era,Naz Reid,5,59.6,-0.443,-0.984,Grinder
+1630162,Post-Crackdown Era,Anthony Edwards,5,54.6,0.39,-0.08,Ethical Hooper
+1630163,Post-Crackdown Era,LaMelo Ball,4,70.9,0.229,-1.399,Ethical Hooper
+1630166,Post-Crackdown Era,Deni Avdija,3,28.3,-0.239,1.434,Downhill Bully
+1630167,Post-Crackdown Era,Obi Toppin,3,46.8,-1.623,-0.802,Grinder
+1630169,Post-Crackdown Era,Tyrese Haliburton,4,65.6,1.742,-0.016,Ethical Hooper
+1630170,Post-Crackdown Era,Devin Vassell,5,50.3,0.004,-0.024,Ethical Hooper
+1630173,Post-Crackdown Era,Precious Achiuwa,3,43.5,-1.58,-0.545,Grinder
+1630174,Post-Crackdown Era,Aaron Nesmith,2,48.7,-0.569,-0.29,Grinder
+1630175,Post-Crackdown Era,Cole Anthony,4,51,0.525,0.284,Whistle Artist
+1630178,Post-Crackdown Era,Tyrese Maxey,5,59.1,0.722,-0.187,Ethical Hooper
+1630180,Post-Crackdown Era,Saddiq Bey,4,32.9,-1.034,0.599,Downhill Bully
+1630188,Post-Crackdown Era,Jalen Smith,3,47.4,-1.097,-0.557,Grinder
+1630193,Post-Crackdown Era,Immanuel Quickley,4,41.6,0.562,1.036,Whistle Artist
+1630198,Post-Crackdown Era,Isaiah Joe,4,50,0.468,0.313,Whistle Artist
+1630200,Post-Crackdown Era,Tre Jones,2,55,0.196,-0.23,Ethical Hooper
+1630202,Post-Crackdown Era,Payton Pritchard,4,79.3,1.502,-1.163,Ethical Hooper
+1630217,Post-Crackdown Era,Desmond Bane,5,68.7,0.655,-0.97,Ethical Hooper
+1630224,Post-Crackdown Era,Jalen Green,4,44.2,-0.185,0.306,Downhill Bully
+1630228,Post-Crackdown Era,Jonathan Kuminga,4,35.8,-0.893,0.5,Downhill Bully
+1630230,Post-Crackdown Era,Naji Marshall,2,48.2,0.56,0.496,Whistle Artist
+1630241,Post-Crackdown Era,Sam Merrill,2,54.1,0.098,-0.224,Ethical Hooper
+1630530,Post-Crackdown Era,Trey Murphy III,3,50.4,-0.233,-0.17,Grinder
+1630532,Post-Crackdown Era,Franz Wagner,5,55.3,-0.026,-0.403,Grinder
+1630533,Post-Crackdown Era,Ziaire Williams,3,25.4,-1.6,0.734,Downhill Bully
+1630538,Post-Crackdown Era,Bones Hyland,3,61.6,0.318,-0.622,Ethical Hooper
+1630540,Post-Crackdown Era,Miles McBride,3,52.1,0.059,-0.115,Ethical Hooper
+1630541,Post-Crackdown Era,Moses Moody,3,32.6,-0.263,1.103,Downhill Bully
+1630544,Post-Crackdown Era,Tre Mann,2,61.4,0.261,-0.696,Ethical Hooper
+1630552,Post-Crackdown Era,Jalen Johnson,3,49.4,-0.952,-0.588,Grinder
+1630557,Post-Crackdown Era,Corey Kispert,3,46.6,-0.227,0.094,Downhill Bully
+1630559,Post-Crackdown Era,Austin Reaves,3,39.6,1.359,1.662,Whistle Artist
+1630560,Post-Crackdown Era,Cam Thomas,2,31.2,0.473,1.769,Whistle Artist
+1630567,Post-Crackdown Era,Scottie Barnes,5,51.8,-0.643,-0.571,Grinder
+1630578,Post-Crackdown Era,Alperen Şengün,5,46.5,-0.656,-0.156,Grinder
+1630581,Post-Crackdown Era,Josh Giddey,5,64.2,-0.037,-1.098,Grinder
+1630583,Post-Crackdown Era,Santi Aldama,3,49.1,-0.633,-0.35,Grinder
+1630591,Post-Crackdown Era,Jalen Suggs,5,47.9,-0.436,-0.103,Grinder
+1630595,Post-Crackdown Era,Cade Cunningham,4,67.7,0.692,-0.882,Ethical Hooper
+1630596,Post-Crackdown Era,Evan Mobley,5,36.4,-1.798,-0.177,Grinder
+1630598,Post-Crackdown Era,Aaron Wiggins,2,66.1,-0.19,-1.3,Grinder
+1630625,Post-Crackdown Era,Dalano Banton,2,48.8,-0.655,-0.353,Grinder
+1630631,Post-Crackdown Era,Jose Alvarado,3,53.8,-0.178,-0.4,Grinder
+1630692,Post-Crackdown Era,Jordan Goodwin,2,58,-0.614,-0.993,Grinder
+1630703,Post-Crackdown Era,Scoot Henderson,2,39.3,-0.704,0.336,Downhill Bully
+1631093,Post-Crackdown Era,Jaden Ivey,2,32.7,-0.478,0.976,Downhill Bully
+1631094,Post-Crackdown Era,Paolo Banchero,4,28.5,-0.362,1.331,Downhill Bully
+1631095,Post-Crackdown Era,Jabari Smith Jr.,3,43.3,-0.796,-0.033,Grinder
+1631096,Post-Crackdown Era,Chet Holmgren,2,42.7,-0.703,0.079,Downhill Bully
+1631097,Post-Crackdown Era,Bennedict Mathurin,4,21.1,-0.883,1.525,Downhill Bully
+1631101,Post-Crackdown Era,Shaedon Sharpe,4,56.9,-0.427,-0.773,Grinder
+1631103,Post-Crackdown Era,Malaki Branham,2,62.4,-0.383,-1.181,Grinder
+1631106,Post-Crackdown Era,Tari Eason,3,52.8,-1.522,-1.214,Grinder
+1631110,Post-Crackdown Era,Jeremy Sochan,3,44,-2.261,-1.061,Grinder
+1631114,Post-Crackdown Era,Jalen Williams,3,62.6,0.527,-0.602,Ethical Hooper
+1631170,Post-Crackdown Era,Jaime Jaquez Jr.,2,54.7,0.169,-0.218,Ethical Hooper
+1631323,Post-Crackdown Era,Simone Fontecchio,2,38.1,-0.619,0.45,Downhill Bully
+1641705,Post-Crackdown Era,Victor Wembanyama,3,38.4,-1.206,0.069,Downhill Bully
+1641706,Post-Crackdown Era,Brandon Miller,2,52.6,-0.163,-0.315,Grinder
+1641711,Post-Crackdown Era,Gradey Dick,3,39.6,-1.318,-0.125,Grinder
+1641713,Post-Crackdown Era,GG Jackson II,2,44.4,-0.869,-0.162,Grinder
+1641718,Post-Crackdown Era,Keyonte George,3,19.5,0.196,2.396,Whistle Artist
+1641722,Post-Crackdown Era,Jordan Hawkins,2,33.9,-0.946,0.577,Downhill Bully
+1641729,Post-Crackdown Era,Brice Sensabaugh,2,57.2,0.449,-0.23,Ethical Hooper
+1641730,Post-Crackdown Era,Noah Clowney,2,26.4,-1.762,0.529,Downhill Bully
+1641764,Post-Crackdown Era,Brandin Podziemski,2,52.5,0.455,0.115,Whistle Artist
+1641824,Post-Crackdown Era,Matas Buzelis,2,43.9,-1.43,-0.51,Grinder
+1642258,Post-Crackdown Era,Zaccharie Risacher,2,45.8,-1.57,-0.742,Grinder
+1642259,Post-Crackdown Era,Alex Sarr,2,47.8,-1.551,-0.871,Grinder
+1642264,Post-Crackdown Era,Stephon Castle,2,27.2,-1.056,0.945,Downhill Bully
+1642271,Post-Crackdown Era,Kyle Filipowski,2,40.5,-0.521,0.338,Downhill Bully
