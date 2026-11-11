@@ -66,7 +66,7 @@ summary = {
 ehiChart = match ? Plot.plot({
   width: Math.min(width, 860), height: 340, marginLeft: 44, marginBottom: 40,
   style: {fontSize: "13px", background: "transparent"},
-  x: {label: null, tickFormat: seasonLabel, ticks: Math.min(rows.length + 1, 10), nice: false,
+  x: {label: null, tickFormat: seasonLabel, ticks: Math.max(2, Math.min(rows.length + 1, Math.floor(Math.min(width, 860) / 80))), nice: false,
       domain: [d3.min(rows, d => d.yr) - 0.5, d3.max(rows, d => d.yr) + 0.5]},
   y: {label: "EHI (0–100)", domain: [0, 100], grid: true},
   color: {legend: showPO && po.length > 0, domain: ["Regular season", "Playoffs"], range: ["#2a78d6", "#eb6834"]},
@@ -87,7 +87,7 @@ ehiChart = match ? Plot.plot({
 axesChart = (match && rs.length) ? Plot.plot({
   width: Math.min(width, 860), height: 260, marginLeft: 44, marginBottom: 40,
   style: {fontSize: "13px", background: "transparent"},
-  x: {label: null, tickFormat: seasonLabel, ticks: Math.min(rs.length + 1, 10), nice: false,
+  x: {label: null, tickFormat: seasonLabel, ticks: Math.max(2, Math.min(rs.length + 1, Math.floor(Math.min(width, 860) / 80))), nice: false,
       domain: [d3.min(rs, d => d.yr) - 0.5, d3.max(rs, d => d.yr) + 0.5]},
   y: {label: "SD vs season peers", grid: true},
   color: {legend: true, domain: ["Skill Score", "Whistle Score (lower = cleaner)"], range: ["#2a78d6", "#eb6834"]},
