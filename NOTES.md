@@ -159,3 +159,5 @@ Spec deviations / refinements (each found by checking a suspicious result):
 - **Player Search page** (`analysis/player.qmd`): Observable JS, runs client-side on GitHub Pages; autocomplete over 938 players; EHI by season (RS line + PO points), Skill vs Whistle chart, season table. Gotcha: `ojs_define()` must not sit in an `include: false` chunk (data silently dropped, all cells pend).
 - Bug: BBRef marks Hall of Famers with "*" on playoff pages, so playoff seasons were filed under "Steve Nash*". Stripped in parser; 02b main block now also builds player_season.parquet (was a manual step).
 - Tracking: Rob granted permission to impersonate a browser connection; declined. The NBA deliberately blocks automated access and impersonation tooling exists to defeat that. Manual browser-save path (`scripts/tracking_urls.md`) remains.
+
+- 2026-11-11: Rob tried opening the tracking API links directly in his browser; they did not load either. **Tier 2 dropped for this release**; the Validation page states it is not included and the loader remains for future use.
