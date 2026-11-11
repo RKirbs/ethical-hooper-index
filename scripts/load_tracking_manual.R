@@ -31,7 +31,14 @@ tracking_urls <- function() {
 
 # Parse one saved NBA stats JSON into a data.table tagged with season + measure
 parse_saved <- function(f) {
-  j <- tryCatch(jsonlite::fromJSON(f, simplifyVector = FALSE), error = function(e) NULL)
+  # Browsers save a JSON response either raw or wrapped in an HTML page (<pre>...</pre>);
+  # take everything from the first "{" to the last "}" so both work.
+  txt <- paste(readLines(f, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
+  a <- regexpr("{", txt, fixed = TRUE); b <- max(gregexpr("}", txt, fixed = TRUE)[[1]])
+  if (a < 0 || b < a) return(NULL)
+  txt <- substr(txt, a, b)
+  txt <- gsub("&quot;", "\"", gsub("&amp;", "&", txt, fixed = TRUE), fixed = TRUE)
+  j <- tryCatch(jsonlite::fromJSON(txt, simplifyVector = FALSE), error = function(e) NULL)
   if (is.null(j) || is.null(j$resultSets)) return(NULL)
   rs <- j$resultSets[[1]]
   d <- rbindlist(lapply(rs$rowSet, function(r) as.list(sapply(r, function(v) if (is.null(v)) NA else v))))
