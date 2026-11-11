@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 root <- rprojroot::find_root(rprojroot::has_file(".here"))
 
 # Public repository (set once the GitHub repo exists; used for links on every page)
-REPO_URL <- "https://github.com/USERNAME/ethical-hooper-index"
+REPO_URL <- "https://github.com/RKirbs/ethical-hooper-index"
 fin <- function(x) fread(file = file.path(root, "data", "final", x), encoding = "UTF-8")
 
 careers  <- fin("ehi_careers.csv")[order(rank)]

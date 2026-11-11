@@ -53,7 +53,8 @@ build_bbref_totals <- function() {
     if (!file.exists(f)) { warning("missing ", f); next }
     d <- parse_bbref_table(f, "totals_stats")
     if (is.null(d)) { warning("no table in ", f); next }
-    d <- d[, .(bbref_id, name = name_display, team = team_name_abbr, pos,
+    # BBRef marks Hall of Famers with a trailing "*" on some pages (e.g. playoff totals)
+    d <- d[, .(bbref_id, name = sub("\\*$", "", trimws(name_display)), team = team_name_abbr, pos,
                age = to_num(age), g = to_num(games), mp = to_num(mp),
                fga = to_num(fga), fg3a = to_num(fg3a), fta = to_num(fta),
                tov = to_num(tov), pts = to_num(pts))]
@@ -154,13 +155,6 @@ build_external <- function() {
   invisible(list(bb = bb, pbs = pbs, map = map))
 }
 
-if (sys.nframe() == 0) {
-  r <- build_external()
-  m <- r$map
-  cat("ID map rows:", nrow(m), "| by method:\n"); print(m[, .N, method])
-  cat("FGA agreement |diff|<=2:", round(mean(abs(m$fga_bb - m$fga_nba) <= 2, na.rm = TRUE), 4), "\n")
-}
-
 # ---- Clean player-season table --------------------------------------------------------------
 # One row per player x season x season type: PBP counting stats (summed over teams)
 # + official minutes / games / position / age from BBRef (combined row for traded
@@ -191,4 +185,12 @@ build_player_season <- function() {
   ps[, player := fcoalesce(player, player_pbp)][, player_pbp := NULL]
   ps[, pts := 2 * (fgm - fg3m) + 3 * fg3m + ftm]
   ps
+}
+
+if (sys.nframe() == 0) {
+  r <- build_external()
+  write_parquet(build_player_season(), file.path(paths$interim, "player_season.parquet"))
+  m <- r$map
+  cat("ID map rows:", nrow(m), "| by method:\n"); print(m[, .N, method])
+  cat("FGA agreement |diff|<=2:", round(mean(abs(m$fga_bb - m$fga_nba) <= 2, na.rm = TRUE), 4), "\n")
 }

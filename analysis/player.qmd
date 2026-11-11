@@ -1,0 +1,117 @@
+---
+title: "Player Search"
+subtitle: "Look up any qualifying scorer and see their Ethical Hooper Index season by season"
+toc: false
+code-fold: false
+---
+
+```{r setup}
+#| include: false
+source("_common.R")
+ps_ojs <- seasons[, .(personId, player, season, yr = as.integer(substr(season, 1, 4)), type = season_type,
+                      team = fifelse(is.na(primary_team), "", primary_team),
+                      ehi = round(ehi, 1), skill = round(skill, 2), whistle = round(whistle, 2),
+                      archetype, mp = round(mp), fga = round(fga))][order(player, yr)]
+car_ojs <- careers[, .(personId, rank, career_ehi = round(career_ehi, 1), peak3 = round(peak3_ehi, 1),
+                       seasons, archetype, first, last)]
+```
+
+```{r}
+#| echo: false
+# ojs_define() writes the data into the page as a <script>, so this chunk must
+# NOT be include: false (that silently drops the data and leaves every cell pending)
+ojs_define(ps_raw = ps_ojs, car_raw = car_ojs, n_careers = nrow(careers))
+```
+
+Type a name (autocomplete suggests matches). Every regular-season and playoff season in which the player **qualified as a scorer** is shown: 1,000+ minutes (150+ in the playoffs) and 12+ field-goal attempts per 36 minutes. **50 = an average qualifying scorer that season.** Higher is cleaner, more skill-driven scoring.
+
+```{ojs}
+//| echo: false
+ps = transpose(ps_raw)
+car = transpose(car_raw)
+names = Array.from(new Set(ps.map(d => d.player))).sort()
+viewof query = Inputs.text({label: "Player", placeholder: "e.g. Steve Nash", value: "Steve Nash",
+                            datalist: names, width: 320, autocomplete: "off"})
+viewof showPO = Inputs.toggle({label: "Show playoff seasons", value: true})
+```
+
+```{ojs}
+//| echo: false
+match = names.find(n => n.toLowerCase() === query.trim().toLowerCase())
+  ?? names.find(n => n.toLowerCase().includes(query.trim().toLowerCase()))
+rows = match ? ps.filter(d => d.player === match) : []
+rs = rows.filter(d => d.type === "RS")
+po = rows.filter(d => d.type === "PO")
+crec = rows.length ? car.find(c => c.personId === rows[0].personId) : undefined
+seasonLabel = y => `${y}-${String((y + 1) % 100).padStart(2, "0")}`
+```
+
+```{ojs}
+//| echo: false
+summary = {
+  if (!query.trim()) return html`<p class="small-note">Start typing a player's name.</p>`;
+  if (!match) return html`<p><strong>No qualifying seasons found for "${query}".</strong> Only seasons with 1,000+ minutes and 12+ FGA per 36 are rated. Check the spelling, or try another player.</p>`;
+  const avg = d3.mean(rs, d => d.ehi);
+  const careerLine = crec
+    ? html`<strong>Career EHI ${crec.career_ehi.toFixed(1)}</strong> · ranked <strong>#${crec.rank} of ${n_careers}</strong> qualifying careers · peak 3-season EHI ${crec.peak3 ?? "n/a"} · career archetype: <strong>${crec.archetype}</strong>`
+    : html`Fewer than 4 qualifying regular seasons, so not in the career rankings${rs.length ? html` · average EHI across ${rs.length} qualifying season${rs.length > 1 ? "s" : ""}: <strong>${avg.toFixed(1)}</strong>` : ""}.`;
+  return html`<div class="definition"><div style="font-size:1.35rem;font-weight:700">${match}</div>
+    <div>${rs.length} qualifying regular season${rs.length === 1 ? "" : "s"}${po.length ? `, ${po.length} qualifying playoff run${po.length === 1 ? "" : "s"}` : ""}</div>
+    <div style="margin-top:.4rem">${careerLine}</div></div>`;
+}
+```
+
+```{ojs}
+//| echo: false
+ehiChart = match ? Plot.plot({
+  width: Math.min(width, 860), height: 340, marginLeft: 44, marginBottom: 40,
+  style: {fontSize: "13px", background: "transparent"},
+  x: {label: null, tickFormat: seasonLabel, ticks: Math.min(rows.length + 1, 10), nice: false,
+      domain: [d3.min(rows, d => d.yr) - 0.5, d3.max(rows, d => d.yr) + 0.5]},
+  y: {label: "EHI (0–100)", domain: [0, 100], grid: true},
+  color: {legend: showPO && po.length > 0, domain: ["Regular season", "Playoffs"], range: ["#2a78d6", "#eb6834"]},
+  marks: [
+    Plot.ruleY([50], {stroke: "#898781", strokeDasharray: "4,4"}),
+    Plot.text([{x: d3.min(rows, d => d.yr) - 0.4, y: 52}], {x: "x", y: "y", text: () => "league average", textAnchor: "start", fill: "#52514e", fontSize: 11}),
+    Plot.line(rs, {x: "yr", y: "ehi", stroke: "#2a78d6", strokeWidth: 2.2}),
+    Plot.dot(rs, {x: "yr", y: "ehi", fill: () => "Regular season", r: 5, stroke: "#fcfcfb", strokeWidth: 2}),
+    showPO ? Plot.dot(po, {x: "yr", y: "ehi", fill: () => "Playoffs", symbol: "triangle", r: 6, stroke: "#fcfcfb", strokeWidth: 2}) : null,
+    Plot.tip(showPO ? rows : rs, Plot.pointer({x: "yr", y: "ehi",
+      title: d => `${seasonLabel(d.yr)} ${d.type === "PO" ? "playoffs" : "regular season"} · ${d.team}\nEHI ${d.ehi.toFixed(1)} · ${d.archetype}\nSkill ${d.skill >= 0 ? "+" : ""}${d.skill.toFixed(2)} SD · Whistle ${d.whistle >= 0 ? "+" : ""}${d.whistle.toFixed(2)} SD\n${d.mp.toLocaleString()} min · ${d.fga.toLocaleString()} FGA`}))
+  ]
+}) : html``
+```
+
+```{ojs}
+//| echo: false
+axesChart = (match && rs.length) ? Plot.plot({
+  width: Math.min(width, 860), height: 260, marginLeft: 44, marginBottom: 40,
+  style: {fontSize: "13px", background: "transparent"},
+  x: {label: null, tickFormat: seasonLabel, ticks: Math.min(rs.length + 1, 10), nice: false,
+      domain: [d3.min(rs, d => d.yr) - 0.5, d3.max(rs, d => d.yr) + 0.5]},
+  y: {label: "SD vs season peers", grid: true},
+  color: {legend: true, domain: ["Skill Score", "Whistle Score (lower = cleaner)"], range: ["#2a78d6", "#eb6834"]},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(rs, {x: "yr", y: "skill", stroke: () => "Skill Score", strokeWidth: 2}),
+    Plot.dot(rs, {x: "yr", y: "skill", fill: () => "Skill Score", r: 4}),
+    Plot.line(rs, {x: "yr", y: "whistle", stroke: () => "Whistle Score (lower = cleaner)", strokeWidth: 2}),
+    Plot.dot(rs, {x: "yr", y: "whistle", fill: () => "Whistle Score (lower = cleaner)", r: 4, symbol: "triangle"}),
+    Plot.tip(rs, Plot.pointerX({x: "yr", y: "skill",
+      title: d => `${seasonLabel(d.yr)}\nSkill ${d.skill >= 0 ? "+" : ""}${d.skill.toFixed(2)} SD\nWhistle ${d.whistle >= 0 ? "+" : ""}${d.whistle.toFixed(2)} SD`}))
+  ]
+}) : html``
+```
+
+```{ojs}
+//| echo: false
+table = match ? Inputs.table((showPO ? rows : rs).map(d => ({
+    Season: seasonLabel(d.yr), Type: d.type === "PO" ? "Playoffs" : "Regular", Team: d.team,
+    EHI: d.ehi, Skill: d.skill, Whistle: d.whistle, Archetype: d.archetype, Minutes: d.mp, FGA: d.fga})),
+  {sort: "Season", rows: 30, layout: "auto",
+   format: {EHI: x => x.toFixed(1), Skill: x => (x >= 0 ? "+" : "") + x.toFixed(2), Whistle: x => (x >= 0 ? "+" : "") + x.toFixed(2)}}) : html``
+```
+
+::: {.small-note}
+**How to read it.** Skill Score blends shot-making above expected, self-creation, shot difficulty and clean footwork. Whistle Score blends excess free throws, three-point fouls drawn, free-throw share of points and perimeter and-ones. Both are in standard deviations versus that season's qualifying scorers. See [Methodology](methodology.qmd). This is a stylistic measure of *how* a player scores, not a judgment of the person.
+:::

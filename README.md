@@ -2,7 +2,7 @@
 
 **Which NBA scorers, 1996-97 to 2025-26, generate offense through skill rather than the whistle?** A reproducible R + Quarto analysis of every shot, foul and free throw in thirty seasons of NBA play-by-play.
 
-**Live site:** https://USERNAME.github.io/ethical-hooper-index/
+**Live site:** https://rkirbs.github.io/ethical-hooper-index/
 
 ![The Ethical Hooper map: Skill Score vs Whistle Score for every qualifying career](figures/quadrant_signature.png)
 

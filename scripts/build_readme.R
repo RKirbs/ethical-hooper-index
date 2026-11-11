@@ -5,8 +5,8 @@
 suppressPackageStartupMessages(library(data.table))
 fin <- function(x) fread(file = file.path("data", "final", x), encoding = "UTF-8")
 
-REPO_URL <- "https://github.com/USERNAME/ethical-hooper-index"
-SITE_URL <- "https://USERNAME.github.io/ethical-hooper-index/"
+REPO_URL <- "https://github.com/RKirbs/ethical-hooper-index"
+SITE_URL <- "https://rkirbs.github.io/ethical-hooper-index/"
 
 careers <- fin("ehi_careers.csv")[order(rank)]
 rs <- fin("ehi_player_seasons.csv")[season_type == "RS"]

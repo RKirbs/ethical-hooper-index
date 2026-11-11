@@ -37,6 +37,10 @@ In measurable terms: an ethical hooper **generates scoring through skill rather 
 **This is a stylistic metric, not a moral judgment of any person.** It uses on-court play-by-play data only. Drawing fouls is legal and often smart basketball. The index describes *how* a player scores, nothing about who they are.
 :::
 
+::: {.callout-tip appearance="simple"}
+**Look up any player:** the [Player Search](player.qmd) page charts a player's Ethical Hooper Index season by season.
+:::
+
 ## The map
 
 The index has two axes. **Skill Score** (x) blends shot-making above expectation, self-creation, shot difficulty, and clean footwork. **Whistle Score** (y, flipped so "clean" is up) blends excess free throws, three-point fouls drawn, free-throw share of points, and perimeter and-ones. Every value is measured against the same season's peers, so a 1999 post-up big and a 2025 pull-up guard are compared on equal footing.
@@ -58,6 +62,7 @@ The **Ethical Hooper Index (EHI)** combines both axes on a 0–100 scale where 5
 ## Explore
 
 - [**Methodology**](methodology.qmd): data, the expected-FG model, the eight components, shrinkage, weights, and limitations.
+- [**Player Search**](player.qmd): type any name to see their EHI season by season.
 - [**Rankings**](rankings.qmd): every qualifying player-season and career, searchable.
 - [**Eras**](eras.qmd): the most and least ethical hoopers from the hand-check era to the post-crackdown NBA.
 - [**Anomalies**](anomalies.qmd): who loses the whistle in the playoffs, who changed style, and statistical outliers.

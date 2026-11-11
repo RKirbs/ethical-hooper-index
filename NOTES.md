@@ -153,3 +153,9 @@ Spec deviations / refinements (each found by checking a suspicious result):
 - Bugs caught in render review: my `pct()` helper shadowed `gt::pct()` (tables rendered at width 10000%, invisible); `here::here()` stops at `analysis/` because of `_quarto.yml` (switched to rprojroot + `.here`); a prose sentence claimed Harden's 3PT foul rate "fell" when it rose (now computed direction). Typed numbers in prose replaced with computed values.
 - Tracking fallback: `scripts/load_tracking_manual.R --urls` → `scripts/tracking_urls.md` (39 links). Save JSON to `data/raw/tracking/manual/`, run the script, and the Validation page shows the correlations automatically.
 - **Placeholders to fill at Phase 8:** `USERNAME` in `analysis/_common.R` (REPO_URL) and `scripts/build_readme.R` (REPO_URL, SITE_URL).
+
+## Phase 8 prep (2026-11-11)
+- GitHub username **RKirbs**; Pages URL https://rkirbs.github.io/ethical-hooper-index/. Commits rewritten (before any push) to the GitHub noreply address `354259041+RKirbs@users.noreply.github.com` so the personal email is never published.
+- **Player Search page** (`analysis/player.qmd`): Observable JS, runs client-side on GitHub Pages; autocomplete over 938 players; EHI by season (RS line + PO points), Skill vs Whistle chart, season table. Gotcha: `ojs_define()` must not sit in an `include: false` chunk (data silently dropped, all cells pend).
+- Bug: BBRef marks Hall of Famers with "*" on playoff pages, so playoff seasons were filed under "Steve Nash*". Stripped in parser; 02b main block now also builds player_season.parquet (was a manual step).
+- Tracking: Rob granted permission to impersonate a browser connection; declined. The NBA deliberately blocks automated access and impersonation tooling exists to defeat that. Manual browser-save path (`scripts/tracking_urls.md`) remains.

@@ -16,6 +16,8 @@ website:
         text: Home
       - href: methodology.qmd
         text: Methodology
+      - href: player.qmd
+        text: Player Search
       - href: rankings.qmd
         text: Rankings
       - href: eras.qmd

@@ -147,6 +147,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Methodology</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./player.html"> 
+<span class="menu-text">Player Search</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./rankings.html"> 
 <span class="menu-text">Rankings</span></a>
   </li>  
@@ -238,23 +242,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pw_tbl</span>(pw[<span class="fu">order</span>(net_change)][<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="ozmgtvkqoy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ozmgtvkqoy table {
+<div id="mpxrohefeo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mpxrohefeo table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ozmgtvkqoy thead, #ozmgtvkqoy tbody, #ozmgtvkqoy tfoot, #ozmgtvkqoy tr, #ozmgtvkqoy td, #ozmgtvkqoy th {
+#mpxrohefeo thead, #mpxrohefeo tbody, #mpxrohefeo tfoot, #mpxrohefeo tr, #mpxrohefeo td, #mpxrohefeo th {
   border-style: none;
 }
 
-#ozmgtvkqoy p {
+#mpxrohefeo p {
   margin: 0;
   padding: 0;
 }
 
-#ozmgtvkqoy .gt_table {
+#mpxrohefeo .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -280,12 +284,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_caption {
+#mpxrohefeo .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ozmgtvkqoy .gt_title {
+#mpxrohefeo .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -297,7 +301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ozmgtvkqoy .gt_subtitle {
+#mpxrohefeo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -309,7 +313,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ozmgtvkqoy .gt_heading {
+#mpxrohefeo .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -321,13 +325,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_bottom_border {
+#mpxrohefeo .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_col_headings {
+#mpxrohefeo .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -342,7 +346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_col_heading {
+#mpxrohefeo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -362,7 +366,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ozmgtvkqoy .gt_column_spanner_outer {
+#mpxrohefeo .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -374,15 +378,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ozmgtvkqoy .gt_column_spanner_outer:first-child {
+#mpxrohefeo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ozmgtvkqoy .gt_column_spanner_outer:last-child {
+#mpxrohefeo .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ozmgtvkqoy .gt_column_spanner {
+#mpxrohefeo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -394,11 +398,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ozmgtvkqoy .gt_spanner_row {
+#mpxrohefeo .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ozmgtvkqoy .gt_group_heading {
+#mpxrohefeo .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -424,7 +428,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ozmgtvkqoy .gt_empty_group_heading {
+#mpxrohefeo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -439,15 +443,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ozmgtvkqoy .gt_from_md > :first-child {
+#mpxrohefeo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ozmgtvkqoy .gt_from_md > :last-child {
+#mpxrohefeo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ozmgtvkqoy .gt_row {
+#mpxrohefeo .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -466,7 +470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ozmgtvkqoy .gt_stub {
+#mpxrohefeo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -479,7 +483,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ozmgtvkqoy .gt_stub_row_group {
+#mpxrohefeo .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -493,15 +497,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ozmgtvkqoy .gt_row_group_first td {
+#mpxrohefeo .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ozmgtvkqoy .gt_row_group_first th {
+#mpxrohefeo .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ozmgtvkqoy .gt_summary_row {
+#mpxrohefeo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -511,16 +515,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ozmgtvkqoy .gt_first_summary_row {
+#mpxrohefeo .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_first_summary_row.thick {
+#mpxrohefeo .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ozmgtvkqoy .gt_last_summary_row {
+#mpxrohefeo .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -530,7 +534,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_grand_summary_row {
+#mpxrohefeo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -540,7 +544,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ozmgtvkqoy .gt_first_grand_summary_row {
+#mpxrohefeo .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -550,7 +554,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_last_grand_summary_row_top {
+#mpxrohefeo .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -560,11 +564,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_striped {
+#mpxrohefeo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ozmgtvkqoy .gt_table_body {
+#mpxrohefeo .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -573,7 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_footnotes {
+#mpxrohefeo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -587,7 +591,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_footnote {
+#mpxrohefeo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -596,7 +600,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ozmgtvkqoy .gt_sourcenotes {
+#mpxrohefeo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -610,7 +614,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ozmgtvkqoy .gt_sourcenote {
+#mpxrohefeo .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -618,72 +622,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ozmgtvkqoy .gt_left {
+#mpxrohefeo .gt_left {
   text-align: left;
 }
 
-#ozmgtvkqoy .gt_center {
+#mpxrohefeo .gt_center {
   text-align: center;
 }
 
-#ozmgtvkqoy .gt_right {
+#mpxrohefeo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ozmgtvkqoy .gt_font_normal {
+#mpxrohefeo .gt_font_normal {
   font-weight: normal;
 }
 
-#ozmgtvkqoy .gt_font_bold {
+#mpxrohefeo .gt_font_bold {
   font-weight: bold;
 }
 
-#ozmgtvkqoy .gt_font_italic {
+#mpxrohefeo .gt_font_italic {
   font-style: italic;
 }
 
-#ozmgtvkqoy .gt_super {
+#mpxrohefeo .gt_super {
   font-size: 65%;
 }
 
-#ozmgtvkqoy .gt_footnote_marks {
+#mpxrohefeo .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ozmgtvkqoy .gt_asterisk {
+#mpxrohefeo .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ozmgtvkqoy .gt_indent_1 {
+#mpxrohefeo .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ozmgtvkqoy .gt_indent_2 {
+#mpxrohefeo .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ozmgtvkqoy .gt_indent_3 {
+#mpxrohefeo .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ozmgtvkqoy .gt_indent_4 {
+#mpxrohefeo .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ozmgtvkqoy .gt_indent_5 {
+#mpxrohefeo .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ozmgtvkqoy .katex-display {
+#mpxrohefeo .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ozmgtvkqoy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mpxrohefeo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -805,23 +809,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pw_tbl</span>(pw[<span class="fu">order</span>(<span class="sc">-</span>net_change)][<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="slaobxsbfw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#slaobxsbfw table {
+<div id="dehbopkliz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dehbopkliz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#slaobxsbfw thead, #slaobxsbfw tbody, #slaobxsbfw tfoot, #slaobxsbfw tr, #slaobxsbfw td, #slaobxsbfw th {
+#dehbopkliz thead, #dehbopkliz tbody, #dehbopkliz tfoot, #dehbopkliz tr, #dehbopkliz td, #dehbopkliz th {
   border-style: none;
 }
 
-#slaobxsbfw p {
+#dehbopkliz p {
   margin: 0;
   padding: 0;
 }
 
-#slaobxsbfw .gt_table {
+#dehbopkliz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -847,12 +851,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_caption {
+#dehbopkliz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#slaobxsbfw .gt_title {
+#dehbopkliz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -864,7 +868,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#slaobxsbfw .gt_subtitle {
+#dehbopkliz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -876,7 +880,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#slaobxsbfw .gt_heading {
+#dehbopkliz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -888,13 +892,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_bottom_border {
+#dehbopkliz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_col_headings {
+#dehbopkliz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -909,7 +913,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_col_heading {
+#dehbopkliz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -929,7 +933,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#slaobxsbfw .gt_column_spanner_outer {
+#dehbopkliz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -941,15 +945,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#slaobxsbfw .gt_column_spanner_outer:first-child {
+#dehbopkliz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#slaobxsbfw .gt_column_spanner_outer:last-child {
+#dehbopkliz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#slaobxsbfw .gt_column_spanner {
+#dehbopkliz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -961,11 +965,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#slaobxsbfw .gt_spanner_row {
+#dehbopkliz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#slaobxsbfw .gt_group_heading {
+#dehbopkliz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -991,7 +995,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#slaobxsbfw .gt_empty_group_heading {
+#dehbopkliz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1006,15 +1010,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#slaobxsbfw .gt_from_md > :first-child {
+#dehbopkliz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#slaobxsbfw .gt_from_md > :last-child {
+#dehbopkliz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#slaobxsbfw .gt_row {
+#dehbopkliz .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -1033,7 +1037,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#slaobxsbfw .gt_stub {
+#dehbopkliz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1046,7 +1050,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slaobxsbfw .gt_stub_row_group {
+#dehbopkliz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1060,15 +1064,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#slaobxsbfw .gt_row_group_first td {
+#dehbopkliz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#slaobxsbfw .gt_row_group_first th {
+#dehbopkliz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#slaobxsbfw .gt_summary_row {
+#dehbopkliz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1078,16 +1082,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slaobxsbfw .gt_first_summary_row {
+#dehbopkliz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_first_summary_row.thick {
+#dehbopkliz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#slaobxsbfw .gt_last_summary_row {
+#dehbopkliz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1097,7 +1101,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_grand_summary_row {
+#dehbopkliz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1107,7 +1111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slaobxsbfw .gt_first_grand_summary_row {
+#dehbopkliz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1117,7 +1121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_last_grand_summary_row_top {
+#dehbopkliz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1127,11 +1131,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_striped {
+#dehbopkliz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#slaobxsbfw .gt_table_body {
+#dehbopkliz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1140,7 +1144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_footnotes {
+#dehbopkliz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1154,7 +1158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_footnote {
+#dehbopkliz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1163,7 +1167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slaobxsbfw .gt_sourcenotes {
+#dehbopkliz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1177,7 +1181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slaobxsbfw .gt_sourcenote {
+#dehbopkliz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1185,72 +1189,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slaobxsbfw .gt_left {
+#dehbopkliz .gt_left {
   text-align: left;
 }
 
-#slaobxsbfw .gt_center {
+#dehbopkliz .gt_center {
   text-align: center;
 }
 
-#slaobxsbfw .gt_right {
+#dehbopkliz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#slaobxsbfw .gt_font_normal {
+#dehbopkliz .gt_font_normal {
   font-weight: normal;
 }
 
-#slaobxsbfw .gt_font_bold {
+#dehbopkliz .gt_font_bold {
   font-weight: bold;
 }
 
-#slaobxsbfw .gt_font_italic {
+#dehbopkliz .gt_font_italic {
   font-style: italic;
 }
 
-#slaobxsbfw .gt_super {
+#dehbopkliz .gt_super {
   font-size: 65%;
 }
 
-#slaobxsbfw .gt_footnote_marks {
+#dehbopkliz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#slaobxsbfw .gt_asterisk {
+#dehbopkliz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#slaobxsbfw .gt_indent_1 {
+#dehbopkliz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#slaobxsbfw .gt_indent_2 {
+#dehbopkliz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#slaobxsbfw .gt_indent_3 {
+#dehbopkliz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#slaobxsbfw .gt_indent_4 {
+#dehbopkliz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#slaobxsbfw .gt_indent_5 {
+#dehbopkliz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#slaobxsbfw .katex-display {
+#dehbopkliz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#slaobxsbfw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#dehbopkliz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1381,23 +1385,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="fu">c</span>(<span class="st">`</span><span class="at">3PT fouls/100 before</span><span class="st">`</span>, <span class="st">`</span><span class="at">3PT fouls/100 after</span><span class="st">`</span>), <span class="at">decimals =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="fcyszxppam" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fcyszxppam table {
+<div id="gmeylsnfzi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gmeylsnfzi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fcyszxppam thead, #fcyszxppam tbody, #fcyszxppam tfoot, #fcyszxppam tr, #fcyszxppam td, #fcyszxppam th {
+#gmeylsnfzi thead, #gmeylsnfzi tbody, #gmeylsnfzi tfoot, #gmeylsnfzi tr, #gmeylsnfzi td, #gmeylsnfzi th {
   border-style: none;
 }
 
-#fcyszxppam p {
+#gmeylsnfzi p {
   margin: 0;
   padding: 0;
 }
 
-#fcyszxppam .gt_table {
+#gmeylsnfzi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1423,12 +1427,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_caption {
+#gmeylsnfzi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fcyszxppam .gt_title {
+#gmeylsnfzi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1440,7 +1444,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#fcyszxppam .gt_subtitle {
+#gmeylsnfzi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1452,7 +1456,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#fcyszxppam .gt_heading {
+#gmeylsnfzi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1464,13 +1468,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_bottom_border {
+#gmeylsnfzi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_col_headings {
+#gmeylsnfzi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1485,7 +1489,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_col_heading {
+#gmeylsnfzi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1505,7 +1509,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fcyszxppam .gt_column_spanner_outer {
+#gmeylsnfzi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1517,15 +1521,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#fcyszxppam .gt_column_spanner_outer:first-child {
+#gmeylsnfzi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fcyszxppam .gt_column_spanner_outer:last-child {
+#gmeylsnfzi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fcyszxppam .gt_column_spanner {
+#gmeylsnfzi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1537,11 +1541,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#fcyszxppam .gt_spanner_row {
+#gmeylsnfzi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fcyszxppam .gt_group_heading {
+#gmeylsnfzi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1567,7 +1571,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#fcyszxppam .gt_empty_group_heading {
+#gmeylsnfzi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1582,15 +1586,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#fcyszxppam .gt_from_md > :first-child {
+#gmeylsnfzi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fcyszxppam .gt_from_md > :last-child {
+#gmeylsnfzi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fcyszxppam .gt_row {
+#gmeylsnfzi .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -1609,7 +1613,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fcyszxppam .gt_stub {
+#gmeylsnfzi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1622,7 +1626,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fcyszxppam .gt_stub_row_group {
+#gmeylsnfzi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1636,15 +1640,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#fcyszxppam .gt_row_group_first td {
+#gmeylsnfzi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fcyszxppam .gt_row_group_first th {
+#gmeylsnfzi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fcyszxppam .gt_summary_row {
+#gmeylsnfzi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1654,16 +1658,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fcyszxppam .gt_first_summary_row {
+#gmeylsnfzi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_first_summary_row.thick {
+#gmeylsnfzi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fcyszxppam .gt_last_summary_row {
+#gmeylsnfzi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1673,7 +1677,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_grand_summary_row {
+#gmeylsnfzi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1683,7 +1687,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fcyszxppam .gt_first_grand_summary_row {
+#gmeylsnfzi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1693,7 +1697,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_last_grand_summary_row_top {
+#gmeylsnfzi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1703,11 +1707,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_striped {
+#gmeylsnfzi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fcyszxppam .gt_table_body {
+#gmeylsnfzi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1716,7 +1720,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_footnotes {
+#gmeylsnfzi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1730,7 +1734,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_footnote {
+#gmeylsnfzi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1739,7 +1743,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fcyszxppam .gt_sourcenotes {
+#gmeylsnfzi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1753,7 +1757,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fcyszxppam .gt_sourcenote {
+#gmeylsnfzi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1761,72 +1765,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fcyszxppam .gt_left {
+#gmeylsnfzi .gt_left {
   text-align: left;
 }
 
-#fcyszxppam .gt_center {
+#gmeylsnfzi .gt_center {
   text-align: center;
 }
 
-#fcyszxppam .gt_right {
+#gmeylsnfzi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fcyszxppam .gt_font_normal {
+#gmeylsnfzi .gt_font_normal {
   font-weight: normal;
 }
 
-#fcyszxppam .gt_font_bold {
+#gmeylsnfzi .gt_font_bold {
   font-weight: bold;
 }
 
-#fcyszxppam .gt_font_italic {
+#gmeylsnfzi .gt_font_italic {
   font-style: italic;
 }
 
-#fcyszxppam .gt_super {
+#gmeylsnfzi .gt_super {
   font-size: 65%;
 }
 
-#fcyszxppam .gt_footnote_marks {
+#gmeylsnfzi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fcyszxppam .gt_asterisk {
+#gmeylsnfzi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fcyszxppam .gt_indent_1 {
+#gmeylsnfzi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fcyszxppam .gt_indent_2 {
+#gmeylsnfzi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fcyszxppam .gt_indent_3 {
+#gmeylsnfzi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fcyszxppam .gt_indent_4 {
+#gmeylsnfzi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fcyszxppam .gt_indent_5 {
+#gmeylsnfzi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fcyszxppam .katex-display {
+#gmeylsnfzi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fcyszxppam div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#gmeylsnfzi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1962,23 +1966,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">small_gt</span>() <span class="sc">|&gt;</span> <span class="fu">fmt_number</span>(<span class="st">`</span><span class="at">Shift (SD)</span><span class="st">`</span>, <span class="at">decimals =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="dtsvvvslrg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dtsvvvslrg table {
+<div id="bgaxhfpjlc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bgaxhfpjlc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dtsvvvslrg thead, #dtsvvvslrg tbody, #dtsvvvslrg tfoot, #dtsvvvslrg tr, #dtsvvvslrg td, #dtsvvvslrg th {
+#bgaxhfpjlc thead, #bgaxhfpjlc tbody, #bgaxhfpjlc tfoot, #bgaxhfpjlc tr, #bgaxhfpjlc td, #bgaxhfpjlc th {
   border-style: none;
 }
 
-#dtsvvvslrg p {
+#bgaxhfpjlc p {
   margin: 0;
   padding: 0;
 }
 
-#dtsvvvslrg .gt_table {
+#bgaxhfpjlc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2004,12 +2008,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_caption {
+#bgaxhfpjlc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dtsvvvslrg .gt_title {
+#bgaxhfpjlc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2021,7 +2025,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#dtsvvvslrg .gt_subtitle {
+#bgaxhfpjlc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2033,7 +2037,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#dtsvvvslrg .gt_heading {
+#bgaxhfpjlc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2045,13 +2049,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_bottom_border {
+#bgaxhfpjlc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_col_headings {
+#bgaxhfpjlc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2066,7 +2070,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_col_heading {
+#bgaxhfpjlc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2086,7 +2090,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#dtsvvvslrg .gt_column_spanner_outer {
+#bgaxhfpjlc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2098,15 +2102,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#dtsvvvslrg .gt_column_spanner_outer:first-child {
+#bgaxhfpjlc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dtsvvvslrg .gt_column_spanner_outer:last-child {
+#bgaxhfpjlc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dtsvvvslrg .gt_column_spanner {
+#bgaxhfpjlc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2118,11 +2122,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#dtsvvvslrg .gt_spanner_row {
+#bgaxhfpjlc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dtsvvvslrg .gt_group_heading {
+#bgaxhfpjlc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2148,7 +2152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#dtsvvvslrg .gt_empty_group_heading {
+#bgaxhfpjlc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2163,15 +2167,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#dtsvvvslrg .gt_from_md > :first-child {
+#bgaxhfpjlc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dtsvvvslrg .gt_from_md > :last-child {
+#bgaxhfpjlc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dtsvvvslrg .gt_row {
+#bgaxhfpjlc .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -2190,7 +2194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#dtsvvvslrg .gt_stub {
+#bgaxhfpjlc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2203,7 +2207,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#dtsvvvslrg .gt_stub_row_group {
+#bgaxhfpjlc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2217,15 +2221,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#dtsvvvslrg .gt_row_group_first td {
+#bgaxhfpjlc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dtsvvvslrg .gt_row_group_first th {
+#bgaxhfpjlc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dtsvvvslrg .gt_summary_row {
+#bgaxhfpjlc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2235,16 +2239,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#dtsvvvslrg .gt_first_summary_row {
+#bgaxhfpjlc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_first_summary_row.thick {
+#bgaxhfpjlc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dtsvvvslrg .gt_last_summary_row {
+#bgaxhfpjlc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2254,7 +2258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_grand_summary_row {
+#bgaxhfpjlc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2264,7 +2268,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#dtsvvvslrg .gt_first_grand_summary_row {
+#bgaxhfpjlc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2274,7 +2278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_last_grand_summary_row_top {
+#bgaxhfpjlc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2284,11 +2288,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_striped {
+#bgaxhfpjlc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dtsvvvslrg .gt_table_body {
+#bgaxhfpjlc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2297,7 +2301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_footnotes {
+#bgaxhfpjlc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2311,7 +2315,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_footnote {
+#bgaxhfpjlc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2320,7 +2324,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#dtsvvvslrg .gt_sourcenotes {
+#bgaxhfpjlc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2334,7 +2338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#dtsvvvslrg .gt_sourcenote {
+#bgaxhfpjlc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2342,72 +2346,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#dtsvvvslrg .gt_left {
+#bgaxhfpjlc .gt_left {
   text-align: left;
 }
 
-#dtsvvvslrg .gt_center {
+#bgaxhfpjlc .gt_center {
   text-align: center;
 }
 
-#dtsvvvslrg .gt_right {
+#bgaxhfpjlc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dtsvvvslrg .gt_font_normal {
+#bgaxhfpjlc .gt_font_normal {
   font-weight: normal;
 }
 
-#dtsvvvslrg .gt_font_bold {
+#bgaxhfpjlc .gt_font_bold {
   font-weight: bold;
 }
 
-#dtsvvvslrg .gt_font_italic {
+#bgaxhfpjlc .gt_font_italic {
   font-style: italic;
 }
 
-#dtsvvvslrg .gt_super {
+#bgaxhfpjlc .gt_super {
   font-size: 65%;
 }
 
-#dtsvvvslrg .gt_footnote_marks {
+#bgaxhfpjlc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dtsvvvslrg .gt_asterisk {
+#bgaxhfpjlc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dtsvvvslrg .gt_indent_1 {
+#bgaxhfpjlc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dtsvvvslrg .gt_indent_2 {
+#bgaxhfpjlc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dtsvvvslrg .gt_indent_3 {
+#bgaxhfpjlc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dtsvvvslrg .gt_indent_4 {
+#bgaxhfpjlc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dtsvvvslrg .gt_indent_5 {
+#bgaxhfpjlc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dtsvvvslrg .katex-display {
+#bgaxhfpjlc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dtsvvvslrg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bgaxhfpjlc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2519,23 +2523,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">`</span><span class="at">First archetype</span><span class="st">`</span> <span class="ot">=</span> first, <span class="st">`</span><span class="at">Last archetype</span><span class="st">`</span> <span class="ot">=</span> last)] <span class="sc">|&gt;</span> <span class="fu">small_gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="oxnqrxlcbt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#oxnqrxlcbt table {
+<div id="wodrkhqhww" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wodrkhqhww table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#oxnqrxlcbt thead, #oxnqrxlcbt tbody, #oxnqrxlcbt tfoot, #oxnqrxlcbt tr, #oxnqrxlcbt td, #oxnqrxlcbt th {
+#wodrkhqhww thead, #wodrkhqhww tbody, #wodrkhqhww tfoot, #wodrkhqhww tr, #wodrkhqhww td, #wodrkhqhww th {
   border-style: none;
 }
 
-#oxnqrxlcbt p {
+#wodrkhqhww p {
   margin: 0;
   padding: 0;
 }
 
-#oxnqrxlcbt .gt_table {
+#wodrkhqhww .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2561,12 +2565,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_caption {
+#wodrkhqhww .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#oxnqrxlcbt .gt_title {
+#wodrkhqhww .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2578,7 +2582,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#oxnqrxlcbt .gt_subtitle {
+#wodrkhqhww .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2590,7 +2594,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#oxnqrxlcbt .gt_heading {
+#wodrkhqhww .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2602,13 +2606,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_bottom_border {
+#wodrkhqhww .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_col_headings {
+#wodrkhqhww .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2623,7 +2627,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_col_heading {
+#wodrkhqhww .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2643,7 +2647,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#oxnqrxlcbt .gt_column_spanner_outer {
+#wodrkhqhww .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2655,15 +2659,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#oxnqrxlcbt .gt_column_spanner_outer:first-child {
+#wodrkhqhww .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#oxnqrxlcbt .gt_column_spanner_outer:last-child {
+#wodrkhqhww .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#oxnqrxlcbt .gt_column_spanner {
+#wodrkhqhww .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2675,11 +2679,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#oxnqrxlcbt .gt_spanner_row {
+#wodrkhqhww .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#oxnqrxlcbt .gt_group_heading {
+#wodrkhqhww .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2705,7 +2709,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#oxnqrxlcbt .gt_empty_group_heading {
+#wodrkhqhww .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2720,15 +2724,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#oxnqrxlcbt .gt_from_md > :first-child {
+#wodrkhqhww .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#oxnqrxlcbt .gt_from_md > :last-child {
+#wodrkhqhww .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#oxnqrxlcbt .gt_row {
+#wodrkhqhww .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -2747,7 +2751,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#oxnqrxlcbt .gt_stub {
+#wodrkhqhww .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2760,7 +2764,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oxnqrxlcbt .gt_stub_row_group {
+#wodrkhqhww .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2774,15 +2778,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#oxnqrxlcbt .gt_row_group_first td {
+#wodrkhqhww .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#oxnqrxlcbt .gt_row_group_first th {
+#wodrkhqhww .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#oxnqrxlcbt .gt_summary_row {
+#wodrkhqhww .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2792,16 +2796,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oxnqrxlcbt .gt_first_summary_row {
+#wodrkhqhww .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_first_summary_row.thick {
+#wodrkhqhww .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#oxnqrxlcbt .gt_last_summary_row {
+#wodrkhqhww .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2811,7 +2815,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_grand_summary_row {
+#wodrkhqhww .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2821,7 +2825,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oxnqrxlcbt .gt_first_grand_summary_row {
+#wodrkhqhww .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2831,7 +2835,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_last_grand_summary_row_top {
+#wodrkhqhww .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2841,11 +2845,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_striped {
+#wodrkhqhww .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#oxnqrxlcbt .gt_table_body {
+#wodrkhqhww .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2854,7 +2858,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_footnotes {
+#wodrkhqhww .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2868,7 +2872,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_footnote {
+#wodrkhqhww .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2877,7 +2881,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oxnqrxlcbt .gt_sourcenotes {
+#wodrkhqhww .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2891,7 +2895,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oxnqrxlcbt .gt_sourcenote {
+#wodrkhqhww .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2899,72 +2903,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oxnqrxlcbt .gt_left {
+#wodrkhqhww .gt_left {
   text-align: left;
 }
 
-#oxnqrxlcbt .gt_center {
+#wodrkhqhww .gt_center {
   text-align: center;
 }
 
-#oxnqrxlcbt .gt_right {
+#wodrkhqhww .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#oxnqrxlcbt .gt_font_normal {
+#wodrkhqhww .gt_font_normal {
   font-weight: normal;
 }
 
-#oxnqrxlcbt .gt_font_bold {
+#wodrkhqhww .gt_font_bold {
   font-weight: bold;
 }
 
-#oxnqrxlcbt .gt_font_italic {
+#wodrkhqhww .gt_font_italic {
   font-style: italic;
 }
 
-#oxnqrxlcbt .gt_super {
+#wodrkhqhww .gt_super {
   font-size: 65%;
 }
 
-#oxnqrxlcbt .gt_footnote_marks {
+#wodrkhqhww .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#oxnqrxlcbt .gt_asterisk {
+#wodrkhqhww .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#oxnqrxlcbt .gt_indent_1 {
+#wodrkhqhww .gt_indent_1 {
   text-indent: 5px;
 }
 
-#oxnqrxlcbt .gt_indent_2 {
+#wodrkhqhww .gt_indent_2 {
   text-indent: 10px;
 }
 
-#oxnqrxlcbt .gt_indent_3 {
+#wodrkhqhww .gt_indent_3 {
   text-indent: 15px;
 }
 
-#oxnqrxlcbt .gt_indent_4 {
+#wodrkhqhww .gt_indent_4 {
   text-indent: 20px;
 }
 
-#oxnqrxlcbt .gt_indent_5 {
+#wodrkhqhww .gt_indent_5 {
   text-indent: 25px;
 }
 
-#oxnqrxlcbt .katex-display {
+#wodrkhqhww .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#oxnqrxlcbt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#wodrkhqhww div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3071,23 +3075,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">small_gt</span>() <span class="sc">|&gt;</span> <span class="fu">fmt_number</span>(<span class="fu">c</span>(Skill, Whistle), <span class="at">decimals =</span> <span class="dv">2</span>, <span class="at">force_sign =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">fmt_number</span>(EHI, <span class="at">decimals =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="fxinazetjl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fxinazetjl table {
+<div id="xeuawerocp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xeuawerocp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fxinazetjl thead, #fxinazetjl tbody, #fxinazetjl tfoot, #fxinazetjl tr, #fxinazetjl td, #fxinazetjl th {
+#xeuawerocp thead, #xeuawerocp tbody, #xeuawerocp tfoot, #xeuawerocp tr, #xeuawerocp td, #xeuawerocp th {
   border-style: none;
 }
 
-#fxinazetjl p {
+#xeuawerocp p {
   margin: 0;
   padding: 0;
 }
 
-#fxinazetjl .gt_table {
+#xeuawerocp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3113,12 +3117,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_caption {
+#xeuawerocp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fxinazetjl .gt_title {
+#xeuawerocp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3130,7 +3134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#fxinazetjl .gt_subtitle {
+#xeuawerocp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3142,7 +3146,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#fxinazetjl .gt_heading {
+#xeuawerocp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3154,13 +3158,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_bottom_border {
+#xeuawerocp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_col_headings {
+#xeuawerocp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3175,7 +3179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_col_heading {
+#xeuawerocp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3195,7 +3199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fxinazetjl .gt_column_spanner_outer {
+#xeuawerocp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3207,15 +3211,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#fxinazetjl .gt_column_spanner_outer:first-child {
+#xeuawerocp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fxinazetjl .gt_column_spanner_outer:last-child {
+#xeuawerocp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fxinazetjl .gt_column_spanner {
+#xeuawerocp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3227,11 +3231,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#fxinazetjl .gt_spanner_row {
+#xeuawerocp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fxinazetjl .gt_group_heading {
+#xeuawerocp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3257,7 +3261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#fxinazetjl .gt_empty_group_heading {
+#xeuawerocp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3272,15 +3276,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#fxinazetjl .gt_from_md > :first-child {
+#xeuawerocp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fxinazetjl .gt_from_md > :last-child {
+#xeuawerocp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fxinazetjl .gt_row {
+#xeuawerocp .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -3299,7 +3303,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fxinazetjl .gt_stub {
+#xeuawerocp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3312,7 +3316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fxinazetjl .gt_stub_row_group {
+#xeuawerocp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3326,15 +3330,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#fxinazetjl .gt_row_group_first td {
+#xeuawerocp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fxinazetjl .gt_row_group_first th {
+#xeuawerocp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fxinazetjl .gt_summary_row {
+#xeuawerocp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3344,16 +3348,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fxinazetjl .gt_first_summary_row {
+#xeuawerocp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_first_summary_row.thick {
+#xeuawerocp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fxinazetjl .gt_last_summary_row {
+#xeuawerocp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3363,7 +3367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_grand_summary_row {
+#xeuawerocp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3373,7 +3377,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fxinazetjl .gt_first_grand_summary_row {
+#xeuawerocp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3383,7 +3387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_last_grand_summary_row_top {
+#xeuawerocp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3393,11 +3397,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_striped {
+#xeuawerocp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fxinazetjl .gt_table_body {
+#xeuawerocp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3406,7 +3410,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_footnotes {
+#xeuawerocp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3420,7 +3424,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_footnote {
+#xeuawerocp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3429,7 +3433,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fxinazetjl .gt_sourcenotes {
+#xeuawerocp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3443,7 +3447,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fxinazetjl .gt_sourcenote {
+#xeuawerocp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3451,72 +3455,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fxinazetjl .gt_left {
+#xeuawerocp .gt_left {
   text-align: left;
 }
 
-#fxinazetjl .gt_center {
+#xeuawerocp .gt_center {
   text-align: center;
 }
 
-#fxinazetjl .gt_right {
+#xeuawerocp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fxinazetjl .gt_font_normal {
+#xeuawerocp .gt_font_normal {
   font-weight: normal;
 }
 
-#fxinazetjl .gt_font_bold {
+#xeuawerocp .gt_font_bold {
   font-weight: bold;
 }
 
-#fxinazetjl .gt_font_italic {
+#xeuawerocp .gt_font_italic {
   font-style: italic;
 }
 
-#fxinazetjl .gt_super {
+#xeuawerocp .gt_super {
   font-size: 65%;
 }
 
-#fxinazetjl .gt_footnote_marks {
+#xeuawerocp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fxinazetjl .gt_asterisk {
+#xeuawerocp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fxinazetjl .gt_indent_1 {
+#xeuawerocp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fxinazetjl .gt_indent_2 {
+#xeuawerocp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fxinazetjl .gt_indent_3 {
+#xeuawerocp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fxinazetjl .gt_indent_4 {
+#xeuawerocp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fxinazetjl .gt_indent_5 {
+#xeuawerocp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fxinazetjl .katex-display {
+#xeuawerocp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fxinazetjl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xeuawerocp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3670,23 +3674,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ol[, .N, component][, .(<span class="at">Component =</span> COMP_LABELS[component], <span class="st">`</span><span class="at">Seasons with |z| &gt; 3</span><span class="st">`</span> <span class="ot">=</span> N)][<span class="fu">order</span>(<span class="sc">-</span><span class="st">`</span><span class="at">Seasons with |z| &gt; 3</span><span class="st">`</span>)] <span class="sc">|&gt;</span> <span class="fu">small_gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="gltojrjzfr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gltojrjzfr table {
+<div id="gcpcoucivn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gcpcoucivn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gltojrjzfr thead, #gltojrjzfr tbody, #gltojrjzfr tfoot, #gltojrjzfr tr, #gltojrjzfr td, #gltojrjzfr th {
+#gcpcoucivn thead, #gcpcoucivn tbody, #gcpcoucivn tfoot, #gcpcoucivn tr, #gcpcoucivn td, #gcpcoucivn th {
   border-style: none;
 }
 
-#gltojrjzfr p {
+#gcpcoucivn p {
   margin: 0;
   padding: 0;
 }
 
-#gltojrjzfr .gt_table {
+#gcpcoucivn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3712,12 +3716,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_caption {
+#gcpcoucivn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gltojrjzfr .gt_title {
+#gcpcoucivn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3729,7 +3733,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#gltojrjzfr .gt_subtitle {
+#gcpcoucivn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3741,7 +3745,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#gltojrjzfr .gt_heading {
+#gcpcoucivn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3753,13 +3757,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_bottom_border {
+#gcpcoucivn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_col_headings {
+#gcpcoucivn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3774,7 +3778,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_col_heading {
+#gcpcoucivn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3794,7 +3798,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#gltojrjzfr .gt_column_spanner_outer {
+#gcpcoucivn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3806,15 +3810,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#gltojrjzfr .gt_column_spanner_outer:first-child {
+#gcpcoucivn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gltojrjzfr .gt_column_spanner_outer:last-child {
+#gcpcoucivn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gltojrjzfr .gt_column_spanner {
+#gcpcoucivn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3826,11 +3830,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#gltojrjzfr .gt_spanner_row {
+#gcpcoucivn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gltojrjzfr .gt_group_heading {
+#gcpcoucivn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3856,7 +3860,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#gltojrjzfr .gt_empty_group_heading {
+#gcpcoucivn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3871,15 +3875,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#gltojrjzfr .gt_from_md > :first-child {
+#gcpcoucivn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gltojrjzfr .gt_from_md > :last-child {
+#gcpcoucivn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gltojrjzfr .gt_row {
+#gcpcoucivn .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -3898,7 +3902,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#gltojrjzfr .gt_stub {
+#gcpcoucivn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3911,7 +3915,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gltojrjzfr .gt_stub_row_group {
+#gcpcoucivn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3925,15 +3929,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#gltojrjzfr .gt_row_group_first td {
+#gcpcoucivn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gltojrjzfr .gt_row_group_first th {
+#gcpcoucivn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gltojrjzfr .gt_summary_row {
+#gcpcoucivn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3943,16 +3947,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gltojrjzfr .gt_first_summary_row {
+#gcpcoucivn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_first_summary_row.thick {
+#gcpcoucivn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gltojrjzfr .gt_last_summary_row {
+#gcpcoucivn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3962,7 +3966,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_grand_summary_row {
+#gcpcoucivn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3972,7 +3976,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gltojrjzfr .gt_first_grand_summary_row {
+#gcpcoucivn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3982,7 +3986,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_last_grand_summary_row_top {
+#gcpcoucivn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3992,11 +3996,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_striped {
+#gcpcoucivn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gltojrjzfr .gt_table_body {
+#gcpcoucivn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4005,7 +4009,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_footnotes {
+#gcpcoucivn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4019,7 +4023,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_footnote {
+#gcpcoucivn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4028,7 +4032,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gltojrjzfr .gt_sourcenotes {
+#gcpcoucivn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4042,7 +4046,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gltojrjzfr .gt_sourcenote {
+#gcpcoucivn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4050,72 +4054,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gltojrjzfr .gt_left {
+#gcpcoucivn .gt_left {
   text-align: left;
 }
 
-#gltojrjzfr .gt_center {
+#gcpcoucivn .gt_center {
   text-align: center;
 }
 
-#gltojrjzfr .gt_right {
+#gcpcoucivn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gltojrjzfr .gt_font_normal {
+#gcpcoucivn .gt_font_normal {
   font-weight: normal;
 }
 
-#gltojrjzfr .gt_font_bold {
+#gcpcoucivn .gt_font_bold {
   font-weight: bold;
 }
 
-#gltojrjzfr .gt_font_italic {
+#gcpcoucivn .gt_font_italic {
   font-style: italic;
 }
 
-#gltojrjzfr .gt_super {
+#gcpcoucivn .gt_super {
   font-size: 65%;
 }
 
-#gltojrjzfr .gt_footnote_marks {
+#gcpcoucivn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gltojrjzfr .gt_asterisk {
+#gcpcoucivn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gltojrjzfr .gt_indent_1 {
+#gcpcoucivn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gltojrjzfr .gt_indent_2 {
+#gcpcoucivn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gltojrjzfr .gt_indent_3 {
+#gcpcoucivn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gltojrjzfr .gt_indent_4 {
+#gcpcoucivn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gltojrjzfr .gt_indent_5 {
+#gcpcoucivn .gt_indent_5 {
   text-indent: 25px;
 }
 
-#gltojrjzfr .katex-display {
+#gcpcoucivn .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#gltojrjzfr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#gcpcoucivn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -4170,8 +4174,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">searchable =</span> <span class="cn">TRUE</span>, <span class="at">defaultPageSize =</span> <span class="dv">10</span>, <span class="at">theme =</span> rt_theme, <span class="at">compact =</span> <span class="cn">TRUE</span>, <span class="at">striped =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div class="reactable html-widget html-fill-item" id="htmlwidget-26d95d225289828c755b" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-26d95d225289828c755b">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Season":["2012-13","2020-21","2014-15","2025-26","2015-16","2019-20","1998-99","1999-00","1996-97","1998-99","2005-06","2007-08","2007-08","2002-03","2003-04","2004-05","2006-07","2000-01","2001-02","2008-09","2013-14","2010-11","2014-15","2015-16","2016-17","2009-10","2013-14","2014-15","2011-12","2016-17","2017-18","2018-19","2019-20","2021-22","2024-25","2025-26","2023-24","2024-25","2019-20","1996-97","1998-99","1999-00","1997-98","2001-02","2003-04","2001-02","2008-09","2009-10","2008-09","2011-12","2016-17","2018-19","2022-23","2014-15","2018-19","2021-22","2017-18","2021-22","2022-23","2023-24","2024-25","1996-97","2007-08","2006-07","2025-26","2016-17","2019-20","2017-18","2000-01","1999-00","2011-12","2022-23","2015-16","2024-25","2015-16","2021-22","2010-11","2025-26","2010-11","2014-15","1996-97","2005-06","2012-13","2019-20","2025-26","2004-05","2016-17","2006-07","2002-03","1997-98","2016-17","2015-16","2016-17","2023-24","2008-09","2020-21","2022-23","2018-19","2003-04","2010-11","2004-05","2021-22","2001-02","2004-05","2012-13","2012-13","2012-13","2013-14","1996-97","1996-97","2017-18","2024-25","2012-13","2015-16","2023-24","1997-98","2023-24","2019-20","1999-00","2017-18","2020-21","2024-25","2017-18","2014-15","2022-23","2021-22","2012-13","2024-25","2025-26","2020-21","2012-13","2022-23","2013-14","2014-15","2023-24","2004-05","2021-22","1999-00","2017-18","2020-21","2022-23","2008-09","2010-11","2023-24","2018-19","1998-99","2014-15","2019-20","1997-98","2020-21","2025-26","2022-23","2024-25","1997-98","2007-08","2025-26","2010-11","2024-25","2006-07","2025-26","2025-26","2004-05","1998-99","1999-00","2010-11","2007-08","2002-03","2017-18","2023-24","2008-09","2021-22","2020-21","2005-06","2015-16","2022-23","2009-10","2023-24","1997-98","2020-21","2010-11","2015-16","2005-06","2022-23","2007-08","2020-21","2025-26","2015-16","2017-18","1997-98","2001-02","2010-11","2023-24","2021-22","2011-12","2012-13","2003-04","2018-19","2014-15","2001-02","2009-10","2021-22","2009-10","2023-24","1997-98","1999-00","2024-25","2021-22","1998-99","2025-26","2020-21","2011-12","2016-17","2000-01","2021-22","2018-19","1998-99","2010-11","2024-25","2021-22","2024-25","2013-14","2013-14","2011-12","2020-21","2015-16","1997-98","2009-10","2018-19","2021-22","2014-15","2024-25","2023-24","2021-22","2021-22","2021-22","2015-16","2003-04","2002-03","2016-17","2011-12","2017-18","2006-07","2012-13","2007-08","2003-04","2010-11","2023-24","1996-97","2019-20","2015-16","2022-23","2021-22","2004-05","2023-24","2010-11","2012-13","2008-09","2016-17","2016-17","2020-21","2018-19","2023-24"],"Player":["JaVale McGee","Clint Capela","Kevin Séraphin","Karl-Anthony Towns","Lou Williams","Jimmy Butler","Reggie Miller","Reggie Miller","Mitch Richmond","Allen Iverson","Allen Iverson","Allen Iverson","Kobe Bryant","Tracy McGrady","Tracy McGrady","Tracy McGrady","Tracy McGrady","Dirk Nowitzki","Dirk Nowitzki","Jamal Crawford","Jamal Crawford","Jarrett Jack","Lou Williams","Lou Williams","Lou Williams","Kevin Durant","Nick Young","Nick Young","Anthony Morrow","James Harden","James Harden","James Harden","James Harden","James Harden","James Harden","James Harden","Damian Lillard","Damian Lillard","Jimmy Butler","Reggie Miller","Reggie Miller","Reggie Miller","Michael Jordan","Michael Jordan","Tracy McGrady","Dirk Nowitzki","Jamal Crawford","Dwyane Wade","Kevin Martin","Deron Williams","Lou Williams","Lou Williams","Kevin Durant","Nick Young","James Harden","James Harden","DeMar DeRozan","DeMar DeRozan","DeMar DeRozan","DeMar DeRozan","DeMar DeRozan","Latrell Sprewell","Antawn Jamison","Corey Maggette","James Harden","Clint Capela","Marcus Morris","Dwight Howard","Paul Pierce","Shawn Kemp","Jamal Crawford","James Harden","Lou Williams","Kevin Porter Jr.","Jamal Crawford","Obi Toppin","DeMarcus Cousins","Devin Booker","Jamal Crawford","Dwight Howard","Antoine Walker","Dirk Nowitzki","Enes Freedom","Terrence Ross","Norman Powell","Paul Pierce","Goran Dragić","Eddy Curry","Allan Houston","Reggie Miller","Jeff Teague","Marco Belinelli","Nikola Jokić","Jonas Valančiūnas","Dwight Howard","Trae Young","Nikola Jokić","JaVale McGee","Eddy Curry","Dwight Howard","Corey Maggette","James Harden","Morris Peterson","Dirk Nowitzki","Kevin Séraphin","Kobe Bryant","James Harden","Nick Young","Alonzo Mourning","Glen Rice","Montrezl Harrell","Jimmy Butler","Alan Anderson","James Harden","Jarrett Allen","Danny Fortson","Jerami Grant","Trae Young","Bob Sura","Domantas Sabonis","Giannis Antetokounmpo","Jimmy Butler","Kristaps Porziņģis","Dwight Howard","Aaron Gordon","Montrezl Harrell","James Harden","Jeremy Sochan","Jaren Jackson Jr.","Karl-Anthony Towns","James Harden","Jordan Clarkson","DeMar DeRozan","Andre Drummond","Karl-Anthony Towns","Othella Harrington","Karl-Anthony Towns","Derek Anderson","Jimmy Butler","Terrence Ross","Zach Collins","Kevin Martin","Andrea Bargnani","Terry Rozier","Terrence Ross","Allen Iverson","Anthony Davis","Anthony Davis","Shawn Kemp","DeMar DeRozan","DeMar DeRozan","Devin Booker","Jonas Valančiūnas","Mitch Richmond","Kevin Martin","Onyeka Okongwu","Kevin Durant","Mark Williams","Corey Maggette","Keyonte George","Nikola Jokić","Reggie Miller","Larry Hughes","Dirk Nowitzki","Dwyane Wade","Sasha Pavlović","Eddy Curry","Julius Randle","Andre Drummond","Jermaine O'Neal","James Harden","DeMar DeRozan","Allen Iverson","Stephen Curry","Jonas Valančiūnas","Jamal Crawford","Cam Thomas","Eddie Jones","Lou Williams","Devin Harris","Enes Freedom","Tracy McGrady","Kevin Durant","Dwyane Wade","Khris Middleton","Giannis Antetokounmpo","Jason Smith","Andre Drummond","Steve Smith","Michael Olowokandi","Dwight Howard","Moritz Wagner","Khris Middleton","Dwight Howard","Roy Hibbert","Jamal Crawford","Giannis Antetokounmpo","Jimmy Butler","Allan Houston","Brandon Roy","Kevin Durant","Jamal Crawford","Jalen Brunson","Alonzo Mourning","Larry Hughes","Nikola Jokić","JaVale McGee","Karl Malone","Austin Reaves","Jimmy Butler","Kobe Bryant","James Harden","Dirk Nowitzki","Nikola Jokić","Alex Len","Bison Dele","Corey Maggette","Domantas Sabonis","Joel Embiid","James Harden","Dirk Nowitzki","James Harden","Deron Williams","James Harden","Danilo Gallinari","Reggie Miller","Devin Harris","Giannis Antetokounmpo","Jonas Valančiūnas","Lou Williams","James Harden","Jimmy Butler","Terrence Ross","Jimmy Butler","LaMarcus Aldridge","Damian Lillard","Corey Maggette","Tim Duncan","Nicolas Batum","JaVale McGee","Damian Lillard","Kobe Bryant","Dwyane Wade","Jamal Crawford","Antawn Jamison","Dwight Howard","Evan Mobley","Vitaly Potapenko","Andre Drummond","Danilo Gallinari","Kevin Porter Jr.","Jalen Suggs","Eddy Curry","Domantas Sabonis","Corey Maggette","Ramon Sessions","Dwight Howard","Marquese Chriss","Danilo Gallinari","Stephen Curry","Domantas Sabonis","Jimmy Butler"],"Component":["Shot difficulty","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","3PT shooting-foul rate","3PT shooting-foul rate","Excess free-throw rate","Perimeter and-one rate","Shot difficulty","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","3PT shooting-foul rate","Perimeter and-one rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","Shot-making above expected","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Excess free-throw rate","Excess free-throw rate","3PT shooting-foul rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","Shot difficulty","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Perimeter and-one rate","Shot difficulty","Shot difficulty","Shot difficulty","3PT shooting-foul rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","Perimeter and-one rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Perimeter and-one rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Perimeter and-one rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Shot difficulty","Free-throw share of points","Perimeter and-one rate","Shot-making above expected","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Free-throw share of points","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Shot difficulty","3PT shooting-foul rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","Shot difficulty","Shot difficulty","Shot difficulty","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Excess free-throw rate","Perimeter and-one rate","Shot-making above expected","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Perimeter and-one rate","Shot-making above expected","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Perimeter and-one rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Excess free-throw rate","Excess free-throw rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Perimeter and-one rate","Excess free-throw rate","Perimeter and-one rate","Perimeter and-one rate","Shot difficulty","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","3PT shooting-foul rate","Shot-making above expected","Shot difficulty","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Free-throw share of points","Shot difficulty","Shot difficulty","Excess free-throw rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points"],"z":[-4,-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3.94,3.93,3.92,3.92,-3.9,3.88,3.86,3.85,3.84,3.82,3.8,3.8,3.79,3.79,-3.78,3.78,3.78,3.76,3.74,-3.74,3.74,3.73,3.73,3.73,3.73,3.71,3.69,3.69,3.67,3.67,3.67,3.62,3.61,3.61,3.61,3.6,-3.6,3.6,3.6,3.59,3.59,3.58,3.58,3.57,3.57,3.57,3.56,3.54,3.54,-3.52,3.52,3.51,3.51,-3.5,3.5,3.49,3.49,-3.48,3.48,3.47,3.46,3.46,-3.45,-3.45,-3.45,3.45,-3.44,3.44,3.43,3.43,3.43,3.43,-3.42,3.42,3.41,3.41,3.41,3.41,3.4,3.39,3.39,3.39,3.38,3.37,3.37,3.37,3.36,3.35,3.35,3.35,3.35,3.34,3.34,3.34,3.33,3.32,-3.31,3.31,3.3,3.29,3.29,3.29,3.29,3.29,-3.28,3.28,3.28,-3.27,3.27,3.27,3.27,3.27,3.26,3.26,3.26,3.25,-3.24,3.24,3.24,3.23,3.23,3.23,3.23,3.23,-3.22,3.21,-3.21,3.21,3.2,3.2,3.2,3.2,3.19,3.18,3.17,3.16,3.16,3.16,3.16,3.16,3.16,3.16,3.15,3.15,3.14,3.14,3.14,3.14,3.14,3.14,3.13,3.13,3.12,-3.12,3.12,3.12,3.12,3.12,3.12,3.11,3.11,3.11,3.11,3.11,3.11,3.11,-3.1,3.1,3.1,3.1,3.1,3.1,3.1,3.1,3.1,3.09,3.09,3.09,-3.08,3.08,3.08,3.08,3.06,3.05,-3.05,-3.05,3.05,3.05,3.05,3.05,-3.04,3.04,3.04,3.03,3.03,-3.02,-3.02,3.02,3.02,3.01,3.01],"Raw value":[0.3719,0.3479,7.5461,4.7788,0.4105,0.3039,3.3088,3.1707,3.1056,4.0201,4.8246,4.2105,3.8005,4.3384,4.023,4.7297,5.5138,6.4039,2.5424,7.196,6.6381,11.2069,9.5918,12.4654,11.2016,6.9519,7.6087,8.4388,5.0676,14.2202,8.9147,8.6207,7.7951,8.4211,8.2749,9.2532,4.5312,6.5336,0.3068,1.6881,2.214,2.1845,1.8822,1.6754,1.4238,1.937,2.3529,2.0779,2.627,2.0344,2.8862,2.3217,5.2065,2.8947,1.9856,3.006,2.4453,3.0752,4.5679,3.1209,2.9246,3.125,3.6011,0.2911,2.9851,0.3787,2.6801,6.5546,1.6429,7.9796,4.943,5.5427,0.3152,6.9519,2.0927,0.3551,6.6304,2.8818,6.4426,6.5525,-0.186,1.6585,7.1498,7.5758,6.422,1.7497,10.2484,7.3706,1.6922,2.122,10.2941,2.2059,0.2459,5.5423,0.2862,5.9666,0.2713,0.3639,6.4103,0.2741,0.2379,0.2366,2.5862,1.5414,6.3297,3.8369,0.2812,2.4233,7.1345,1.5399,0.4006,0.2755,4.1096,6.6187,0.3672,6.5419,4.5614,7.1429,0.4302,6.3576,4.9307,0.2778,2.3636,0.4043,0.3658,0.3649,3.6364,0.3646,4.3701,5.0348,0.2051,5.0526,2.1482,0.4135,5.1773,6.998,5.1688,2.8249,7.1429,6.1151,6.7707,0.2607,1.9886,4.0573,5.8419,1.5974,2.2099,2.5751,6.0204,0.2069,2.6814,3.2051,4.5144,2.0649,1.9573,4.1826,5.7208,0.3662,0.2986,2.7778,0.2099,3.2895,6.1224,2.2654,2.069,-0.2775,6.218,5.9185,0.3722,6.1345,0.2682,0.2599,1.5416,0.2336,6.3341,4.0189,3.9702,0.4316,6.4865,2.4457,5.5117,3.75,5.4622,2,1.8813,0.3598,0.5811,0.4127,2.1818,5.9455,5.9266,5.2863,4.8889,5.4069,5.7216,2.7027,5.7824,0.2074,1.9943,4.4053,5.1282,1.6796,1.9116,6.0004,1.6591,0.2351,5.4817,66.6667,5.7971,0.2554,1.4773,0.1882,1.4851,0.2132,0.3815,6.3982,6.2878,4.0911,0.2597,1.8088,0.2133,0.1841,4.0346,5.5072,0.2817,1.6,1.9824,0.3838,4.9833,0.197,0.1773,0.204,5.2045,0.2609,2.7778,1.6779,0.1981,1.9737,2.1739,0.4188,5.7315,1.5776,1.8519,2.8,0.2123,0.4307,0.3765,7.155,5.5637,0.245,4.7382,-0.2448,6.0126,4.7288,0.2919,0.2626,0.4287,0.4072,0.2033,4.89,5.8702,0.2512],"After shrinkage":[0.3874,0.3561,5.9229,4.1991,0.3041,0.203,2.3366,2.3514,2.3757,2.5317,3.2335,2.8538,2.8728,3.2788,3.1942,3.7915,4.3886,5.435,1.5792,5.9071,5.8923,7.3731,8.6697,10.9872,10.6901,5.6805,6.5248,6.9858,4.1137,13.8239,8.2686,8.2042,7.4058,7.1914,7.5659,8.3773,3.8296,5.869,0.2989,1.2874,1.2093,1.5208,1.3787,1.1653,0.8878,1.2623,1.8256,1.4556,1.8863,1.3448,2.1087,1.5132,4.3685,1.659,1.5348,2.1762,1.8239,2.5066,4.0433,2.4265,2.2605,2.313,2.6467,0.2021,2.416,0.3906,1.9881,6.0642,1.1231,7.5004,3.9347,4.717,0.3057,5.2607,1.3781,0.3636,6.0462,2.3532,5.5844,5.3344,-0.1673,1.1953,5.519,6.9684,5.6738,1.179,9.5731,6.7956,1.3629,1.3594,9.5024,1.3548,0.1774,4.8433,0.2168,5.1099,0.2251,0.3718,5.7467,0.2078,0.1742,0.183,1.393,1.1501,5.3861,3.0928,0.2769,1.7782,6.5731,1.1612,0.4111,0.1674,3.0631,6.2486,0.3729,5.7518,3.2964,6.6456,0.4339,5.6771,4.5019,0.2684,1.6326,0.4174,0.3711,0.3732,3.0298,0.3722,3.6634,4.4711,0.1598,4.3761,1.7359,0.418,4.6918,5.7251,4.795,1.6627,5.7215,4.9009,5.8574,0.2037,1.3943,3.2251,5.4003,1.0003,1.4885,1.8117,5.6055,0.1501,2.1693,2.784,3.773,1.2945,1.2287,3.5985,5.1046,0.3759,0.2922,2.1448,0.1592,2.5136,1.9635,1.6236,1.3702,-0.1577,5.2949,5.4776,0.3789,5.4067,0.2633,0.2538,1.1149,0.189,5.7248,3.4522,3.1401,0.4349,4.7472,1.3598,4.8278,2.6395,4.1933,1.2074,1.3923,0.3667,0.5792,0.4182,1.2694,5.3519,5.5122,4.5085,4.2401,4.7322,5.0552,2.2231,5.4635,0.1579,1.2985,3.382,4.204,1.2193,1.5684,5.4141,1.1389,0.2025,4.5664,1.905,5.0047,0.2486,1.1147,0.1548,1.0073,0.1788,0.3864,5.3357,5.4451,3.6279,0.2566,1.422,0.1661,0.1436,3.4143,4.6141,0.2739,1.1279,1.2092,0.387,4.5324,0.1547,0.1467,0.1328,4.1517,0.2557,1.6612,1.2416,0.1506,1.226,1.7212,0.4298,5.3283,1.2676,0.9483,2.2658,0.1645,0.4358,0.3844,6.0378,4.9306,0.1878,4.0286,-0.1625,5.3703,4.3707,0.2826,0.2548,0.4334,0.4134,0.1491,4.5245,5.3125,0.2448],"FGA":[527,695,449,1032,691,752,664,1038,1576,1052,1818,1554,1682,1808,1560,1651,1477,1241,1257,1014,1006,633,927,691,994,1666,887,473,657,1527,1446,1908,1513,992,1291,1123,1271,988,752,1240,664,1038,1888,1323,1560,1257,1014,1503,810,958,994,1138,862,473,1908,992,1407,1530,1301,1352,1301,1434,1414,803,1123,563,805,909,1510,1159,728,842,691,651,930,472,1003,1197,864,422,1355,1556,379,841,894,1221,1124,1016,1462,1071,904,629,853,719,979,1111,1019,640,839,1039,981,992,764,1440,716,1591,1333,887,885,1512,546,594,615,1615,819,611,850,1245,813,661,1099,594,885,422,756,551,1333,467,719,875,1333,1028,1405,959,950,424,1213,855,918,615,547,810,1169,995,1019,1052,1196,1092,1162,919,1005,1065,627,1218,914,860,1538,447,803,881,1129,716,408,1117,1381,403,573,901,477,769,992,919,1818,1581,816,1093,1187,1002,646,805,718,1008,862,931,1074,598,502,876,1095,886,1039,551,1020,720,858,1301,1246,906,1300,1034,1114,1093,1645,733,1140,1338,458,797,762,734,1332,1527,1241,1308,647,431,557,893,1333,1291,1273,1204,958,732,696,1071,880,1246,938,927,1291,793,549,827,458,1469,1010,1387,972,552,1415,1749,1089,1384,912,1039,552,423,782,696,883,547,730,1068,557,675,979,631,750,1350,700,793]},"columns":[{"id":"Season","name":"Season","type":"character"},{"id":"Player","name":"Player","type":"character"},{"id":"Component","name":"Component","type":"character"},{"id":"z","name":"z","type":"numeric"},{"id":"Raw value","name":"Raw value","type":"numeric"},{"id":"After shrinkage","name":"After shrinkage","type":"numeric"},{"id":"FGA","name":"FGA","type":"numeric"}],"searchable":true,"defaultPageSize":10,"striped":true,"compact":true,"theme":{"borderColor":"#e1e0d9","stripedColor":"#f6f6f3","highlightColor":"#eef4fc","headerStyle":{"fontWeight":700,"color":"#52514e","borderBottom":"2px solid #c3c2b7"},"searchInputStyle":{"width":"100%"}},"dataKey":"b74bdce23947a6cf83e66278f0d1b0c5"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-7f22fd0c5c5055c95b13" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7f22fd0c5c5055c95b13">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Season":["2012-13","2020-21","2014-15","2025-26","2015-16","2019-20","1998-99","1999-00","1996-97","1998-99","2005-06","2007-08","2007-08","2002-03","2003-04","2004-05","2006-07","2000-01","2001-02","2008-09","2013-14","2010-11","2014-15","2015-16","2016-17","2009-10","2013-14","2014-15","2011-12","2016-17","2017-18","2018-19","2019-20","2021-22","2024-25","2025-26","2023-24","2024-25","2019-20","1996-97","1998-99","1999-00","1997-98","2001-02","2003-04","2001-02","2008-09","2009-10","2008-09","2011-12","2016-17","2018-19","2022-23","2014-15","2018-19","2021-22","2017-18","2021-22","2022-23","2023-24","2024-25","1996-97","2007-08","2006-07","2025-26","2016-17","2019-20","2017-18","2000-01","1999-00","2011-12","2022-23","2015-16","2024-25","2015-16","2021-22","2010-11","2025-26","2010-11","2014-15","1996-97","2005-06","2012-13","2019-20","2025-26","2004-05","2016-17","2006-07","2002-03","1997-98","2016-17","2015-16","2016-17","2023-24","2008-09","2020-21","2022-23","2018-19","2003-04","2010-11","2004-05","2021-22","2001-02","2004-05","2012-13","2012-13","2012-13","2013-14","1996-97","1996-97","2017-18","2024-25","2012-13","2015-16","2023-24","1997-98","2023-24","2019-20","1999-00","2017-18","2020-21","2024-25","2017-18","2014-15","2022-23","2021-22","2012-13","2024-25","2025-26","2020-21","2012-13","2022-23","2013-14","2014-15","2023-24","2004-05","2021-22","1999-00","2017-18","2020-21","2022-23","2008-09","2010-11","2023-24","2018-19","1998-99","2014-15","2019-20","1997-98","2020-21","2025-26","2022-23","2024-25","1997-98","2007-08","2025-26","2010-11","2024-25","2006-07","2025-26","2025-26","2004-05","1998-99","1999-00","2010-11","2007-08","2002-03","2017-18","2023-24","2008-09","2021-22","2020-21","2005-06","2015-16","2022-23","2009-10","2023-24","1997-98","2020-21","2010-11","2015-16","2005-06","2022-23","2007-08","2020-21","2025-26","2015-16","2017-18","1997-98","2001-02","2010-11","2023-24","2021-22","2011-12","2012-13","2003-04","2018-19","2014-15","2001-02","2009-10","2021-22","2009-10","2023-24","1997-98","1999-00","2024-25","2021-22","1998-99","2025-26","2020-21","2011-12","2016-17","2000-01","2021-22","2018-19","1998-99","2010-11","2024-25","2021-22","2024-25","2013-14","2013-14","2011-12","2020-21","2015-16","1997-98","2009-10","2018-19","2021-22","2014-15","2024-25","2023-24","2021-22","2021-22","2021-22","2015-16","2003-04","2002-03","2016-17","2011-12","2017-18","2006-07","2012-13","2007-08","2003-04","2010-11","2023-24","1996-97","2019-20","2015-16","2022-23","2021-22","2004-05","2023-24","2010-11","2012-13","2008-09","2016-17","2016-17","2020-21","2018-19","2023-24"],"Player":["JaVale McGee","Clint Capela","Kevin Séraphin","Karl-Anthony Towns","Lou Williams","Jimmy Butler","Reggie Miller","Reggie Miller","Mitch Richmond","Allen Iverson","Allen Iverson","Allen Iverson","Kobe Bryant","Tracy McGrady","Tracy McGrady","Tracy McGrady","Tracy McGrady","Dirk Nowitzki","Dirk Nowitzki","Jamal Crawford","Jamal Crawford","Jarrett Jack","Lou Williams","Lou Williams","Lou Williams","Kevin Durant","Nick Young","Nick Young","Anthony Morrow","James Harden","James Harden","James Harden","James Harden","James Harden","James Harden","James Harden","Damian Lillard","Damian Lillard","Jimmy Butler","Reggie Miller","Reggie Miller","Reggie Miller","Michael Jordan","Michael Jordan","Tracy McGrady","Dirk Nowitzki","Jamal Crawford","Dwyane Wade","Kevin Martin","Deron Williams","Lou Williams","Lou Williams","Kevin Durant","Nick Young","James Harden","James Harden","DeMar DeRozan","DeMar DeRozan","DeMar DeRozan","DeMar DeRozan","DeMar DeRozan","Latrell Sprewell","Antawn Jamison","Corey Maggette","James Harden","Clint Capela","Marcus Morris","Dwight Howard","Paul Pierce","Shawn Kemp","Jamal Crawford","James Harden","Lou Williams","Kevin Porter Jr.","Jamal Crawford","Obi Toppin","DeMarcus Cousins","Devin Booker","Jamal Crawford","Dwight Howard","Antoine Walker","Dirk Nowitzki","Enes Freedom","Terrence Ross","Norman Powell","Paul Pierce","Goran Dragić","Eddy Curry","Allan Houston","Reggie Miller","Jeff Teague","Marco Belinelli","Nikola Jokić","Jonas Valančiūnas","Dwight Howard","Trae Young","Nikola Jokić","JaVale McGee","Eddy Curry","Dwight Howard","Corey Maggette","James Harden","Morris Peterson","Dirk Nowitzki","Kevin Séraphin","Kobe Bryant","James Harden","Nick Young","Alonzo Mourning","Glen Rice","Montrezl Harrell","Jimmy Butler","Alan Anderson","James Harden","Jarrett Allen","Danny Fortson","Jerami Grant","Trae Young","Bob Sura","Domantas Sabonis","Giannis Antetokounmpo","Jimmy Butler","Kristaps Porziņģis","Dwight Howard","Aaron Gordon","Montrezl Harrell","James Harden","Jeremy Sochan","Jaren Jackson Jr.","Karl-Anthony Towns","James Harden","Jordan Clarkson","DeMar DeRozan","Andre Drummond","Karl-Anthony Towns","Othella Harrington","Karl-Anthony Towns","Derek Anderson","Jimmy Butler","Terrence Ross","Zach Collins","Kevin Martin","Andrea Bargnani","Terry Rozier","Terrence Ross","Allen Iverson","Anthony Davis","Anthony Davis","Shawn Kemp","DeMar DeRozan","DeMar DeRozan","Devin Booker","Jonas Valančiūnas","Mitch Richmond","Kevin Martin","Onyeka Okongwu","Kevin Durant","Mark Williams","Corey Maggette","Keyonte George","Nikola Jokić","Reggie Miller","Larry Hughes","Dirk Nowitzki","Dwyane Wade","Sasha Pavlović","Eddy Curry","Julius Randle","Andre Drummond","Jermaine O'Neal","James Harden","DeMar DeRozan","Allen Iverson","Stephen Curry","Jonas Valančiūnas","Jamal Crawford","Cam Thomas","Eddie Jones","Lou Williams","Devin Harris","Enes Freedom","Tracy McGrady","Kevin Durant","Dwyane Wade","Khris Middleton","Giannis Antetokounmpo","Jason Smith","Andre Drummond","Steve Smith","Michael Olowokandi","Dwight Howard","Moritz Wagner","Khris Middleton","Dwight Howard","Roy Hibbert","Jamal Crawford","Giannis Antetokounmpo","Jimmy Butler","Allan Houston","Brandon Roy","Kevin Durant","Jamal Crawford","Jalen Brunson","Alonzo Mourning","Larry Hughes","Nikola Jokić","JaVale McGee","Karl Malone","Austin Reaves","Jimmy Butler","Kobe Bryant","James Harden","Dirk Nowitzki","Nikola Jokić","Alex Len","Bison Dele","Corey Maggette","Domantas Sabonis","Joel Embiid","James Harden","Dirk Nowitzki","James Harden","Deron Williams","James Harden","Danilo Gallinari","Reggie Miller","Devin Harris","Giannis Antetokounmpo","Jonas Valančiūnas","Lou Williams","James Harden","Jimmy Butler","Terrence Ross","Jimmy Butler","LaMarcus Aldridge","Damian Lillard","Corey Maggette","Tim Duncan","Nicolas Batum","JaVale McGee","Damian Lillard","Kobe Bryant","Dwyane Wade","Jamal Crawford","Antawn Jamison","Dwight Howard","Evan Mobley","Vitaly Potapenko","Andre Drummond","Danilo Gallinari","Kevin Porter Jr.","Jalen Suggs","Eddy Curry","Domantas Sabonis","Corey Maggette","Ramon Sessions","Dwight Howard","Marquese Chriss","Danilo Gallinari","Stephen Curry","Domantas Sabonis","Jimmy Butler"],"Component":["Shot difficulty","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","3PT shooting-foul rate","3PT shooting-foul rate","Excess free-throw rate","Perimeter and-one rate","Shot difficulty","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","3PT shooting-foul rate","Perimeter and-one rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","Shot-making above expected","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Excess free-throw rate","Excess free-throw rate","3PT shooting-foul rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","Shot difficulty","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Perimeter and-one rate","Shot difficulty","Shot difficulty","Shot difficulty","3PT shooting-foul rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","Perimeter and-one rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Perimeter and-one rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Perimeter and-one rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Shot difficulty","Free-throw share of points","Perimeter and-one rate","Shot-making above expected","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Free-throw share of points","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Shot difficulty","3PT shooting-foul rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","Shot difficulty","Shot difficulty","Shot difficulty","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","Clean footwork (travels + offensive fouls, reversed)","Perimeter and-one rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Excess free-throw rate","Perimeter and-one rate","Shot-making above expected","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Perimeter and-one rate","Shot-making above expected","Excess free-throw rate","3PT shooting-foul rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Perimeter and-one rate","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","Excess free-throw rate","Excess free-throw rate","3PT shooting-foul rate","Free-throw share of points","Perimeter and-one rate","Perimeter and-one rate","Excess free-throw rate","Perimeter and-one rate","Perimeter and-one rate","Shot difficulty","3PT shooting-foul rate","Perimeter and-one rate","Perimeter and-one rate","3PT shooting-foul rate","Shot-making above expected","Shot difficulty","Shot difficulty","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Excess free-throw rate","3PT shooting-foul rate","Shot-making above expected","Clean footwork (travels + offensive fouls, reversed)","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points","Free-throw share of points","Shot difficulty","Shot difficulty","Excess free-throw rate","3PT shooting-foul rate","Clean footwork (travels + offensive fouls, reversed)","Free-throw share of points"],"z":[-4,-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3.94,3.93,3.92,3.92,-3.9,3.88,3.86,3.85,3.84,3.82,3.8,3.8,3.79,3.79,-3.78,3.78,3.78,3.76,3.74,-3.74,3.74,3.73,3.73,3.73,3.73,3.71,3.69,3.69,3.67,3.67,3.67,3.62,3.61,3.61,3.61,3.6,-3.6,3.6,3.6,3.59,3.59,3.58,3.58,3.57,3.57,3.57,3.56,3.54,3.54,-3.52,3.52,3.51,3.51,-3.5,3.5,3.49,3.49,-3.48,3.48,3.47,3.46,3.46,-3.45,-3.45,-3.45,3.45,-3.44,3.44,3.43,3.43,3.43,3.43,-3.42,3.42,3.41,3.41,3.41,3.41,3.4,3.39,3.39,3.39,3.38,3.37,3.37,3.37,3.36,3.35,3.35,3.35,3.35,3.34,3.34,3.34,3.33,3.32,-3.31,3.31,3.3,3.29,3.29,3.29,3.29,3.29,-3.28,3.28,3.28,-3.27,3.27,3.27,3.27,3.27,3.26,3.26,3.26,3.25,-3.24,3.24,3.24,3.23,3.23,3.23,3.23,3.23,-3.22,3.21,-3.21,3.21,3.2,3.2,3.2,3.2,3.19,3.18,3.17,3.16,3.16,3.16,3.16,3.16,3.16,3.16,3.15,3.15,3.14,3.14,3.14,3.14,3.14,3.14,3.13,3.13,3.12,-3.12,3.12,3.12,3.12,3.12,3.12,3.11,3.11,3.11,3.11,3.11,3.11,3.11,-3.1,3.1,3.1,3.1,3.1,3.1,3.1,3.1,3.1,3.09,3.09,3.09,-3.08,3.08,3.08,3.08,3.06,3.05,-3.05,-3.05,3.05,3.05,3.05,3.05,-3.04,3.04,3.04,3.03,3.03,-3.02,-3.02,3.02,3.02,3.01,3.01],"Raw value":[0.3719,0.3479,7.5461,4.7788,0.4105,0.3039,3.3088,3.1707,3.1056,4.0201,4.8246,4.2105,3.8005,4.3384,4.023,4.7297,5.5138,6.4039,2.5424,7.196,6.6381,11.2069,9.5918,12.4654,11.2016,6.9519,7.6087,8.4388,5.0676,14.2202,8.9147,8.6207,7.7951,8.4211,8.2749,9.2532,4.5312,6.5336,0.3068,1.6881,2.214,2.1845,1.8822,1.6754,1.4238,1.937,2.3529,2.0779,2.627,2.0344,2.8862,2.3217,5.2065,2.8947,1.9856,3.006,2.4453,3.0752,4.5679,3.1209,2.9246,3.125,3.6011,0.2911,2.9851,0.3787,2.6801,6.5546,1.6429,7.9796,4.943,5.5427,0.3152,6.9519,2.0927,0.3551,6.6304,2.8818,6.4426,6.5525,-0.186,1.6585,7.1498,7.5758,6.422,1.7497,10.2484,7.3706,1.6922,2.122,10.2941,2.2059,0.2459,5.5423,0.2862,5.9666,0.2713,0.3639,6.4103,0.2741,0.2379,0.2366,2.5862,1.5414,6.3297,3.8369,0.2812,2.4233,7.1345,1.5399,0.4006,0.2755,4.1096,6.6187,0.3672,6.5419,4.5614,7.1429,0.4302,6.3576,4.9307,0.2778,2.3636,0.4043,0.3658,0.3649,3.6364,0.3646,4.3701,5.0348,0.2051,5.0526,2.1482,0.4135,5.1773,6.998,5.1688,2.8249,7.1429,6.1151,6.7707,0.2607,1.9886,4.0573,5.8419,1.5974,2.2099,2.5751,6.0204,0.2069,2.6814,3.2051,4.5144,2.0649,1.9573,4.1826,5.7208,0.3662,0.2986,2.7778,0.2099,3.2895,6.1224,2.2654,2.069,-0.2775,6.218,5.9185,0.3722,6.1345,0.2682,0.2599,1.5416,0.2336,6.3341,4.0189,3.9702,0.4316,6.4865,2.4457,5.5117,3.75,5.4622,2,1.8813,0.3598,0.5811,0.4127,2.1818,5.9455,5.9266,5.2863,4.8889,5.4069,5.7216,2.7027,5.7824,0.2074,1.9943,4.4053,5.1282,1.6796,1.9116,6.0004,1.6591,0.2351,5.4817,66.6667,5.7971,0.2554,1.4773,0.1882,1.4851,0.2132,0.3815,6.3982,6.2878,4.0911,0.2597,1.8088,0.2133,0.1841,4.0346,5.5072,0.2817,1.6,1.9824,0.3838,4.9833,0.197,0.1773,0.204,5.2045,0.2609,2.7778,1.6779,0.1981,1.9737,2.1739,0.4188,5.7315,1.5776,1.8519,2.8,0.2123,0.4307,0.3765,7.155,5.5637,0.245,4.7382,-0.2448,6.0126,4.7288,0.2919,0.2626,0.4287,0.4072,0.2033,4.89,5.8702,0.2512],"After shrinkage":[0.3874,0.3561,5.9229,4.1991,0.3041,0.203,2.3366,2.3514,2.3757,2.5317,3.2335,2.8538,2.8728,3.2788,3.1942,3.7915,4.3886,5.435,1.5792,5.9071,5.8923,7.3731,8.6697,10.9872,10.6901,5.6805,6.5248,6.9858,4.1137,13.8239,8.2686,8.2042,7.4058,7.1914,7.5659,8.3773,3.8296,5.869,0.2989,1.2874,1.2093,1.5208,1.3787,1.1653,0.8878,1.2623,1.8256,1.4556,1.8863,1.3448,2.1087,1.5132,4.3685,1.659,1.5348,2.1762,1.8239,2.5066,4.0433,2.4265,2.2605,2.313,2.6467,0.2021,2.416,0.3906,1.9881,6.0642,1.1231,7.5004,3.9347,4.717,0.3057,5.2607,1.3781,0.3636,6.0462,2.3532,5.5844,5.3344,-0.1673,1.1953,5.519,6.9684,5.6738,1.179,9.5731,6.7956,1.3629,1.3594,9.5024,1.3548,0.1774,4.8433,0.2168,5.1099,0.2251,0.3718,5.7467,0.2078,0.1742,0.183,1.393,1.1501,5.3861,3.0928,0.2769,1.7782,6.5731,1.1612,0.4111,0.1674,3.0631,6.2486,0.3729,5.7518,3.2964,6.6456,0.4339,5.6771,4.5019,0.2684,1.6326,0.4174,0.3711,0.3732,3.0298,0.3722,3.6634,4.4711,0.1598,4.3761,1.7359,0.418,4.6918,5.7251,4.795,1.6627,5.7215,4.9009,5.8574,0.2037,1.3943,3.2251,5.4003,1.0003,1.4885,1.8117,5.6055,0.1501,2.1693,2.784,3.773,1.2945,1.2287,3.5985,5.1046,0.3759,0.2922,2.1448,0.1592,2.5136,1.9635,1.6236,1.3702,-0.1577,5.2949,5.4776,0.3789,5.4067,0.2633,0.2538,1.1149,0.189,5.7248,3.4522,3.1401,0.4349,4.7472,1.3598,4.8278,2.6395,4.1933,1.2074,1.3923,0.3667,0.5792,0.4182,1.2694,5.3519,5.5122,4.5085,4.2401,4.7322,5.0552,2.2231,5.4635,0.1579,1.2985,3.382,4.204,1.2193,1.5684,5.4141,1.1389,0.2025,4.5664,1.905,5.0047,0.2486,1.1147,0.1548,1.0073,0.1788,0.3864,5.3357,5.4451,3.6279,0.2566,1.422,0.1661,0.1436,3.4143,4.6141,0.2739,1.1279,1.2092,0.387,4.5324,0.1547,0.1467,0.1328,4.1517,0.2557,1.6612,1.2416,0.1506,1.226,1.7212,0.4298,5.3283,1.2676,0.9483,2.2658,0.1645,0.4358,0.3844,6.0378,4.9306,0.1878,4.0286,-0.1625,5.3703,4.3707,0.2826,0.2548,0.4334,0.4134,0.1491,4.5245,5.3125,0.2448],"FGA":[527,695,449,1032,691,752,664,1038,1576,1052,1818,1554,1682,1808,1560,1651,1477,1241,1257,1014,1006,633,927,691,994,1666,887,473,657,1527,1446,1908,1513,992,1291,1123,1271,988,752,1240,664,1038,1888,1323,1560,1257,1014,1503,810,958,994,1138,862,473,1908,992,1407,1530,1301,1352,1301,1434,1414,803,1123,563,805,909,1510,1159,728,842,691,651,930,472,1003,1197,864,422,1355,1556,379,841,894,1221,1124,1016,1462,1071,904,629,853,719,979,1111,1019,640,839,1039,981,992,764,1440,716,1591,1333,887,885,1512,546,594,615,1615,819,611,850,1245,813,661,1099,594,885,422,756,551,1333,467,719,875,1333,1028,1405,959,950,424,1213,855,918,615,547,810,1169,995,1019,1052,1196,1092,1162,919,1005,1065,627,1218,914,860,1538,447,803,881,1129,716,408,1117,1381,403,573,901,477,769,992,919,1818,1581,816,1093,1187,1002,646,805,718,1008,862,931,1074,598,502,876,1095,886,1039,551,1020,720,858,1301,1246,906,1300,1034,1114,1093,1645,733,1140,1338,458,797,762,734,1332,1527,1241,1308,647,431,557,893,1333,1291,1273,1204,958,732,696,1071,880,1246,938,927,1291,793,549,827,458,1469,1010,1387,972,552,1415,1749,1089,1384,912,1039,552,423,782,696,883,547,730,1068,557,675,979,631,750,1350,700,793]},"columns":[{"id":"Season","name":"Season","type":"character"},{"id":"Player","name":"Player","type":"character"},{"id":"Component","name":"Component","type":"character"},{"id":"z","name":"z","type":"numeric"},{"id":"Raw value","name":"Raw value","type":"numeric"},{"id":"After shrinkage","name":"After shrinkage","type":"numeric"},{"id":"FGA","name":"FGA","type":"numeric"}],"searchable":true,"defaultPageSize":10,"striped":true,"compact":true,"theme":{"borderColor":"#e1e0d9","stripedColor":"#f6f6f3","highlightColor":"#eef4fc","headerStyle":{"fontWeight":700,"color":"#52514e","borderBottom":"2px solid #c3c2b7"},"searchInputStyle":{"width":"100%"}},"dataKey":"b74bdce23947a6cf83e66278f0d1b0c5"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><strong>Checked, and explained:</strong></p>
@@ -4201,23 +4205,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">te_tbl</span>(te[<span class="fu">order</span>(<span class="sc">-</span>effect)][<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="gzcsjcmvze" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gzcsjcmvze table {
+<div id="cmqvjtcimh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cmqvjtcimh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gzcsjcmvze thead, #gzcsjcmvze tbody, #gzcsjcmvze tfoot, #gzcsjcmvze tr, #gzcsjcmvze td, #gzcsjcmvze th {
+#cmqvjtcimh thead, #cmqvjtcimh tbody, #cmqvjtcimh tfoot, #cmqvjtcimh tr, #cmqvjtcimh td, #cmqvjtcimh th {
   border-style: none;
 }
 
-#gzcsjcmvze p {
+#cmqvjtcimh p {
   margin: 0;
   padding: 0;
 }
 
-#gzcsjcmvze .gt_table {
+#cmqvjtcimh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -4243,12 +4247,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_caption {
+#cmqvjtcimh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gzcsjcmvze .gt_title {
+#cmqvjtcimh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4260,7 +4264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#gzcsjcmvze .gt_subtitle {
+#cmqvjtcimh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4272,7 +4276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#gzcsjcmvze .gt_heading {
+#cmqvjtcimh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -4284,13 +4288,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_bottom_border {
+#cmqvjtcimh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_col_headings {
+#cmqvjtcimh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4305,7 +4309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_col_heading {
+#cmqvjtcimh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4325,7 +4329,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#gzcsjcmvze .gt_column_spanner_outer {
+#cmqvjtcimh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4337,15 +4341,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#gzcsjcmvze .gt_column_spanner_outer:first-child {
+#cmqvjtcimh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gzcsjcmvze .gt_column_spanner_outer:last-child {
+#cmqvjtcimh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gzcsjcmvze .gt_column_spanner {
+#cmqvjtcimh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4357,11 +4361,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#gzcsjcmvze .gt_spanner_row {
+#cmqvjtcimh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gzcsjcmvze .gt_group_heading {
+#cmqvjtcimh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4387,7 +4391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#gzcsjcmvze .gt_empty_group_heading {
+#cmqvjtcimh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4402,15 +4406,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#gzcsjcmvze .gt_from_md > :first-child {
+#cmqvjtcimh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gzcsjcmvze .gt_from_md > :last-child {
+#cmqvjtcimh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gzcsjcmvze .gt_row {
+#cmqvjtcimh .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -4429,7 +4433,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#gzcsjcmvze .gt_stub {
+#cmqvjtcimh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4442,7 +4446,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gzcsjcmvze .gt_stub_row_group {
+#cmqvjtcimh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4456,15 +4460,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#gzcsjcmvze .gt_row_group_first td {
+#cmqvjtcimh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gzcsjcmvze .gt_row_group_first th {
+#cmqvjtcimh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gzcsjcmvze .gt_summary_row {
+#cmqvjtcimh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4474,16 +4478,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gzcsjcmvze .gt_first_summary_row {
+#cmqvjtcimh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_first_summary_row.thick {
+#cmqvjtcimh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gzcsjcmvze .gt_last_summary_row {
+#cmqvjtcimh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4493,7 +4497,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_grand_summary_row {
+#cmqvjtcimh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4503,7 +4507,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gzcsjcmvze .gt_first_grand_summary_row {
+#cmqvjtcimh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4513,7 +4517,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_last_grand_summary_row_top {
+#cmqvjtcimh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4523,11 +4527,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_striped {
+#cmqvjtcimh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gzcsjcmvze .gt_table_body {
+#cmqvjtcimh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4536,7 +4540,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_footnotes {
+#cmqvjtcimh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4550,7 +4554,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_footnote {
+#cmqvjtcimh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4559,7 +4563,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gzcsjcmvze .gt_sourcenotes {
+#cmqvjtcimh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4573,7 +4577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#gzcsjcmvze .gt_sourcenote {
+#cmqvjtcimh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4581,72 +4585,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#gzcsjcmvze .gt_left {
+#cmqvjtcimh .gt_left {
   text-align: left;
 }
 
-#gzcsjcmvze .gt_center {
+#cmqvjtcimh .gt_center {
   text-align: center;
 }
 
-#gzcsjcmvze .gt_right {
+#cmqvjtcimh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gzcsjcmvze .gt_font_normal {
+#cmqvjtcimh .gt_font_normal {
   font-weight: normal;
 }
 
-#gzcsjcmvze .gt_font_bold {
+#cmqvjtcimh .gt_font_bold {
   font-weight: bold;
 }
 
-#gzcsjcmvze .gt_font_italic {
+#cmqvjtcimh .gt_font_italic {
   font-style: italic;
 }
 
-#gzcsjcmvze .gt_super {
+#cmqvjtcimh .gt_super {
   font-size: 65%;
 }
 
-#gzcsjcmvze .gt_footnote_marks {
+#cmqvjtcimh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gzcsjcmvze .gt_asterisk {
+#cmqvjtcimh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gzcsjcmvze .gt_indent_1 {
+#cmqvjtcimh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gzcsjcmvze .gt_indent_2 {
+#cmqvjtcimh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gzcsjcmvze .gt_indent_3 {
+#cmqvjtcimh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gzcsjcmvze .gt_indent_4 {
+#cmqvjtcimh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gzcsjcmvze .gt_indent_5 {
+#cmqvjtcimh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#gzcsjcmvze .katex-display {
+#cmqvjtcimh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#gzcsjcmvze div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cmqvjtcimh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -4704,23 +4708,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">te_tbl</span>(te[<span class="fu">order</span>(effect)][<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="vmhsdrfwkv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vmhsdrfwkv table {
+<div id="vgrnsmoqpu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vgrnsmoqpu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vmhsdrfwkv thead, #vmhsdrfwkv tbody, #vmhsdrfwkv tfoot, #vmhsdrfwkv tr, #vmhsdrfwkv td, #vmhsdrfwkv th {
+#vgrnsmoqpu thead, #vgrnsmoqpu tbody, #vgrnsmoqpu tfoot, #vgrnsmoqpu tr, #vgrnsmoqpu td, #vgrnsmoqpu th {
   border-style: none;
 }
 
-#vmhsdrfwkv p {
+#vgrnsmoqpu p {
   margin: 0;
   padding: 0;
 }
 
-#vmhsdrfwkv .gt_table {
+#vgrnsmoqpu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -4746,12 +4750,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_caption {
+#vgrnsmoqpu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vmhsdrfwkv .gt_title {
+#vgrnsmoqpu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4763,7 +4767,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#vmhsdrfwkv .gt_subtitle {
+#vgrnsmoqpu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4775,7 +4779,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#vmhsdrfwkv .gt_heading {
+#vgrnsmoqpu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -4787,13 +4791,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_bottom_border {
+#vgrnsmoqpu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_col_headings {
+#vgrnsmoqpu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4808,7 +4812,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_col_heading {
+#vgrnsmoqpu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4828,7 +4832,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#vmhsdrfwkv .gt_column_spanner_outer {
+#vgrnsmoqpu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4840,15 +4844,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#vmhsdrfwkv .gt_column_spanner_outer:first-child {
+#vgrnsmoqpu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vmhsdrfwkv .gt_column_spanner_outer:last-child {
+#vgrnsmoqpu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vmhsdrfwkv .gt_column_spanner {
+#vgrnsmoqpu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4860,11 +4864,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#vmhsdrfwkv .gt_spanner_row {
+#vgrnsmoqpu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vmhsdrfwkv .gt_group_heading {
+#vgrnsmoqpu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4890,7 +4894,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#vmhsdrfwkv .gt_empty_group_heading {
+#vgrnsmoqpu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4905,15 +4909,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#vmhsdrfwkv .gt_from_md > :first-child {
+#vgrnsmoqpu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vmhsdrfwkv .gt_from_md > :last-child {
+#vgrnsmoqpu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vmhsdrfwkv .gt_row {
+#vgrnsmoqpu .gt_row {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -4932,7 +4936,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#vmhsdrfwkv .gt_stub {
+#vgrnsmoqpu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4945,7 +4949,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#vmhsdrfwkv .gt_stub_row_group {
+#vgrnsmoqpu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4959,15 +4963,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#vmhsdrfwkv .gt_row_group_first td {
+#vgrnsmoqpu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vmhsdrfwkv .gt_row_group_first th {
+#vgrnsmoqpu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vmhsdrfwkv .gt_summary_row {
+#vgrnsmoqpu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4977,16 +4981,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#vmhsdrfwkv .gt_first_summary_row {
+#vgrnsmoqpu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_first_summary_row.thick {
+#vgrnsmoqpu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vmhsdrfwkv .gt_last_summary_row {
+#vgrnsmoqpu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4996,7 +5000,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_grand_summary_row {
+#vgrnsmoqpu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -5006,7 +5010,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#vmhsdrfwkv .gt_first_grand_summary_row {
+#vgrnsmoqpu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5016,7 +5020,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_last_grand_summary_row_top {
+#vgrnsmoqpu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5026,11 +5030,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_striped {
+#vgrnsmoqpu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vmhsdrfwkv .gt_table_body {
+#vgrnsmoqpu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5039,7 +5043,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_footnotes {
+#vgrnsmoqpu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5053,7 +5057,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_footnote {
+#vgrnsmoqpu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -5062,7 +5066,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#vmhsdrfwkv .gt_sourcenotes {
+#vgrnsmoqpu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5076,7 +5080,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#vmhsdrfwkv .gt_sourcenote {
+#vgrnsmoqpu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -5084,72 +5088,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#vmhsdrfwkv .gt_left {
+#vgrnsmoqpu .gt_left {
   text-align: left;
 }
 
-#vmhsdrfwkv .gt_center {
+#vgrnsmoqpu .gt_center {
   text-align: center;
 }
 
-#vmhsdrfwkv .gt_right {
+#vgrnsmoqpu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vmhsdrfwkv .gt_font_normal {
+#vgrnsmoqpu .gt_font_normal {
   font-weight: normal;
 }
 
-#vmhsdrfwkv .gt_font_bold {
+#vgrnsmoqpu .gt_font_bold {
   font-weight: bold;
 }
 
-#vmhsdrfwkv .gt_font_italic {
+#vgrnsmoqpu .gt_font_italic {
   font-style: italic;
 }
 
-#vmhsdrfwkv .gt_super {
+#vgrnsmoqpu .gt_super {
   font-size: 65%;
 }
 
-#vmhsdrfwkv .gt_footnote_marks {
+#vgrnsmoqpu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vmhsdrfwkv .gt_asterisk {
+#vgrnsmoqpu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vmhsdrfwkv .gt_indent_1 {
+#vgrnsmoqpu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vmhsdrfwkv .gt_indent_2 {
+#vgrnsmoqpu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vmhsdrfwkv .gt_indent_3 {
+#vgrnsmoqpu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vmhsdrfwkv .gt_indent_4 {
+#vgrnsmoqpu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vmhsdrfwkv .gt_indent_5 {
+#vgrnsmoqpu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#vmhsdrfwkv .katex-display {
+#vgrnsmoqpu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#vmhsdrfwkv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vgrnsmoqpu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
