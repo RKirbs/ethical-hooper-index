@@ -24,11 +24,11 @@ Treatment from 2016-18 (no RTM),3PT shooting fouls per 100 3PA,-0.167,0.1204,0.1
 Treatment from 2016-18 (no RTM),FT share of points,-0.001947,0.002501,0.4377,-0.006849,0.002956,781,152
 Treatment from 2016-18 (no RTM),Points per 75 possessions,-0.8019,0.2767,0.004389,-1.344,-0.2595,781,152
 Treatment from 2016-18 (no RTM),True shooting %,-0.005536,0.002114,0.009858,-0.00968,-0.001392,781,152
-Treatment = pre EHI Whistle Score,Excess FT rate,-0.004505,0.004325,0.2987,-0.01298,0.003973,1305,237
-Treatment = pre EHI Whistle Score,3PT shooting fouls per 100 3PA,-0.3511,0.1019,0.0006794,-0.5508,-0.1514,1305,237
-Treatment = pre EHI Whistle Score,FT share of points,-0.002623,0.001694,0.123,-0.005944,0.0006981,1305,237
-Treatment = pre EHI Whistle Score,Points per 75 possessions,-0.3329,0.3132,0.289,-0.9468,0.281,1305,237
-Treatment = pre EHI Whistle Score,True shooting %,-0.004457,0.001818,0.01497,-0.00802,-0.0008946,1305,237
+Treatment = pre EHI Whistle Score,Excess FT rate,-0.004893,0.004235,0.2492,-0.01319,0.003408,1305,237
+Treatment = pre EHI Whistle Score,3PT shooting fouls per 100 3PA,-0.3288,0.09793,0.0009261,-0.5207,-0.1368,1305,237
+Treatment = pre EHI Whistle Score,FT share of points,-0.002614,0.001687,0.1227,-0.00592,0.0006924,1305,237
+Treatment = pre EHI Whistle Score,Points per 75 possessions,-0.2879,0.3113,0.356,-0.8981,0.3223,1305,237
+Treatment = pre EHI Whistle Score,True shooting %,-0.003777,0.001824,0.03948,-0.007352,-0.0002031,1305,237
 Placebo: fake rule in 2019-20,Excess FT rate,0.0003827,0.002703,0.8876,-0.004916,0.005681,843,209
 Placebo: fake rule in 2019-20,3PT shooting fouls per 100 3PA,-0.3818,0.1086,0.0005392,-0.5946,-0.169,841,209
 Placebo: fake rule in 2019-20,FT share of points,-0.0008551,0.002,0.6695,-0.004776,0.003066,843,209

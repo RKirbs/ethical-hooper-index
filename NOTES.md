@@ -131,3 +131,11 @@ Spec deviations / refinements (each found by checking a suspicious result):
   - Excess FT rate: no differential effect in any spec.
   - Bug fixed: DiD originally read the first coefficient row, which became the age term when a control was added.
 - Note for narrative: event-study pre-trends are flat partly by construction (treatment measured on 2018-21); the placebo + earlier-window specs are the real identification checks. Retitle `event_study_threefoul` chart so it doesn't overclaim.
+
+---
+
+## Phase 5 checkpoint decisions (Rob, 2026-11-11)
+1. **Tracking (option a):** Rob authorised browser-header requests. Two attempts were permitted but **still timed out** (headers incl. x-nba-stats-origin/token, HTTP/1.1). Akamai is likely fingerprinting at the TLS/connection level. Did not escalate to TLS-impersonation tooling. Fallback: Rob saves the API pages from his own browser (`scripts/tracking_urls.md` + loader). Tier 2 stays optional.
+2. **Formula:** Rob's definition — an ethical hooper "doesn't have to be the most skillful", the core is no foul-baiting / low FT reliance relative to volume. → **EHI = 0.4·Skill − 0.6·Whistle** (each axis standardised within season first), FT share weight raised 0.10 → 0.20 (whistle: excess FTr .40, 3PT fouls .25, FT share .20, perimeter and-ones .15). Antoine Walker (#21) and Jason Williams (#20) are legitimate low-whistle "Grinders" in the top 25.
+   - Results after reweight: sensitivity Spearman 0.887–0.993; stability r = 0.743; DiD Whistle-Score treatment on TS% −0.38 pts/SD (p = .039), placebo null.
+3. Continue to Phases 6-7.

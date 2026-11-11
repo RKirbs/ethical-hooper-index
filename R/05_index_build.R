@@ -16,7 +16,11 @@ suppressPackageStartupMessages(library(arrow))
 # Sign: +1 means "higher raw value = more of this axis".
 SKILL_W <- c(smae = 0.45, selfcreate = 0.25, difficulty = 0.15, footwork = 0.15)
 SKILL_SIGN <- c(smae = 1, selfcreate = 1, difficulty = 1, footwork = -1)
-WHISTLE_W <- c(excess_ftr = 0.45, threefoul = 0.30, and1jump = 0.15, ftshare = 0.10)
+WHISTLE_W <- c(excess_ftr = 0.40, threefoul = 0.25, ftshare = 0.20, and1jump = 0.15)
+# Axis weights in the final index. Rob's definition: an ethical hooper "doesn't have
+# to be the most skillful", the core is NOT living at the line, so whistle-avoidance
+# outweighs skill (decision logged in NOTES.md, Phase 6).
+AXIS_W <- c(skill = 0.4, whistle = 0.6)
 WHISTLE_SIGN <- c(excess_ftr = 1, threefoul = 1, and1jump = 1, ftshare = 1)
 COMPONENTS <- c(names(SKILL_W), names(WHISTLE_W))
 
@@ -34,10 +38,13 @@ compute_ehi <- function(dt, sw = SKILL_W, ww = WHISTLE_W) {
   zs <- as.matrix(dt[, paste0("z_", names(sw)), with = FALSE]) %*% (SKILL_SIGN[names(sw)] * sw) / sum(sw)
   zw <- as.matrix(dt[, paste0("z_", names(ww)), with = FALSE]) %*% (WHISTLE_SIGN[names(ww)] * ww) / sum(ww)
   tmp <- data.table(group = dt$group, q = dt$qualified, s = as.numeric(zs), w = as.numeric(zw))
-  tmp[, raw := s - w]
-  st <- tmp[q == TRUE, .(m = mean(raw), sd = sd(raw), ms = mean(s), ss = sd(s), mw = mean(w), sw = sd(w)), group]
-  tmp[st, on = "group", `:=`(ehi = pmin(pmax(50 + 15 * (raw - i.m) / i.sd, 0), 100),
-                             skill = (s - i.ms) / i.ss, whistle = (w - i.mw) / i.sw)]
+  # standardise each axis within season first, so the 0.4 / 0.6 axis weights are
+  # real weights rather than artefacts of how correlated each axis's components are
+  st <- tmp[q == TRUE, .(ms = mean(s), ss = sd(s), mw = mean(w), sw = sd(w)), group]
+  tmp[st, on = "group", `:=`(skill = (s - i.ms) / i.ss, whistle = (w - i.mw) / i.sw)]
+  tmp[, raw := AXIS_W[["skill"]] * skill - AXIS_W[["whistle"]] * whistle]
+  st2 <- tmp[q == TRUE, .(m = mean(raw), sd = sd(raw)), group]
+  tmp[st2, on = "group", ehi := pmin(pmax(50 + 15 * (raw - i.m) / i.sd, 0), 100)]
   tmp[, .(ehi, skill, whistle)]
 }
 
