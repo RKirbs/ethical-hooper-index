@@ -1,0 +1,109 @@
+---
+title: "Validation"
+subtitle: "Is the data right, is the index stable, and does it measure what it claims to?"
+---
+
+```{r setup}
+#| include: false
+source("_common.R")
+xb  <- fin("crosscheck_bbref_summary.csv")
+xbd <- fin("crosscheck_bbref_detail.csv")
+xp  <- fin("crosscheck_pbpstats.csv")
+fv  <- fin("face_validity.csv")
+w_ts <- did[spec == "Treatment = pre EHI Whistle Score" & outcome == "True shooting %"]
+small_gt <- function(d) gt(d) |> tab_options(table.width = gt::pct(100), table.font.size = px(14), data_row.padding = px(4))
+```
+
+## 1. Cross-source checks
+
+Every component is built from raw play-by-play by this project's own code. To make sure that code reads the events correctly, the counts were compared with two independent sources.
+
+**Basketball Reference** parses the same games with its own code. On `r xb$n[1]` randomly sampled player-seasons (1,000+ minutes, fixed random seed):
+
+```{r}
+xb[, .(Metric = metric, `Player-seasons` = n, Correlation = r, `Mean |difference|` = mean_abs_diff,
+       `Within tolerance` = paste0(pct_within_tol, "% (±", tol, ")"))] |> small_gt()
+```
+
+```{r}
+reactable(xbd, defaultPageSize = 8, compact = TRUE, striped = TRUE, theme = rt_theme,
+          columns = list(player = colDef(name = "Player", minWidth = 140)))
+```
+
+**pbpstats.com** covers 2000-01 onward (earlier seasons in its database are missing games). For every player-season with 200+ FGA:
+
+```{r}
+xp[era == "2000-01 to 2025-26", .(Metric = metric, `Player-seasons` = n, Correlation = r,
+                                  `Within tolerance` = paste0(pct_within_tol, "% (±", tol, ")"))] |> small_gt()
+```
+
+Against **official box-score totals**, field-goal attempts, free-throw attempts and turnovers match within ±2 for every qualifying-minutes player-season.
+
+## 2. Tracking-data validation (Tier 2)
+
+The design calls for checking the play-by-play proxies against NBA player-tracking data (2013-14+): for example, whether **excess free-throw rate** tracks **free throws that did *not* come from drives**, and whether **shot-making above expected** tracks efficiency on tightly-contested and pull-up shots. Tracking data was never an input to the index; it's corroborating evidence only.
+
+```{r}
+#| results: asis
+tv_file <- file.path(root, "data", "final", "tracking_validation.csv")
+if (file.exists(tv_file)) {
+  cat("**Results from tracking pages saved manually from nba.com:**\n\n")
+  print(htmltools::tagList(small_gt(fread(file = tv_file)[, .(Check = check, r, `95% CI` = sprintf("[%.2f, %.2f]", ci_lo, ci_hi), `Player-seasons` = n)])))
+} else {
+  cat("*The NBA's stats server blocks automated requests, so this layer is pending (see `scripts/load_tracking_manual.R`). Sections 3–5 provide independent validation in the meantime.*")
+}
+```
+
+## 3. Year-to-year stability
+
+If the index measures a real playing style, a player's rating this season should predict next season's. Pure noise would correlate near zero.
+
+```{r}
+stab[, .(Measure = fcase(measure == "ehi", "EHI", measure == "skill", "Skill Score", measure == "whistle", "Whistle Score",
+                         default = COMP_LABELS[measure]),
+         `r (season t → t+1)` = r, `95% CI` = sprintf("[%.3f, %.3f]", ci_lo, ci_hi), Pairs = pairs)] |> small_gt()
+```
+
+EHI is highly persistent (*r* = `r f2(stab[measure == "ehi", r])`). Self-creation and shot difficulty, essentially a player's role and shot diet, are the stickiest components. The perimeter and-one rate is the noisiest, which is why it carries the smallest weight.
+
+## 4. Predictive validation: the 2021-22 rule change
+
+The strongest test of a "whistle" measure is whether it predicts what happens when the league takes the whistle away. Players with higher pre-2021 Whistle Scores lost `r f2(-100 * w_ts$estimate)` points of true shooting per standard deviation after the crackdown (`r pval(w_ts$p)`), while a placebo rule date shows no effect. Full analysis on the [Rule Change](rule-change.qmd) page.
+
+## 5. Face validity
+
+Top and bottom 15 in four sample seasons. These were scanned for anything that looked like a data bug rather than a real playing style. Each bug found during development (and fixed) is logged in the project's `NOTES.md`.
+
+```{r}
+fv_wide <- function(s) {
+  d <- fv[season == s]
+  data.table(`#` = 1:15, `Most ethical` = d[end == "top"][order(rank), sprintf("%s (%.0f)", player, ehi)],
+             `Most whistle-reliant` = d[end == "bottom"][order(rank), sprintf("%s (%.0f)", player, ehi)])
+}
+```
+
+::: {.panel-tabset}
+### 2000-01
+```{r}
+small_gt(fv_wide("2000-01"))
+```
+### 2010-11
+```{r}
+small_gt(fv_wide("2010-11"))
+```
+### 2018-19
+```{r}
+small_gt(fv_wide("2018-19"))
+```
+### 2025-26
+```{r}
+small_gt(fv_wide("2025-26"))
+```
+:::
+
+**Bugs caught by these checks (now fixed):**
+
+- **Intentional fouls** inflated the free-throw rates of elite free-throw shooters (fouled on purpose late in games) and poor ones (hack-a-big). Now only shooting-foul free throws count.
+- **"And-ones on jumpers" as a share** flagged pure spot-up shooters as foul-baiters. It's now a rate per perimeter attempt.
+- **Shrinkage priors** were briefly distorted by tiny samples, producing |z| > 8 outliers. They're now fit on reliable samples only.
+- **Shot-chart joins, the 2012-13 missing games, and heave logging changes** were all caught during the data audit, before any metric was built.

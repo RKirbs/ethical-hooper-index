@@ -1,0 +1,99 @@
+---
+title: "Eras"
+subtitle: "From hand-checks to the crackdown: the cleanest and the most whistle-reliant scorers of each era"
+---
+
+```{r setup}
+#| include: false
+source("_common.R")
+tb <- fin("era_top_bottom.csv")
+er <- fin("era_ratings.csv")
+tr <- copy(trends); setnames(tr, c("season", "ftr", "threefoul", "unast", "footwork", "yr"))
+at <- function(s, col) tr[season == s][[col]]
+peak_tf <- tr[which.max(threefoul)]
+eras <- c("Hand-Check Era", "Freedom-of-Movement Era", "Pace-and-Space Era", "Post-Crackdown Era")
+era_years <- c("1996-97 to 2003-04", "2004-05 to 2012-13", "2013-14 to 2020-21", "2021-22 to 2025-26")
+```
+
+Each era is judged on its own terms: every component is standardized within its season, so a hand-check-era post scorer is compared with hand-check-era peers. A player's era rating is the minutes-weighted average over at least two qualifying seasons in that era.
+
+| Era | Seasons | What changed |
+|---|---|---|
+| **Hand-Check Era** | 1996-97 to 2003-04 | Perimeter defenders could hand-check; slow, post-heavy offense |
+| **Freedom-of-Movement Era** | 2004-05 to 2012-13 | Hand-checking banned in 2004-05; driving lanes open |
+| **Pace-and-Space Era** | 2013-14 to 2020-21 | Three-point boom and peak foul-drawing craft |
+| **Post-Crackdown Era** | 2021-22 to 2025-26 | Officials told to stop rewarding "non-basketball moves" |
+
+## How the whistle changed
+
+![](`r fig("league_trends")`){fig-alt="Four small-multiple line charts of league-wide rates by season from 1996-97 to 2025-26, with dashed lines at 2004-05 and 2021-22."}
+
+- **Three-point foul-drawing exploded and then got policed.** Three-point shooting fouls rose from `r f2(at("1996-97", "threefoul"))` per 100 attempts in 1996-97 to a peak of `r f2(peak_tf$threefoul)` in `r peak_tf$season`, the peak of the leg-kick, lean-into-the-closeout era. They fell to `r f2(at("2021-22", "threefoul"))` in the first crackdown season.
+- **Shooting-foul free throws per shot** went from `r f3(at("1996-97", "ftr"))` (1996-97) to `r f3(at("2020-21", "ftr"))` (2020-21) and `r f3(at("2025-26", "ftr"))` (2025-26).
+- **Self-created offense has receded.** The unassisted share of made field goals peaked at `r pct(max(tr$unast), 1)` (`r tr[which.max(unast), season]`) and stands at `r pct(at("2025-26", "unast"), 1)` today, as offenses move the ball more.
+- **Travels and offensive fouls** have fallen from `r f2(at("1996-97", "footwork"))` to `r f2(at("2025-26", "footwork"))` per 100 scoring attempts.
+
+## Top 10 and bottom 10 by era
+
+Each blurb is generated from the data: it names the two components that pushed that player's rating up (top) or down (bottom) the most.
+
+```{r}
+era_gt <- function(e, which) {
+  d <- tb[era == e & end == which, .(`#` = rank, Player = player, Seasons = seasons, EHI = ehi, Archetype = archetype, `Why` = blurb)]
+  gt(d) |>
+    fmt_number(EHI, decimals = 1) |>
+    data_color(columns = EHI, fn = scales::col_numeric(c("#f2a6a5", "#f0efec", "#86b6ef"), domain = c(0, 100))) |>
+    cols_width(`Why` ~ gt::pct(45)) |>
+    tab_options(table.width = gt::pct(100), table.font.size = px(14), data_row.padding = px(4))
+}
+```
+
+::: {.panel-tabset}
+
+### Hand-Check
+
+*`r era_years[1]`*. **Most ethical:** `r tb[era == eras[1] & end == "Top", player][1]`. **Most whistle-reliant:** `r tb[era == eras[1] & end == "Bottom", player][1]`.
+
+```{r}
+era_gt(eras[1], "Top"); era_gt(eras[1], "Bottom")
+```
+
+### Freedom of Movement
+
+*`r era_years[2]`*. **Most ethical:** `r tb[era == eras[2] & end == "Top", player][1]`. **Most whistle-reliant:** `r tb[era == eras[2] & end == "Bottom", player][1]`.
+
+```{r}
+era_gt(eras[2], "Top"); era_gt(eras[2], "Bottom")
+```
+
+### Pace and Space
+
+*`r era_years[3]`*. **Most ethical:** `r tb[era == eras[3] & end == "Top", player][1]`. **Most whistle-reliant:** `r tb[era == eras[3] & end == "Bottom", player][1]`.
+
+```{r}
+era_gt(eras[3], "Top"); era_gt(eras[3], "Bottom")
+```
+
+### Post-Crackdown
+
+*`r era_years[4]`*. **Most ethical:** `r tb[era == eras[4] & end == "Top", player][1]`. **Most whistle-reliant:** `r tb[era == eras[4] & end == "Bottom", player][1]`.
+
+```{r}
+era_gt(eras[4], "Top"); era_gt(eras[4], "Bottom")
+```
+
+:::
+
+## Every era on one map
+
+![](`r fig("quadrant_eras")`){fig-alt="Four-panel quadrant chart, one per era, plotting each player's era-average Skill Score against Whistle Score."}
+
+```{r}
+mix <- er[, .N, .(era, archetype)][, share := N / sum(N), era]
+dcast(mix, era ~ archetype, value.var = "share")[match(eras, era)] |>
+  gt(rowname_col = "era") |> fmt_percent(-era, decimals = 0) |>
+  tab_header(title = "Archetype mix by era", subtitle = "Share of players with 2+ qualifying seasons in the era") |>
+  tab_options(table.width = gt::pct(100))
+```
+
+Archetypes are defined relative to each season's peers, so the mix stays roughly balanced by construction. What changes between eras is *who* occupies each corner.

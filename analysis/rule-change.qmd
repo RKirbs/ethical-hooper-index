@@ -1,0 +1,80 @@
+---
+title: "The 2021-22 Crackdown"
+subtitle: "When the NBA stopped rewarding 'non-basketball moves', who lost the whistle?"
+---
+
+```{r setup}
+#| include: false
+source("_common.R")
+g <- function(spec_, out_) did[spec == spec_ & outcome == out_]
+TS <- "True shooting %"; TF <- "3PT shooting fouls per 100 3PA"; P75 <- "Points per 75 possessions"; EX <- "Excess FT rate"
+main_tf <- g("Main: continuous treatment", TF); plac_tf <- g("Placebo: fake rule in 2019-20", TF); early_tf <- g("Treatment from 2016-18 (no RTM)", TF)
+main_ts <- g("Main: continuous treatment", TS); plac_ts <- g("Placebo: fake rule in 2019-20", TS)
+early_ts <- g("Treatment from 2016-18 (no RTM)", TS); age_ts <- g("Age control", TS); w_ts <- g("Treatment = pre EHI Whistle Score", TS)
+main_ex <- g("Main: continuous treatment", EX)
+lg <- trends[season %in% c("2020-21", "2021-22")]
+ppt <- function(x) f2(100 * x)   # TS% points
+```
+
+## The natural experiment
+
+Before the 2021-22 season, the NBA told officials to stop rewarding **"non-basketball moves"**: abrupt sideways or backward launches into defenders, hooking a defender's arm, and similar tricks designed to draw a foul rather than score. It is the closest thing basketball has to a policy experiment on exactly the behavior this index measures.
+
+League-wide, the effect was immediate: three-point shooting fouls fell from `r f2(lg[season == "2020-21"][[3]])` to `r f2(lg[season == "2021-22"][[3]])` per 100 attempts in one season. The sharper question is whether the rule hit **the players who had been leaning on those moves**, and whether our index had flagged them in advance.
+
+## Design
+
+- **Panel:** regular-season player-seasons with 500+ minutes, 2018-19 to 2025-26. The minutes threshold deliberately ignores shot volume, so the sample isn't filtered on the outcomes being measured. Treated players are those who were qualifying scorers before the rule (`r f0(main_ts$players)` players).
+- **Pre-period** 2018-19 to 2020-21; **post-period** 2021-22 to 2025-26.
+- **Treatment intensity:** each player's pooled pre-period three-point shooting-foul rate, standardized (continuous), plus a binary top-quartile version. An alternative uses the index's own pre-period **Whistle Score**.
+- **Specification:** two-way fixed effects (player + season) difference-in-differences with standard errors clustered by player (`fixest`). Season effects absorb the league-wide drop, so estimates measure the **differential** change for heavier foul-drawers.
+
+## The trap: regression to the mean
+
+Players picked *because* they drew unusually many fouls in 2018-21 will tend to draw fewer later even with no rule change. Extreme seasons don't repeat. Two checks separate the rule from that drift:
+
+1. **Placebo:** pretend the rule arrived in 2019-20, measuring treatment in 2016-18 and using only pre-rule seasons. Any "effect" there is pure drift.
+2. **Separate treatment window:** measure foul-drawing in 2016-18, before the outcome window, so mean reversion can't mechanically create the effect.
+
+## Results
+
+```{r}
+show <- did[outcome %in% c(TF, TS, P75, EX)]
+show[, Estimate := fifelse(outcome == TS, 100 * estimate, estimate)]
+show[, `95% CI` := fifelse(outcome == TS, sprintf("[%.2f, %.2f]", 100 * ci_lo, 100 * ci_hi), sprintf("[%.3f, %.3f]", ci_lo, ci_hi))]
+show[, outcome := fifelse(outcome == TS, "True shooting % (points)", outcome)]
+show[, .(Outcome = outcome, Specification = spec, Estimate, `95% CI`, p, N = n)] |>
+  gt(groupname_col = "Outcome") |>
+  fmt_number(Estimate, decimals = 3, force_sign = TRUE) |> fmt(p, fns = function(x) vapply(x, pval, "")) |>
+  tab_style(cell_text(weight = "bold"), cells_body(rows = Specification %in% c("Placebo: fake rule in 2019-20", "Treatment = pre EHI Whistle Score"))) |>
+  tab_options(table.width = gt::pct(100), table.font.size = px(13), data_row.padding = px(3))
+```
+
+### Three-point fouls: mostly drift
+
+The headline estimate looks dramatic: each standard deviation of pre-rule foul-drawing predicts `r f2(main_tf$estimate)` three-point fouls per 100 attempts afterward (`r pval(main_tf$p)`). But the **placebo shows `r f2(plac_tf$estimate)`** (`r pval(plac_tf$p)`) with no rule at all, and measuring treatment in the earlier window shrinks the effect to `r f2(early_tf$estimate)` (`r pval(early_tf$p)`). Most of the apparent targeting is regression to the mean. The rule clearly lowered three-point fouls **for everyone**, but this design can't show it fell *disproportionately* on the prior foul-drawers.
+
+![](`r fig("event_study_threefoul")`){fig-alt="Event study of three-point shooting fouls per 100 attempts by season, relative to 2020-21, per standard deviation of pre-period foul-drawing."}
+
+### Efficiency: a real, targeted hit
+
+True shooting tells a cleaner story. Heavier pre-rule foul-drawers lost `r ppt(-main_ts$estimate)` TS points per standard deviation after the rule (`r pval(main_ts$p)`). The effect **survives every check**:
+
+- the early treatment window (`r ppt(-early_ts$estimate)` points, `r pval(early_ts$p)`), so it is not mean reversion;
+- an age control (`r ppt(-age_ts$estimate)` points, `r pval(age_ts$p)`), so it is not aging foul-drawers;
+- while the **placebo is flat** (`r ppt(plac_ts$estimate)` points, `r pval(plac_ts$p)`).
+
+![](`r fig("event_study_ts")`){fig-alt="Event study of true shooting percentage by season relative to 2020-21; flat before 2021-22, then roughly 0.5 to 0.8 points lower afterward."}
+
+### The index saw it coming
+
+Using the **pre-rule EHI Whistle Score** as the treatment, a measure built *before* and *independently of* the rule, each standard deviation of whistle-dependence predicts a `r ppt(-w_ts$estimate)`-point drop in true shooting after the crackdown (`r pval(w_ts$p)`). The players the index labeled as whistle-reliant are the ones whose scoring got less efficient once the league stopped rewarding non-basketball moves. That is external validation of what the Whistle Score measures.
+
+The **excess free-throw rate** did not fall differentially (`r sgn(main_ex$estimate, 3)`, `r pval(main_ex$p)`). One reading: foul-drawers still got to the line on drives and contact at the rim, but lost the cheap jump-shot whistles that had padded their efficiency.
+
+## Caveats
+
+- Event-study pre-trends look flat partly by construction, because treatment is measured over the same pre-period. The placebo and early-window checks carry the identification weight.
+- The sample is small (`r f0(main_ts$players)` players), and the binary top-quartile group even smaller.
+- Linear age is absorbed by player + season fixed effects; the age control is a quadratic term.
+- Other things changed after 2021-22 (pace, the take-foul rule in 2022-23). They hit all players, and season fixed effects absorb anything common to everyone.

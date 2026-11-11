@@ -1,0 +1,97 @@
+---
+title: "Rankings"
+subtitle: "Every qualifying career and player-season, 1996-97 to 2025-26"
+---
+
+```{r setup}
+#| include: false
+source("_common.R")
+car_tbl <- careers[, .(Rank = rank, Player = player, Seasons = seasons, Span = paste(first, last, sep = " to "),
+                       EHI = career_ehi, `Peak 3-yr` = peak3_ehi, Skill = skill, Whistle = whistle,
+                       Archetype = archetype, Minutes = mp)]
+```
+
+A career qualifies with four or more qualifying regular seasons (1,000+ minutes and 12+ FGA per 36). **Career EHI** is the minutes-weighted average of those seasons; **Peak** is the best three-consecutive-season stretch. Skill and Whistle are in standard deviations versus season peers. For Whistle, **negative is cleaner**.
+
+## The 25 most ethical hoopers
+
+```{r}
+gt_career <- function(d, title) {
+  d |> gt() |>
+    tab_header(title = title) |>
+    fmt_number(c(EHI, `Peak 3-yr`), decimals = 1) |>
+    fmt_number(c(Skill, Whistle), decimals = 2, force_sign = TRUE) |>
+    fmt_number(Minutes, decimals = 0) |>
+    data_color(columns = EHI, fn = scales::col_numeric(c("#f2a6a5", "#f0efec", "#86b6ef"), domain = c(0, 100))) |>
+    cols_hide(Minutes) |>
+    tab_options(table.width = gt::pct(100), data_row.padding = px(4), table.font.size = px(14))
+}
+gt_career(car_tbl[1:25], "All-time top 25 by career EHI")
+```
+
+## The 25 most whistle-dependent
+
+```{r}
+gt_career(car_tbl[order(EHI)][1:25], "All-time bottom 25 by career EHI")
+```
+
+## All `r nrow(careers)` careers
+
+Search by name, or sort any column.
+
+```{r}
+reactable(car_tbl, searchable = TRUE, striped = TRUE, highlight = TRUE, defaultPageSize = 15,
+          theme = rt_theme, defaultSorted = "Rank",
+          columns = list(
+            Rank = colDef(width = 70), Player = colDef(minWidth = 150), Seasons = colDef(width = 90),
+            Span = colDef(minWidth = 175),
+            EHI = colDef(format = colFormat(digits = 1), style = ehi_color, width = 70),
+            `Peak 3-yr` = colDef(format = colFormat(digits = 1), width = 80),
+            Skill = colDef(format = colFormat(digits = 2), width = 70),
+            Whistle = colDef(format = colFormat(digits = 2), width = 75),
+            Archetype = colDef(minWidth = 130),
+            Minutes = colDef(format = colFormat(separators = TRUE, digits = 0), width = 85)))
+```
+
+## Every qualifying regular-season player-season
+
+`r f0(nrow(rs))` seasons. Expand the components to see what drove each rating. Raw values are shown (before shrinkage and standardization).
+
+```{r}
+ps_tbl <- rs[, .(Season = season, Player = player, Team = primary_team, EHI = ehi, Skill = skill, Whistle = whistle,
+                 Archetype = archetype, Min = mp, FGA = fga,
+                 `SMAE (pts/FGA)` = smae_raw, `Unassisted %` = 100 * selfcreate_raw, `Difficulty` = difficulty_raw,
+                 `Travels+OF /100` = footwork_raw, `Excess FTr` = excess_ftr_raw,
+                 `3PT fouls /100 3PA` = threefoul_raw, `FT % of pts` = 100 * ftshare_raw,
+                 `Perim. and-1 /100` = and1jump_raw)][order(-EHI)]
+num2 <- colFormat(digits = 2); num1 <- colFormat(digits = 1)
+reactable(ps_tbl, searchable = TRUE, filterable = FALSE, striped = TRUE, highlight = TRUE, defaultPageSize = 15,
+          theme = rt_theme, compact = TRUE,
+          columns = list(
+            Season = colDef(width = 80), Player = colDef(minWidth = 150), Team = colDef(width = 60),
+            EHI = colDef(format = num1, style = ehi_color, width = 65),
+            Skill = colDef(format = num2, width = 65), Whistle = colDef(format = num2, width = 70),
+            Archetype = colDef(minWidth = 125),
+            Min = colDef(format = colFormat(separators = TRUE, digits = 0), width = 70),
+            FGA = colDef(format = colFormat(separators = TRUE, digits = 0), width = 65),
+            `SMAE (pts/FGA)` = colDef(format = colFormat(digits = 3)), `Unassisted %` = colDef(format = num1),
+            Difficulty = colDef(format = colFormat(digits = 3)), `Travels+OF /100` = colDef(format = num2),
+            `Excess FTr` = colDef(format = colFormat(digits = 3)), `3PT fouls /100 3PA` = colDef(format = num2),
+            `FT % of pts` = colDef(format = num1), `Perim. and-1 /100` = colDef(format = num2)))
+```
+
+## Playoffs
+
+Playoff player-seasons with 150+ minutes and 12+ FGA per 36, standardized against that postseason's qualifiers (`r f0(nrow(po))` seasons).
+
+```{r}
+po_tbl <- po[, .(Season = season, Player = player, Team = primary_team, EHI = ehi, Skill = skill,
+                 Whistle = whistle, Archetype = archetype, Min = mp, FGA = fga)][order(-EHI)]
+reactable(po_tbl, searchable = TRUE, striped = TRUE, highlight = TRUE, defaultPageSize = 10, theme = rt_theme, compact = TRUE,
+          columns = list(EHI = colDef(format = num1, style = ehi_color), Skill = colDef(format = num2),
+                         Whistle = colDef(format = num2), Player = colDef(minWidth = 150), Archetype = colDef(minWidth = 125)))
+```
+
+::: {.small-note}
+Download the full data: [`ehi_player_seasons.csv`](`r REPO_URL`/blob/main/data/final/ehi_player_seasons.csv) and [`ehi_careers.csv`](`r REPO_URL`/blob/main/data/final/ehi_careers.csv).
+:::

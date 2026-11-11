@@ -28,3 +28,6 @@ analysis/.quarto/
 analysis/_freeze/
 analysis/*_files/
 /.quarto/
+
+# Quarto: figures copied in at render time
+analysis/figures/

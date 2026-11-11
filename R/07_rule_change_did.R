@@ -118,11 +118,12 @@ if (sys.nframe() == 0) {
   message("players: ", r$n_players, " | top-quartile treated: ", r$n_treated)
   print(r$res[, .(spec, outcome, estimate = signif(estimate, 3), se = signif(se, 3), p = signif(p, 3), n)])
   save_fig(plot_event_study(r$es[outcome == OUTCOMES[["threefoul_raw"]]],
-                            "The crackdown hit the 3PT foul-drawers",
-                            "Event study: change in 3PT shooting fouls drawn per 100 3PA, per 1 SD of 2018-21 foul-drawing"),
+                            "3PT foul-drawers drew fewer fouls on threes after 2021-22...",
+                            "...but a placebo test shows much of this drop is regression to the mean.\nChange in 3PT shooting fouls per 100 3PA per 1 SD of 2018-21 foul-drawing"),
            "event_study_threefoul")
-  save_fig(plot_event_study(r$es[outcome == OUTCOMES[["excess_ftr_raw"]]],
-                            "Excess free-throw rate after the rule change",
-                            "Event study: change in FTA/FGA beyond shot-diet expectation, per 1 SD of 2018-21 foul-drawing"),
-           "event_study_excess_ftr")
+  save_fig(plot_event_study(r$es[outcome == OUTCOMES[["ts"]]][, `:=`(estimate = 100 * estimate, ci_lo = 100 * ci_lo, ci_hi = 100 * ci_hi)],
+                            "Foul-drawers lost efficiency after the crackdown",
+                            "Change in true shooting % (points) per 1 SD of 2018-21 3PT foul-drawing, vs 2020-21") +
+             labs(y = "TS% points per 1 SD of pre-period\n3PT foul-drawing (vs 2020-21)"),
+           "event_study_ts")
 }

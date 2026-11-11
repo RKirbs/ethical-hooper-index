@@ -1,0 +1,134 @@
+---
+title: "Anomalies"
+subtitle: "Playoff whistles, style changes, rare combinations, and outliers, all found by code rather than hand-picked"
+---
+
+```{r setup}
+#| include: false
+source("_common.R")
+pw  <- fin("anomaly_playoff_whistle.csv")
+prd <- fin("anomaly_post_rule_drop.csv")
+sw  <- fin("anomaly_switchers.csv")
+ev  <- fin("anomaly_ethical_volume.csv")
+ol  <- fin("anomaly_outliers.csv")
+te  <- fin("anomaly_team_effects.csv")
+small_gt <- function(d) gt(d) |> tab_options(table.width = gt::pct(100), table.font.size = px(14), data_row.padding = px(4))
+```
+
+## Who loses the whistle in the playoffs?
+
+The cliché says referees "swallow their whistles" in the postseason. For every player with `r min(pw$po_runs)`+ qualifying-season playoff runs (and 300+ playoff field-goal attempts), we compare shooting-foul free throws per shot in the playoffs with the same seasons' regular seasons, **net of the league-wide change** that year.
+
+```{r}
+pw_tbl <- function(d) d[, .(Player = player, `Playoff runs` = po_runs, `Playoff FGA` = po_fga,
+                            `RS FTA/FGA` = rs_ftr, `PO FTA/FGA` = po_ftr, `Net change` = net_change, `% change` = pct_change / 100)] |>
+  small_gt() |> fmt_number(c(`RS FTA/FGA`, `PO FTA/FGA`), decimals = 3) |>
+  fmt_number(`Net change`, decimals = 3, force_sign = TRUE) |> fmt_percent(`% change`, decimals = 0, force_sign = TRUE) |>
+  fmt_number(`Playoff FGA`, decimals = 0)
+```
+
+::: {.panel-tabset}
+### Biggest drops
+```{r}
+pw_tbl(pw[order(net_change)][1:10])
+```
+### Biggest gains
+```{r}
+pw_tbl(pw[order(-net_change)][1:10])
+```
+:::
+
+`r pw[order(net_change)][1, player]` saw the steepest playoff drop: shooting-foul free throws per shot fell `r pct(-pw[order(net_change)][1, pct_change] / 100)` relative to the league trend over `r pw[order(net_change)][1, po_runs]` runs. `r pw[order(-net_change)][1, player]` went the other way (+`r pct(pw[order(-net_change)][1, pct_change] / 100)`).
+
+## Biggest whistle drop after the 2021-22 rule change
+
+Players with 2+ qualifying seasons both before (2018-21) and after (2021-26) the "non-basketball move" crackdown, ranked by change in Whistle Score. A negative change means a cleaner, less whistle-reliant scorer after the rule.
+
+```{r}
+prd[1:12, .(Player = player, `Whistle before` = whistle_pre, `Whistle after` = whistle_post, Change = whistle_change,
+            `3PT fouls/100 before` = threefoul_pre, `3PT fouls/100 after` = threefoul_post)] |>
+  small_gt() |> fmt_number(c(`Whistle before`, `Whistle after`, Change), decimals = 2, force_sign = TRUE) |>
+  fmt_number(c(`3PT fouls/100 before`, `3PT fouls/100 after`), decimals = 2)
+```
+
+```{r}
+#| include: false
+heavy <- prd[threefoul_pre >= quantile(threefoul_pre, 0.75)]       # top quartile of pre-rule 3PT foul-drawing
+steep <- heavy[order(threefoul_post - threefoul_pre)][1]
+topdrawer <- prd[order(-threefoul_pre)][1]
+```
+
+`r prd[1, player]` shows the largest drop in Whistle Score (`r sgn(prd[1, whistle_change])` SD). Among the heaviest pre-rule three-point foul-drawers (top quartile), the steepest decline belonged to `r steep$player`, from `r f2(steep$threefoul_pre)` to `r f2(steep$threefoul_post)` three-point fouls per 100 attempts. The single heaviest pre-rule drawer, `r topdrawer$player`, `r if (topdrawer$threefoul_post < topdrawer$threefoul_pre) "fell" else "actually rose"` from `r f2(topdrawer$threefoul_pre)` to `r f2(topdrawer$threefoul_post)`. These are descriptive changes; the [Rule Change](rule-change.qmd) page tests whether they are larger than the drift we'd expect without a rule.
+
+## Archetype switchers
+
+Among players with 6+ qualifying seasons: how far did they travel across the map between their first three and last three qualifying seasons, and how often did their season-to-season archetype flip?
+
+::: {.panel-tabset}
+### Biggest overall shift
+```{r}
+sw[order(-shift)][1:10, .(Player = player, Seasons = seasons, `First archetype` = first, `Last archetype` = last,
+                         `Shift (SD)` = shift, `Season-to-season switches` = switches)] |>
+  small_gt() |> fmt_number(`Shift (SD)`, decimals = 2)
+```
+### Most frequent switching
+```{r}
+sw[order(-switches, -seasons)][1:10, .(Player = player, Seasons = seasons, `Season-to-season switches` = switches,
+                                      `First archetype` = first, `Last archetype` = last)] |> small_gt()
+```
+:::
+
+`r sw[order(-shift)][1, player]` made the longest journey: from `r sw[order(-shift)][1, first]` early to `r sw[order(-shift)][1, last]` late in the career, a shift of `r f2(sw[order(-shift)][1, shift])` standard deviations.
+
+## Ethical despite the volume
+
+High-usage scorers usually draw more fouls, because the ball is in their hands more often. These seasons combine **top-10% usage** (scoring attempts per 36 minutes, within season) with **EHI ≥ 65**.
+
+```{r}
+ev[1:15, .(Season = season, Player = player, EHI = ehi, `Usage (scoring att./36)` = usage36, Skill = skill, Whistle = whistle)] |>
+  small_gt() |> fmt_number(c(Skill, Whistle), decimals = 2, force_sign = TRUE) |> fmt_number(EHI, decimals = 1)
+```
+
+Only `r nrow(ev)` player-seasons in thirty years clear both bars.
+
+## Statistical outliers
+
+Any qualifying season where a component sits **more than 3 SD** from its season mean (component z-scores are capped at ±4 in the index). Each was checked for data bugs before being kept.
+
+```{r}
+ol[, .N, component][, .(Component = COMP_LABELS[component], `Seasons with |z| > 3` = N)][order(-`Seasons with |z| > 3`)] |> small_gt()
+```
+
+```{r}
+reactable(ol[, .(Season = season, Player = player, Component = COMP_LABELS[component], z, `Raw value` = raw,
+                 `After shrinkage` = shrunk, FGA = fga)],
+          searchable = TRUE, defaultPageSize = 10, theme = rt_theme, compact = TRUE, striped = TRUE)
+```
+
+**Checked, and explained:**
+
+- An early version of the shrinkage produced |z| > 8 for a handful of seasons. Tracing it showed that tiny samples (e.g. a big man with a couple of three-shot fouls on a handful of three-point attempts) were inflating the estimated spread of true talent. The priors are now fit only on players with reliable samples. The remaining outliers are **large-sample seasons**, genuine extremes rather than noise.
+- Very low **shot difficulty** belongs to lob-and-dunk centers whose attempts are almost all at the rim. That is a real shot diet, not an error.
+- High **three-point foul rates** belong to famously effective three-point foul-drawers.
+
+## Team effects (exploratory)
+
+Do some franchises make players more or less "ethical"? A regression of EHI on **player fixed effects + franchise fixed effects** asks how a player's EHI shifts when on one franchise versus elsewhere in their career. Relocated franchises are merged (e.g. SEA → OKC).
+
+```{r}
+te_tbl <- function(d) d[, .(Franchise = franchise, `EHI shift vs. own career` = effect, `Player-seasons` = player_seasons)] |>
+  small_gt() |> fmt_number(2, decimals = 1, force_sign = TRUE)
+```
+
+::: {.panel-tabset}
+### Most "ethical" environments
+```{r}
+te_tbl(te[order(-effect)][1:6])
+```
+### Most whistle-friendly environments
+```{r}
+te_tbl(te[order(effect)][1:6])
+```
+:::
+
+The spread is modest. The largest franchise effect (`r sgn(max(abs(te$effect)), 1)` EHI points) is smaller than the `r f1(quantile(rs$ehi, 0.75) - median(rs$ehi))`-point gap between a median and a top-quartile qualifying season, and coaching, roster construction and officiating aren't separated. Treat this as a conversation starter, not a finding.

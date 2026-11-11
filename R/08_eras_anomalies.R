@@ -105,6 +105,7 @@ trend_plot <- function(ps) {
               `Unassisted share of made FG` = sum(fg2m_unast + fg3m_unast) / sum(fgm),
               `Travels + offensive fouls per 100 attempts` = 100 * sum(travels + off_fouls) / sum(fga + 0.44 * fta + tov)),
           season][, yr := season_year(season)]
+  fwrite(lg[order(yr)], file.path(paths$final, "league_trends.csv"))   # for inline numbers on the site
   long <- melt(lg, id.vars = c("season", "yr"))
   ggplot(long, aes(yr, value)) +
     geom_vline(xintercept = RULE_CHANGES$year, color = pal$muted, linetype = "dashed", linewidth = 0.4) +
@@ -206,7 +207,7 @@ if (sys.nframe() == 0) {
   car <- fread(file.path(paths$final, "ehi_careers.csv"))
   car[, `:=`(archetype = factor(archetype, levels = ARCHETYPES), ehi = career_ehi)]
   save_fig(quadrant_plot(car, pick_labels(car, 8, 14), "The Ethical Hooper map, 1996-97 to 2025-26",
-                         "417 careers (4+ qualifying seasons). Up-and-right: skill-driven scoring without leaning on the whistle"),
+                         sprintf("%d careers (4+ qualifying seasons). Up-and-right: skill-driven scoring without leaning on the whistle", nrow(car))),
            "quadrant_signature", width = 9, height = 8.5)
 
   fwrite(playoff_whistle(ps), file.path(paths$final, "anomaly_playoff_whistle.csv"))

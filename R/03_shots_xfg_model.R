@@ -123,4 +123,5 @@ if (sys.nframe() == 0) {
   fwrite(imp, "data/audit/xfg_importance.csv"); print(imp)
   out <- crossfit_xfg(s, nrounds = r$best)
   write_parquet(out, file.path(paths$interim, "shots_xfg.parquet"))
+  fwrite(data.table(n_shots = nrow(s), n_train = sum(season_year(s$season) <= 2023)), file.path(paths$final, "xfg_meta.csv"))
 }

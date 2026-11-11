@@ -1,0 +1,69 @@
+---
+title: "The Ethical Hooper Index"
+subtitle: "Who scores through skill, and who scores through the whistle? Thirty NBA seasons, measured."
+toc: false
+---
+
+```{r setup}
+#| include: false
+source("_common.R")
+top <- careers[1]; bot <- careers[.N]
+n_careers <- nrow(careers); n_seasons <- nrow(rs)
+ts_w <- did[spec == "Treatment = pre EHI Whistle Score" & outcome == "True shooting %"]
+ts_pl <- did[spec == "Placebo: fake rule in 2019-20" & outcome == "True shooting %"]
+tf <- trends[season %in% c("2020-21", "2021-22")]
+stab_ehi <- stab[measure == "ehi"]
+active <- rs[season == "2025-26"][order(-ehi)]
+arch <- careers[, .N, archetype]
+```
+
+::: {.lead-hook}
+Every pickup run has one: the player who never seems to need a whistle. No arm-hooks, no launching sideways into a closeout, no head-snap on contact. Just footwork, a jumper, and a bucket. Basketball has a name for that player: the **ethical hooper**. This project turns the slang into a number.
+:::
+
+## What is an ethical hooper?
+
+::: {.definition}
+An **ethical hooper** is a player who scores and dominates through pure skill, clean footwork, natural shot-making, and fluid movement, rather than trickery, flopping, or foul-baiting.
+
+- **No rule manipulation.** They don't jump into defenders, hook arms, or sell contact with exaggerated head-snaps to earn a whistle.
+- **An aesthetic playstyle.** Their offense runs on clean mid-range pull-ups, pure jump shots, smooth handles, and honest post moves.
+- **Low free-throw reliance.** They take few free throws relative to their scoring volume, *beyond what their shot diet would naturally earn*.
+:::
+
+In measurable terms: an ethical hooper **generates scoring through skill rather than the whistle**: high shot-making relative to shot difficulty, self-created offense, clean footwork, and low dependence on free throws that are not explained by an aggressive, rim-attacking shot diet. A center who lives at the rim *should* shoot free throws. A guard who draws three-shot fouls by leaning into closeouts is a different story.
+
+::: {.small-note}
+**This is a stylistic metric, not a moral judgment of any person.** It uses on-court play-by-play data only. Drawing fouls is legal and often smart basketball. The index describes *how* a player scores, nothing about who they are.
+:::
+
+## The map
+
+The index has two axes. **Skill Score** (x) blends shot-making above expectation, self-creation, shot difficulty, and clean footwork. **Whistle Score** (y, flipped so "clean" is up) blends excess free throws, three-point fouls drawn, free-throw share of points, and perimeter and-ones. Every value is measured against the same season's peers, so a 1999 post-up big and a 2025 pull-up guard are compared on equal footing.
+
+![](`r fig("quadrant_signature")`){fig-alt="Scatter plot of every qualifying NBA career: Skill Score on the x-axis and Whistle Score on the y-axis (flipped so less whistle is up). Steve Nash sits alone in the upper right; James Harden sits alone at the bottom."}
+
+The **Ethical Hooper Index (EHI)** combines both axes on a 0–100 scale where 50 is an average qualifying scorer. Because the slang is mostly about *not* living at the line, the whistle axis carries `r pct(AXIS_W[["whistle"]])` of the weight and skill `r pct(AXIS_W[["skill"]])`. An ethical hooper doesn't have to be the most skilled player on the floor, just a clean one.
+
+## Top-line findings
+
+::: {.finding-list}
+- **`r top$player` is the most ethical hooper of the last 30 years** (career EHI `r f1(top$career_ehi)` over `r top$seasons` qualifying seasons), combining elite shot-making (`r sgn(top$skill)` SD) with a light whistle (`r sgn(top$whistle)` SD). **`r bot$player` ranks last** of `r n_careers` qualifying careers (EHI `r f1(bot$career_ehi)`, Whistle Score `r sgn(bot$whistle)` SD).
+- **The style is a real, persistent trait.** A player's EHI correlates *r* = `r f2(stab_ehi$r)` with their EHI the next season (`r f0(stab_ehi$pairs)` season pairs).
+- **The NBA's 2021-22 crackdown on "non-basketball moves" left a visible mark.** League-wide, three-point shooting fouls fell from `r f2(tf[season == "2020-21"][[3]])` to `r f2(tf[season == "2021-22"][[3]])` per 100 attempts in one season. Players our index had flagged as whistle-dependent lost efficiency afterward: each standard deviation of pre-rule Whistle Score predicted a `r f2(-100 * ts_w$estimate)`-point drop in true shooting (`r pval(ts_w$p)`), while a placebo "rule" in 2019-20 shows nothing (`r pval(ts_pl$p)`).
+- **Ethical hoopers are common.** `r arch[archetype == "Ethical Hooper", N]` of `r n_careers` careers land in the Ethical Hooper quadrant, including `r careers[archetype == "Ethical Hooper"][2, player]`, `r careers[archetype == "Ethical Hooper"][4, player]` and `r careers[archetype == "Ethical Hooper"][5, player]`.
+- **In 2025-26, the cleanest qualifying scorers** were `r active$player[1]`, `r active$player[2]` and `r active$player[3]`.
+:::
+
+## Explore
+
+- [**Methodology**](methodology.qmd): data, the expected-FG model, the eight components, shrinkage, weights, and limitations.
+- [**Rankings**](rankings.qmd): every qualifying player-season and career, searchable.
+- [**Eras**](eras.qmd): the most and least ethical hoopers from the hand-check era to the post-crackdown NBA.
+- [**Anomalies**](anomalies.qmd): who loses the whistle in the playoffs, who changed style, and statistical outliers.
+- [**Rule Change**](rule-change.qmd): the 2021-22 "non-basketball move" crackdown as a natural experiment.
+- [**Validation**](validation.qmd): cross-checks against Basketball Reference, stability, and sanity checks.
+
+::: {.small-note}
+`r f0(n_seasons)` qualifying regular-season player-seasons, 1996-97 to 2025-26. Reproducible from the [GitHub repository](`r REPO_URL`) with `renv` and one build command.
+:::

@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: ../docs
+  pre-render: Rscript --vanilla _copy_figures.R
+  post-render: Rscript --vanilla _post_render.R
+  resources:
+    - figures/
+
+website:
+  title: "The Ethical Hooper Index"
+  description: "Which NBA scorers, 1996-97 to 2025-26, score through skill rather than the whistle?"
+  page-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: methodology.qmd
+        text: Methodology
+      - href: rankings.qmd
+        text: Rankings
+      - href: eras.qmd
+        text: Eras
+      - href: anomalies.qmd
+        text: Anomalies
+      - href: rule-change.qmd
+        text: Rule Change
+      - href: validation.qmd
+        text: Validation
+  page-footer:
+    left: "Analysis by Rob Kirby · Data: NBA play-by-play & shot charts (shufinskiy/nba_data), pbpstats.com, Basketball Reference"
+    right: "A stylistic metric, not a judgment of any person."
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-summary: "Show code"
+    code-tools: false
+    fig-align: center
+    fig-responsive: true
+    df-print: kable
+    smooth-scroll: true
+    lightbox: auto
+
+execute:
+  echo: true
+  warning: false
+  message: false

@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+$body-bg: #fcfcfb;
+$body-color: #0b0b0b;
+$primary: #2a78d6;
+$link-color: #2a78d6;
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$navbar-bg: #0b0b0b;
+$navbar-fg: #f0efec;
+$headings-font-weight: 700;
+
+/*-- scss:rules --*/
+body { font-size: 1.05rem; line-height: 1.6; }
+.lead-hook { font-size: 1.2rem; color: #52514e; }
+.definition {
+  border-left: 4px solid #2a78d6; background: #f0efec; padding: 1rem 1.25rem; margin: 1.25rem 0;
+  border-radius: 4px;
+}
+.finding-list li { margin-bottom: .5rem; }
+.small-note { color: #52514e; font-size: .9rem; }
+img { max-width: 100%; height: auto; }
+.reactable { font-size: .88rem; }
+table { font-variant-numeric: tabular-nums; }
