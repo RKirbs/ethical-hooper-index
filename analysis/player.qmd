@@ -44,6 +44,11 @@ rs = rows.filter(d => d.type === "RS")
 po = rows.filter(d => d.type === "PO")
 crec = rows.length ? car.find(c => c.personId === rows[0].personId) : undefined
 seasonLabel = y => `${y}-${String((y + 1) % 100).padStart(2, "0")}`
+archDesc = new Map([
+  ["Ethical Hooper", "skilled scorer who rarely needs the whistle"],
+  ["Whistle Artist", "skilled scorer who also works the whistle, especially on jump shots"],
+  ["Downhill Bully", "less efficient scorer who lives at the line through contact"],
+  ["Grinder", "less efficient scorer, but clean and rarely at the line"]])
 ```
 
 ```{ojs}
@@ -53,7 +58,7 @@ summary = {
   if (!match) return html`<p><strong>No qualifying seasons found for "${query}".</strong> Only seasons with 1,000+ minutes and 12+ FGA per 36 are rated. Check the spelling, or try another player.</p>`;
   const avg = d3.mean(rs, d => d.ehi);
   const careerLine = crec
-    ? html`<strong>Career EHI ${crec.career_ehi.toFixed(1)}</strong> · ranked <strong>#${crec.rank} of ${n_careers}</strong> qualifying careers · peak 3-season EHI ${crec.peak3 ?? "n/a"} · career archetype: <strong>${crec.archetype}</strong>`
+    ? html`<strong>Career EHI ${crec.career_ehi.toFixed(1)}</strong> · ranked <strong>#${crec.rank} of ${n_careers}</strong> qualifying careers · peak 3-season EHI ${crec.peak3 ?? "n/a"} · career archetype: <strong>${crec.archetype}</strong> (${archDesc.get(crec.archetype) ?? ""})`
     : html`Fewer than 4 qualifying regular seasons, so not in the career rankings${rs.length ? html` · average EHI across ${rs.length} qualifying season${rs.length > 1 ? "s" : ""}: <strong>${avg.toFixed(1)}</strong>` : ""}.`;
   return html`<div class="definition"><div style="font-size:1.35rem;font-weight:700">${match}</div>
     <div>${rs.length} qualifying regular season${rs.length === 1 ? "" : "s"}${po.length ? `, ${po.length} qualifying playoff run${po.length === 1 ? "" : "s"}` : ""}</div>

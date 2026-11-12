@@ -49,6 +49,29 @@ The index has two axes. **Skill Score** (x) blends shot-making above expectation
 
 The **Ethical Hooper Index (EHI)** combines both axes on a 0–100 scale where 50 is an average qualifying scorer. Because the slang is mostly about *not* living at the line, the whistle axis carries `r pct(AXIS_W[["whistle"]])` of the weight and skill `r pct(AXIS_W[["skill"]])`. An ethical hooper doesn't have to be the most skilled player on the floor, just a clean one.
 
+### The four archetypes
+
+Each player lands in one corner of the map, depending on whether they are above or below their season's average on each axis.
+
+```{r}
+#| echo: false
+ex <- function(a) paste(careers[archetype == a][order(-mp)][1:3, player], collapse = ", ")
+data.table(
+  Archetype = c("Ethical Hooper", "Whistle Artist", "Downhill Bully", "Grinder"),
+  `What it means` = c(
+    "Skilled scorer who rarely needs the whistle: makes tough shots, creates their own offense, and gets few free throws for their shot mix.",
+    "Just as skilled, but works the whistle: draws fouls on jump shots and threes, and leans on the free-throw line.",
+    "Less efficient scorer who lives at the line through contact on drives and in the paint, not on jumpers.",
+    "Less efficient, but clean: takes tough or low-percentage shots without seeking contact, and rarely gets to the line."),
+  `Careers` = vapply(c("Ethical Hooper", "Whistle Artist", "Downhill Bully", "Grinder"),
+                     function(a) careers[archetype == a, .N], integer(1)),
+  `Examples (most minutes played)` = vapply(c("Ethical Hooper", "Whistle Artist", "Downhill Bully", "Grinder"), ex, "")) |>
+  gt() |> cols_width(`What it means` ~ gt::pct(52)) |>
+  tab_options(table.width = gt::pct(100), table.font.size = px(14), data_row.padding = px(5))
+```
+
+Labels are relative to each season's peers, so a player close to average on an axis can switch types from year to year.
+
 ## Top-line findings
 
 ::: {.finding-list}
