@@ -161,3 +161,12 @@ Spec deviations / refinements (each found by checking a suspicious result):
 - Tracking: Rob granted permission to impersonate a browser connection; declined. The NBA deliberately blocks automated access and impersonation tooling exists to defeat that. Manual browser-save path (`scripts/tracking_urls.md`) remains.
 
 - 2026-11-11: Rob tried opening the tracking API links directly in his browser; they did not load either. **Tier 2 dropped for this release**; the Validation page states it is not included and the loader remains for future use.
+
+## Phase 8: Published (2026-11-11)
+- Repo https://github.com/RKirbs/ethical-hooper-index (public), site https://rkirbs.github.io/ethical-hooper-index/ (GitHub Pages from main /docs). Created and pushed with the GitHub CLI (~/opt/gh) using Rob's existing sign-in; narrow publish rules in `.claude/settings.local.json` (gitignored).
+- Live-site review fixed overlapping season labels on Player Search at phone width (tick count now scales with chart width).
+- Portfolio: card + summary page added to RKirbs/RKirbs.github.io (order 1; cover SVG generated from league_trends.csv).
+- Archetype descriptions added after launch: a "The four archetypes" key under the map on Home (meaning, career counts and examples computed from data, examples = most minutes played) and a one-line description on the Player Search card.
+- Private build guide: Claude Doc "The Ethical Hooper Index: How It Was Built, Step by Step" (claude.ai, shared with Rob only) + PDF export in the project folder, kept off GitHub via `.git/info/exclude`.
+
+**Status: complete.** Only the optional Tier 2 tracking validation remains undone (NBA blocks access).
